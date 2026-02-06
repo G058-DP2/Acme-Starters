@@ -1,0 +1,3 @@
+acme.validation.text.message   	    = Debe tener entre 1 y 255 caracteres
+acme.validation.header.message   	= Debe tener entre 1 y 75 caracteres
+acme.validation.ticker.message 		= El ticker debe comenzar con 2 letras mayúsculas y 2 números, seguidos de un guion y entre 5 y 10 caracteres alfanuméricos

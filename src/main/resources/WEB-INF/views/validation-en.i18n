@@ -1,0 +1,3 @@
+acme.validation.text.message   	    = Must have from 1 to 255 characters
+acme.validation.header.message   	= Must have from 1 to 75 characters
+acme.validation.ticker.message 		= The ticker must start with 2 uppercase letters and 2 digits, followed by a hyphen and 5 to 10 alphanumeric characters 

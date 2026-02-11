@@ -58,6 +58,11 @@ public class Sponsorship extends AbstractEntity {
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date				startMoment;
 
+	/*
+	 * startMoment/endMoment must be a valid time interval in future wrt.
+	 * the moment when a sponsorship is published.
+	 */
+
 	@Mandatory
 	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
 	@Temporal(TemporalType.TIMESTAMP)
@@ -71,6 +76,7 @@ public class Sponsorship extends AbstractEntity {
 	@Mandatory
 	@Valid
 	@Column
+	//Sponsorships cannot be published unless they have at least one donation
 	private Boolean				draftMode;
 
 	// Derived attributes -----------------------------------------------------
@@ -78,11 +84,19 @@ public class Sponsorship extends AbstractEntity {
 	@Mandatory
 	@Valid
 	@Transient
+	/*
+	 * monthsActive is computed as the number of months in interval
+	 * startMoment/endMoment rounded to the nearest decimal
+	 */
 	private Double				monthsActive;
 
 	@Mandatory
 	@ValidMoney(min = 0.0)
 	@Transient
+	/*
+	 * The total money of a sponsorship is the sum of money in the corresponding donations.
+	 * Only Euros are accepted.
+	 */
 	private Money				totalMoney;
 
 	// Relationships ----------------------------------------------------------

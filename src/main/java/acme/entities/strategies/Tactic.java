@@ -49,6 +49,6 @@ public class Tactic extends AbstractEntity {
 
 	@Mandatory
 	@Valid
-	@ManyToOne
+	@ManyToOne(optional = false)
 	private Strategy			strategy;
 }

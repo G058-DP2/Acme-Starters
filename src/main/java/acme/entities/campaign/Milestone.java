@@ -10,7 +10,7 @@
  * they accept any liabilities with respect to them.
  */
 
-package acme.entities;
+package acme.entities.campaign;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

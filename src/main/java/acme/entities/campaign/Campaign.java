@@ -10,7 +10,7 @@
  * they accept any liabilities with respect to them.
  */
 
-package acme.entities;
+package acme.entities.campaign;
 
 import java.time.Duration;
 import java.time.Instant;
@@ -25,11 +25,8 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.persistence.Transient;
 import javax.validation.Valid;
-import javax.validation.constraints.AssertTrue;
-import javax.validation.constraints.Future;
 
 import acme.client.components.basis.AbstractEntity;
-import acme.client.components.datatypes.Moment;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.ValidUrl;
 import acme.constraints.ValidHeader;
@@ -66,16 +63,14 @@ public class Campaign extends AbstractEntity {
 	private String				description;
 
 	@Mandatory
-	@Future
 	@Temporal(TemporalType.TIMESTAMP)
 	@Column
-	private Moment				startMoment;
+	private Date				startMoment;
 
 	@Mandatory
-	@Future
 	@Temporal(TemporalType.TIMESTAMP)
 	@Column
-	private Moment				endMoment;
+	private Date				endMoment;
 
 	@ValidUrl
 	@Column
@@ -104,22 +99,6 @@ public class Campaign extends AbstractEntity {
 			return 0.0;
 
 		return this.milestones.stream().map(Milestone::getEffort).filter(value -> value != null).mapToDouble(Double::doubleValue).sum();
-	}
-
-	@AssertTrue
-	public boolean isMomentIntervalValid() {
-		if (this.startMoment == null || this.endMoment == null)
-			return true;
-
-		return this.startMoment.before(this.endMoment);
-	}
-
-	@AssertTrue
-	public boolean isPublishable() {
-		if (this.draftMode == null || this.draftMode)
-			return true;
-
-		return this.milestones != null && !this.milestones.isEmpty();
 	}
 
 	private double computeMonthsBetween(final Date start, final Date end) {

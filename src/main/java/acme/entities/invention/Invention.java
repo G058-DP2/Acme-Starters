@@ -1,6 +1,7 @@
 
 package acme.entities.invention;
 
+import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -17,6 +18,7 @@ import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidUrl;
+import acme.client.helpers.MomentHelper;
 import acme.client.helpers.SpringHelper;
 import acme.constraints.ValidHeader;
 import acme.constraints.ValidText;
@@ -72,21 +74,17 @@ public class Invention extends AbstractEntity {
 	@Valid
 	@Transient
 	public Double getMonthsActive() {
-		long diffInMillis = this.endMoment.getTime() - this.startMoment.getTime();
-		double diff = diffInMillis / (1000.0 * 60.0 * 60.0 * 24.0 * 30.0);
-		return Math.round(diff * 10.0) / 10.0;
+		return (double) MomentHelper.computeDuration(this.startMoment, this.endMoment).get(ChronoUnit.MONTHS);
 	}
 
+	@Valid
 	@Transient
 	public Money getCost() {
 		Money res = new Money();
-		res.setAmount(0.00);
-		res.setCurrency("EUR");
 
 		PartRepository r;
 		r = SpringHelper.getBean(PartRepository.class);
-
-		Double total = r.findPartsByInvention(this.getId()).stream().map(Part::getCost).mapToDouble(Money::getAmount).sum();
+		Double total = r.getSumCostsByInvention(this.getId());
 
 		res.setAmount(total);
 		return res;
@@ -95,7 +93,7 @@ public class Invention extends AbstractEntity {
 
 	@Mandatory
 	@Valid
-	@ManyToOne
+	@ManyToOne(optional = false)
 	private Inventor inventor;
 
 }

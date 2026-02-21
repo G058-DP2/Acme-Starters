@@ -7,24 +7,17 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 import javax.validation.Constraint;
-import javax.validation.OverridesAttribute;
 import javax.validation.Payload;
-
-import acme.client.components.validation.ValidMoney;
 
 @Target({
 	ElementType.FIELD, ElementType.METHOD
 })
 @Retention(RetentionPolicy.RUNTIME)
 @Constraint(validatedBy = EURCurrencyValidator.class)
-
 public @interface ValidEUR {
 
 	String message() default "";
 
 	Class<?>[] groups() default {};
 	Class<? extends Payload>[] payload() default {};
-
-	@OverridesAttribute(constraint = ValidMoney.class, name = "min")
-	double min() default 0.0;
 }

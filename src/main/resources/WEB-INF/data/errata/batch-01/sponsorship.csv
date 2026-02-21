@@ -1,0 +1,34 @@
+key,name,description,ticker,startMoment,endMoment,moreInfo,draftMode,key:sponsor
+#base - entity
+sponsorship-01,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",AB01-\wwwwwww,2025/01/01 0:00,2025/02/01 0:00,http://lorem.com/ipsum,true,sponsor-01
+#name - errata
+sponsorship-02, ,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",AB02-\wwwwwww,2025/01/01 0:00,2025/02/01 0:00,http://lorem.com/ipsum,true,sponsor-01
+sponsorship-03,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tem","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",AB03-\wwwwwww,2025/01/01 0:00,2025/02/01 0:00,http://lorem.com/ipsum,true,sponsor-01
+#description - errata
+sponsorship-04,"Lorem ipsum dolor sit amet, consectetu", ,AB04-\wwwwwww,2025/01/01 0:00,2025/02/01 0:00,http://lorem.com/ipsum,true,sponsor-01
+sponsorship-05,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i",AB05-\wwwwwww,2025/01/01 0:00,2025/02/01 0:00,http://lorem.com/ipsum,true,sponsor-01
+#ticker - errata
+sponsorship-06,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",A01-\wwwwwww,2025/01/01 0:00,2025/02/01 0:00,http://lorem.com/ipsum,true,sponsor-01
+sponsorship-07,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",ABC01-\wwwwwww,2025/01/01 0:00,2025/02/01 0:00,http://lorem.com/ipsum,true,sponsor-01
+sponsorship-08,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",AB1-\wwwwwww,2025/01/01 0:00,2025/02/01 0:00,http://lorem.com/ipsum,true,sponsor-01
+sponsorship-09,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",AB001-\wwwwwww,2025/01/01 0:00,2025/02/01 0:00,http://lorem.com/ipsum,true,sponsor-01
+sponsorship-10,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",AB01-\wwww,2025/01/01 0:00,2025/02/01 0:00,http://lorem.com/ipsum,true,sponsor-01
+sponsorship-11,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",AB01-\wwwwwwwwwww,2025/01/01 0:00,2025/02/01 0:00,http://lorem.com/ipsum,true,sponsor-01
+sponsorship-12,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",,2025/01/01 0:00,2025/02/01 0:00,http://lorem.com/ipsum,true,sponsor-01
+#startMoment/endMoment - errata
+sponsorship-13,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",AB06-\wwwwwww,,2025/02/01 0:00,http://lorem.com/ipsum,true,sponsor-01
+sponsorship-14,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",AB07-\wwwwwww,2024/12/31 23:59,2025/02/01 0:00,http://lorem.com/ipsum,true,sponsor-01
+sponsorship-15,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",AB08-\wwwwwww,2025/01/01 0:00,,http://lorem.com/ipsum,true,sponsor-01
+sponsorship-16,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",AB09-\wwwwwww,2025/01/01 0:00,2025/01/01 0:00,http://lorem.com/ipsum,true,sponsor-01
+sponsorship-17,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",AB10-\wwwwwww,2025/01/01 0:00,2201/01/01 0:01,http://lorem.com/ipsum,true,sponsor-01
+sponsorship-18,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",AB01-\wwwwwww,2025/02/01 0:00,2025/01/01 0:00,http://lorem.com/ipsum,true,sponsor-01
+#moreInfo - errata
+sponsorship-19,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",AB11-\wwwwwww,2025/01/01 0:00,2025/02/01 0:00,http://,true,sponsor-01
+sponsorship-20,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",AB12-\wwwwwww,2025/01/01 0:00,2025/02/01 0:00,ftp://,true,sponsor-01
+sponsorship-21,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",AB13-\wwwwwww,2025/01/01 0:00,2025/02/01 0:00,http://a,true,sponsor-01
+sponsorship-22,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",AB14-\wwwwwww,2025/01/01 0:00,2025/02/01 0:00,ftp://a,true,sponsor-01
+sponsorship-23,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",AB15-\wwwwwww,2025/01/01 0:00,2025/02/01 0:00,"http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/dolore/magna/aliqua/Ut/enim/ad/minim/veniam/quis/nostrud/exercitation/ullamco/laboris/nisi/ut/aliquip/ex/ea/commodo/consequat/duis/aute/xa",true,sponsor-01
+#draftMode - errata
+sponsorship-24,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",AB01-\wwwwwww,2025/01/01 0:00,2025/02/01 0:00,http://lorem.com/ipsum,false,sponsor-01
+
+

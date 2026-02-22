@@ -1,6 +1,8 @@
 
 package acme.entities.auditReport;
 
+import java.time.Duration;
+import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -19,10 +21,9 @@ import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidMoment.Constraint;
-import acme.client.components.validation.ValidNumber;
 import acme.client.components.validation.ValidUrl;
+import acme.client.helpers.MomentHelper;
 import acme.constraints.ValidHeader;
-import acme.constraints.ValidText;
 import acme.constraints.ValidTicker;
 import acme.features.auditor.auditReport.AuditReportRepository;
 import acme.realms.Auditor;
@@ -51,7 +52,7 @@ public class AuditReport extends AbstractEntity {
 	private String					name;
 
 	@Mandatory
-	@ValidText
+	//@ValidText
 	@Column
 	private String					description;
 
@@ -88,14 +89,22 @@ public class AuditReport extends AbstractEntity {
 	@Autowired
 	private AuditReportRepository	repository;
 
-	@Mandatory
-	@Valid
-	@Transient
-	private Double					monthsActive;
 
-	@Mandatory
-	@ValidNumber(min = 0)
 	@Transient
-	private Integer					hours;
+	public Double getMonthsActive() {
+		Duration d = MomentHelper.computeDuration(this.startMoment, this.endMoment);
+		return (double) d.get(ChronoUnit.MONTHS);
+	}
+
+	@Transient
+	public Integer getHours() {
+
+		if (this.getId() == 0)
+			return 0;
+
+		Integer total = this.repository.sumHoursByReportId(this.getId());
+
+		return total == null ? 0 : total;
+	}
 
 }

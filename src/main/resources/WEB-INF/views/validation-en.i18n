@@ -5,4 +5,4 @@ acme.validation.sponsorship.donations.error = A sponsorship cannot be published 
 acme.validation.sponsorship.dates.error = Start and end moments must form a valid time interval in the future upon publication.
 acme.validation.sponsorship.ticker.non-unique = The ticker is already in use by another sponsorship.
 acme.validation.money.eur.error = The currency must be exclusively EUR.
-acme.validation.money.eur.error = La moneda debe ser exclusivamente EUR. 
+acme.validation.money.amount.error = The money amount must be positive.

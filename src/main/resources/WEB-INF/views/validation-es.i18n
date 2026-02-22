@@ -4,3 +4,11 @@ acme.validation.ticker.message 		= El ticker debe comenzar con 2 letras mayúscu
 acme.validation.sponsorship.donations.error = Un patrocinio no puede publicarse a menos que tenga al menos una donación.
 acme.validation.sponsorship.dates.error = Los momentos de inicio y fin deben formar un intervalo de tiempo válido en el futuro al momento de la publicación.
 acme.validation.sponsorship.ticker.non-unique = El ticker ya está siendo utilizado por otro patrocinio.
+
+
+
+
+##################################### AUDIT 
+acme.validation.auditReport.auditSection.error = Los informes de auditoría no se pueden publicar a menos que tengan al menos una sección de auditoría.
+acme.validation.auditReport.dates.error = Los momentos de inicio y finalización deben formar un intervalo de tiempo válido en el futuro tras la publicación.
+acme.validation.auditReport.ticker.non-unique = El ticker ya está siendo utilizado por otro informe de auditoría.

@@ -6,3 +6,5 @@ acme.validation.sponsorship.dates.error = Los momentos de inicio y fin deben for
 acme.validation.sponsorship.ticker.non-unique = El ticker ya está siendo utilizado por otro patrocinio.
 acme.validation.money.eur.error = La moneda debe ser exclusivamente EUR.
 acme.validation.money.amount.error = La cantidad de dinero debe ser positiva.
+acme.validation.invention.dates.error = Ambas fechas deben estar en el futuro.
+acme.validation.invention.parts.error = Un invento no puede ser publicado a menos que tenga al menos una parte .

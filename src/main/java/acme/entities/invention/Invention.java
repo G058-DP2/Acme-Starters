@@ -73,7 +73,6 @@ public class Invention extends AbstractEntity {
 	private Boolean				draftMode;
 
 
-	@Valid
 	@Transient
 	public Double getMonthsActive() {
 		return (double) MomentHelper.computeDuration(this.startMoment, this.endMoment).get(ChronoUnit.MONTHS);

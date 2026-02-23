@@ -1,0 +1,4 @@
+key,key:userAccount,bio,keyWords,licensed
+inventor-01,user-account-inventor-01,"Lorem ipsum dolor sit amet.","Ingeniero,Lector",true
+inventor-02,user-account-inventor-02,"Lorem ipsum dolor sit amet.","Matemático,Deportista",true
+inventor-03,user-account-inventor-03,"Lorem ipsum dolor sit amet.","Estadístico",true

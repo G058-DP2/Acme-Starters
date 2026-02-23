@@ -1,0 +1,14 @@
+key,name,description,cost,kind,key:invention
+# base
+part-01,"Lorem ipsum dolor sit amet.","Lorem ipsum dolor sit amet, consectetur adipiscing elit",EUR 10.00,CORE,invention-01
+# name - errata
+part-02,,"Lorem ipsum dolor sit amet, consectetur adipiscing elit",EUR 10.00,CORE,invention-02
+part-03,"Looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo","Lorem ipsum dolor sit amet, consectetur adipiscing elit",EUR 10.00,CORE,invention-02
+# description - errata
+part-04,"Lorem ipsum dolor sit amet.",,EUR 10.00,CORE,invention-01
+part-05,"Lorem ipsum dolor sit amet.","Loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooorrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrreeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",EUR 10.00,CORE,invention-01
+# cost - errata
+part-06,"Lorem ipsum dolor sit amet.","Lorem ipsum dolor sit amet, consectetur adipiscing elit",EUR -10.00,CORE,invention-01
+part-07,"Lorem ipsum dolor sit amet.","Lorem ipsum dolor sit amet, consectetur adipiscing elit",EUR 1000000.01,CORE,invention-01
+part-08,"Lorem ipsum dolor sit amet.","Lorem ipsum dolor sit amet, consectetur adipiscing elit",USD 10.00,CORE,invention-01
+part-09,"Lorem ipsum dolor sit amet.","Lorem ipsum dolor sit amet, consectetur adipiscing elit",,CORE,invention-01

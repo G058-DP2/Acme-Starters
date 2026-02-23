@@ -1,0 +1,41 @@
+key,ticker,name,description,startMoment,endMoment,moreInfo,draftMode,key:inventor
+# base
+invention-01,AB01-\wwwwwww,"Lorem ipsum dolor sit amet.","Lorem ipsum dolor sit amet, consectetur adipiscing elit",2025/01/01 0:00,2025/02/01 0:00,"http://lorem.com",true,inventor-01
+# ticker
+invention-02,ZZ99-\wwwwwww,"Lorem ipsum dolor sit amet.","Lorem ipsum dolor sit amet, consectetur adipiscing elit",2025/01/01 0:00,2025/02/01 0:00,"http://lorem.com",true,inventor-01
+invention-03,AA00-\wwwwwww,"Lorem ipsum dolor sit amet.","Lorem ipsum dolor sit amet, consectetur adipiscing elit",2025/01/01 0:00,2025/02/01 0:00,"http://lorem.com",true,inventor-01
+invention-04,AB01-\wwwww,"Lorem ipsum dolor sit amet.","Lorem ipsum dolor sit amet, consectetur adipiscing elit",2025/01/01 0:00,2025/02/01 0:00,"http://lorem.com",true,inventor-02
+invention-05,AB01-\wwwwwwwwww,"Lorem ipsum dolor sit amet.","Lorem ipsum dolor sit amet, consectetur adipiscing elit",2025/01/01 0:00,2025/02/01 0:00,"http://lorem.com",true,inventor-02
+# name
+invention-06,AB06-\wwwwwww,"L","Lorem ipsum dolor sit amet, consectetur adipiscing elit",2025/01/01 0:00,2025/02/01 0:00,"http://lorem.com",true,inventor-02
+invention-07,AB07-\wwwwwww,"Loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo","Lorem ipsum dolor sit amet, consectetur adipiscing elit",2025/01/01 0:00,2025/02/01 0:00,"http://lorem.com",true,inventor-02
+invention-08,AB08-\wwwwwww,"โลเร็ม อิปซัม","Lorem ipsum dolor sit amet, consectetur adipiscing elit",2025/01/01 0:00,2025/02/01 0:00,"http://lorem.com",true,inventor-02
+invention-09,AB09-\wwwwwww,"لوريم إيبسوم","Lorem ipsum dolor sit amet, consectetur adipiscing elit",2025/01/01 0:00,2025/02/01 0:00,"http://lorem.com",true,inventor-02
+invention-10,AB10-\wwwwwww,"洛伦·伊普森","Lorem ipsum dolor sit amet, consectetur adipiscing elit",2025/01/01 0:00,2025/02/01 0:00,"http://lorem.com",true,inventor-01
+invention-11,AB11-\wwwwwww,"<marquee>Hacked</marquee>","Lorem ipsum dolor sit amet, consectetur adipiscing elit",2025/01/01 0:00,2025/02/01 0:00,"http://lorem.com",true,inventor-01
+invention-12,AB12-\wwwwwww,"<script>alert(‘Hacked!’);</script>","Lorem ipsum dolor sit amet, consectetur adipiscing elit",2025/01/01 0:00,2025/02/01 0:00,"http://lorem.com",true,inventor-01
+# description
+invention-13,AB13-\wwwwwww,"Lorem ipsum dolor sit amet.","Lorem ipsum dolor sit amet, consectetur adipiscing elit",2025/01/01 0:00,2025/02/01 0:00,"http://lorem.com",true,inventor-02
+invention-14,AB14-\wwwwwww,"Lorem ipsum dolor sit amet.","Loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooorrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrreeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",2025/01/01 0:00,2025/02/01 0:00,"http://lorem.com",true,inventor-02
+invention-15,AB15-\wwwwwww,"Lorem ipsum dolor sit amet.","โลเร็ม อิปซัม",2025/01/01 0:00,2025/02/01 0:00,"http://lorem.com",true,inventor-01
+invention-16,AB16-\wwwwwww,"Lorem ipsum dolor sit amet.","洛伦·伊普森",2025/01/01 0:00,2025/02/01 0:00,"http://lorem.com",true,inventor-01
+invention-17,AB17-\wwwwwww,"Lorem ipsum dolor sit amet.","<marquee>Hacked</marquee>",2025/01/01 0:00,2025/02/01 0:00,"http://lorem.com",true,inventor-01
+invention-18,AB18-\wwwwwww,"Lorem ipsum dolor sit amet.","<script>alert(‘Hacked!’);</script>",2025/01/01 0:00,2025/02/01 0:00,"http://lorem.com",true,inventor-01
+# startMoment / endMoment
+invention-19,AB19-\wwwwwww,"Lorem ipsum dolor sit amet.","Lorem ipsum dolor sit amet, consectetur adipiscing elit",2025/01/01 0:00,2025/01/01 0:01,"http://lorem.com",true,inventor-01
+invention-20,AB20-\wwwwwww,"Lorem ipsum dolor sit amet.","Lorem ipsum dolor sit amet, consectetur adipiscing elit",2200/12/31 23:58,2200/12/31 23:59,"http://lorem.com",true,inventor-02
+invention-21,AB21-\wwwwwww,"Lorem ipsum dolor sit amet.","Lorem ipsum dolor sit amet, consectetur adipiscing elit",2025/01/01 0:00,2200/12/31 23:59,"http://lorem.com",true,inventor-02
+# moreInfo
+invention-22,AB22-\wwwwwww,"Lorem ipsum dolor sit amet.","Lorem ipsum dolor sit amet, consectetur adipiscing elit",2025/01/01 0:00,2025/02/01 0:00,"http://example.org/a/b?",true,inventor-01
+invention-23,AB23-\wwwwwww,"Lorem ipsum dolor sit amet.","Lorem ipsum dolor sit amet, consectetur adipiscing elit",2025/01/01 0:00,2025/02/01 0:00,"http://www.lorem.com/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/dolore/magna/aliqua/Ut/enim/ad/minim/veniam/quis/nostrud/exercitation/ullamco/laboris/nisi/ut/aliquip/ex/ea/commodo/consequat/duis/aute/",true,inventor-02
+invention-24,AB24-\wwwwwww,"Lorem ipsum dolor sit amet.","Lorem ipsum dolor sit amet, consectetur adipiscing elit",2025/01/01 0:00,2025/02/01 0:00,"https://www.lorem.com",true,inventor-01
+invention-25,AB25-\wwwwwww,"Lorem ipsum dolor sit amet.","Lorem ipsum dolor sit amet, consectetur adipiscing elit",2025/01/01 0:00,2025/02/01 0:00,"http://www.lorem.com/dolor/sit.html",true,inventor-02
+invention-26,AB26-\wwwwwww,"Lorem ipsum dolor sit amet.","Lorem ipsum dolor sit amet, consectetur adipiscing elit",2025/01/01 0:00,2025/02/01 0:00,"http://www.lorem.com/dolor/sit.html#dolor",true,inventor-01
+invention-27,AB27-\wwwwwww,"Lorem ipsum dolor sit amet.","Lorem ipsum dolor sit amet, consectetur adipiscing elit",2025/01/01 0:00,2025/02/01 0:00,"http://example.org?a=1&b=2",true,inventor-02
+invention-28,AB28-\wwwwwww,"Lorem ipsum dolor sit amet.","Lorem ipsum dolor sit amet, consectetur adipiscing elit",2025/01/01 0:00,2025/02/01 0:00,"http://example.org?",true,inventor-01
+invention-29,AB29-\wwwwwww,"Lorem ipsum dolor sit amet.","Lorem ipsum dolor sit amet, consectetur adipiscing elit",2025/01/01 0:00,2025/02/01 0:00,"http://example.org?a",true,inventor-02
+invention-30,AB30-\wwwwwww,"Lorem ipsum dolor sit amet.","Lorem ipsum dolor sit amet, consectetur adipiscing elit",2025/01/01 0:00,2025/02/01 0:00,"http://example.org?a&b",true,inventor-01
+invention-31,AB31-\wwwwwww,"Lorem ipsum dolor sit amet.","Lorem ipsum dolor sit amet, consectetur adipiscing elit",2025/01/01 0:00,2025/02/01 0:00,"http://example.org/a/b?a&b",true,inventor-02
+invention-32,AB32-\wwwwwww,"Lorem ipsum dolor sit amet.","Lorem ipsum dolor sit amet, consectetur adipiscing elit",2025/01/01 0:00,2025/02/01 0:00,,true,inventor-01
+# draftMode
+invention-33,AB33-\wwwwwww,"Lorem ipsum dolor sit amet.","Lorem ipsum dolor sit amet, consectetur adipiscing elit",2025/01/01 0:00,2025/02/01 0:00,"http://lorem.com",false,inventor-02

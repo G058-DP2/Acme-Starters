@@ -4,3 +4,12 @@ acme.validation.ticker.message 		= El ticker debe comenzar con 2 letras mayúscu
 acme.validation.sponsorship.donations.error = Un patrocinio no puede publicarse a menos que tenga al menos una donación.
 acme.validation.sponsorship.dates.error = Los momentos de inicio y fin deben formar un intervalo de tiempo válido en el futuro al momento de la publicación.
 acme.validation.sponsorship.ticker.non-unique = El ticker ya está siendo utilizado por otro patrocinio.
+acme.validation.money.eur.error = La moneda debe ser exclusivamente EUR.
+acme.validation.money.amount.error = La cantidad de dinero debe ser positiva.
+acme.validation.invention.dates.error = Para publicar un invento, ambas fechas deben estar en el futuro.
+acme.validation.invention.parts.error = Un invento no puede ser publicado a menos que tenga al menos una parte .
+acme.validation.invention.ticker.non-unique = El ticker ya está en uso por otro invento.
+
+#Strategy
+acme.validation.strategy.duplicated-ticker.message = La Estrategia está duplicada
+acme.validation.strategy.tactics.error.message = Una Estrategia no puede publicarse a menos que tenga al menos una táctica.

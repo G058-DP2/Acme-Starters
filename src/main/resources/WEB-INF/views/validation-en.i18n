@@ -9,3 +9,8 @@ acme.validation.money.amount.error = The money amount must be positive.
 acme.validation.invention.dates.error = To publish an invention, both dates must be in the future.
 acme.validation.invention.parts.error = An invention cannot be published unless it has at least one part.
 acme.validation.invention.ticker.non-unique = The ticker is already used by another invention.
+acme.validation.money.eur.error = Only EUR currency is accepted. 
+
+#Strategy
+acme.validation.strategy.duplicated-ticker.message = The strategy is duplicated
+acme.validation.strategy.tactics.error.message = A Strategy cannot be published unless they have at least one tactic.

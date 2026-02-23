@@ -21,9 +21,8 @@ auditSection-15,auditReport-15,"Lorem ipsum dolor sit amet, consectetu","Revisi√
 auditSection-16,auditReport-16,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",0,PRELIMINARY
 auditSection-17,auditReport-17,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",1,PRELIMINARY
 auditSection-18,auditReport-18,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",120,PRELIMINARY
-auditSection-19,auditReport-19,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",99999,PRELIMINARY
-auditSection-20,auditReport-20,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",999999,PRELIMINARY
+auditSection-19,auditReport-19,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",999,PRELIMINARY
 #kind - standar
-auditSection-21,auditReport-21,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",5,PRELIMINARY
-auditSection-22,auditReport-22,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",5,EVALUATION
-auditSection-23,auditReport-41,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",5,CONCLUSION
+auditSection-20,auditReport-21,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",5,PRELIMINARY
+auditSection-21,auditReport-22,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",5,EVALUATION
+auditSection-22,auditReport-41,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",5,CONCLUSION

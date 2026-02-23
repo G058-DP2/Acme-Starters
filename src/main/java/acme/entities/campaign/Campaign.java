@@ -12,24 +12,26 @@
 
 package acme.entities.campaign;
 
-import java.time.Duration;
-import java.time.Instant;
-import java.util.Collection;
+import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.persistence.Transient;
 import javax.validation.Valid;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import acme.client.components.basis.AbstractEntity;
 import acme.client.components.validation.Mandatory;
+import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidUrl;
+import acme.client.helpers.MomentHelper;
+import acme.constraints.ValidCampaign;
 import acme.constraints.ValidHeader;
 import acme.constraints.ValidText;
 import acme.constraints.ValidTicker;
@@ -40,6 +42,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
+@ValidCampaign
 public class Campaign extends AbstractEntity {
 
 	// Serialisation version --------------------------------------------------
@@ -73,6 +76,7 @@ public class Campaign extends AbstractEntity {
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date				endMoment;
 
+	@Optional
 	@ValidUrl
 	@Column
 	private String				moreInfo;
@@ -84,29 +88,23 @@ public class Campaign extends AbstractEntity {
 
 	// Derived attributes -----------------------------------------------------
 
+	@Transient
+	@Autowired
+	private CampaignRepository	repository;
+
 
 	@Transient
 	public Double getMonthsActive() {
-		if (this.startMoment == null || this.endMoment == null)
-			return null;
-
-		double months = this.computeMonthsBetween(this.startMoment, this.endMoment);
-		return Math.round(months * 10.0) / 10.0;
+		return (double) MomentHelper.computeDuration(this.startMoment, this.endMoment).get(ChronoUnit.MONTHS);
 	}
 
 	@Transient
 	public Double getEffort() {
-		if (this.milestones == null)
-			return 0.0;
-
-		return this.milestones.stream().map(Milestone::getEffort).filter(value -> value != null).mapToDouble(Double::doubleValue).sum();
-	}
-
-	private double computeMonthsBetween(final Date start, final Date end) {
-		Instant startInstant = start.toInstant();
-		Instant endInstant = end.toInstant();
-		long days = Duration.between(startInstant, endInstant).toDays();
-		return days / 30.0;
+		if (this.getId() > 0 && this.repository != null) {
+			Double totalEffort = this.repository.calculateTotalEffortByCampaignId(this.getId());
+			return totalEffort != null ? totalEffort : 0.0;
+		}
+		return 0.0;
 	}
 
 	// Relationships ----------------------------------------------------------
@@ -115,9 +113,5 @@ public class Campaign extends AbstractEntity {
 	@Mandatory
 	@Valid
 	@ManyToOne(optional = false)
-	private Spokesperson			manager;
-
-	@Valid
-	@OneToMany(mappedBy = "campaign")
-	private Collection<Milestone>	milestones;
+	private Spokesperson manager;
 }

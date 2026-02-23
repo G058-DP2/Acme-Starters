@@ -14,8 +14,6 @@ package acme.entities.campaign;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
 import javax.persistence.ManyToOne;
 import javax.validation.Valid;
 
@@ -55,7 +53,6 @@ public class Milestone extends AbstractEntity {
 
 	@Mandatory
 	@Valid
-	@Enumerated(EnumType.STRING)
 	@Column
 	private MilestoneKind		kind;
 
@@ -64,7 +61,7 @@ public class Milestone extends AbstractEntity {
 	// Relationships ----------------------------------------------------------
 
 	@Mandatory
-	@Valid
+	// @Valid
 	@ManyToOne(optional = false)
 	private Campaign			campaign;
 }

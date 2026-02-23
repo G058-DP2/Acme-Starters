@@ -14,11 +14,9 @@ package acme.realms;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.validation.Valid;
 
 import acme.client.components.basis.AbstractRole;
 import acme.client.components.validation.Mandatory;
-import acme.constraints.ValidText;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -34,17 +32,17 @@ public class Spokesperson extends AbstractRole {
 	// Attributes -------------------------------------------------------------
 
 	@Mandatory
-	@ValidText
+	// @ValidText
 	@Column
 	private String				cv;
 
 	@Mandatory
-	@ValidText
+	// @ValidText
 	@Column
 	private String				achievements;
 
 	@Mandatory
-	@Valid
+	// @Valid
 	@Column
 	private Boolean				licensed;
 

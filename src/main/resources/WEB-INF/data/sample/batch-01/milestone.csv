@@ -1,0 +1,36 @@
+key,key:campaign,title,achievements,effort,kind
+#base - entity
+milestone-01,campaign-35,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",10,TEASER
+#name - standar
+milestone-02,campaign-35,L,"Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",10,TEASER
+milestone-03,campaign-35,Lo,"Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",10,TEASER
+milestone-04,campaign-35,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod t","Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",10,TEASER
+milestone-05,campaign-35,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod te","Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",10,TEASER
+milestone-06,campaign-35,โลเร็ม อิปซัม,"Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",10,TEASER
+milestone-07,campaign-35,لوريم إيبسوم,"Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",10,TEASER
+milestone-08,campaign-35,洛伦·伊普森,"Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",10,TEASER
+milestone-09,campaign-35,<marquee>Hacked</marquee>,"Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",10,TEASER
+milestone-10,campaign-35,<script>alert(‘Hacked!’);</script>,"Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",10,TEASER
+milestone-11,campaign-35,' or 'A' = 'A,"Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",10,TEASER
+#notes - standar
+milestone-12,campaign-35,"Lorem ipsum dolor sit amet, consectetu",L,10,TEASER
+milestone-13,campaign-35,"Lorem ipsum dolor sit amet, consectetu",Lo,10,TEASER
+milestone-14,campaign-35,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",10,TEASER
+milestone-15,campaign-35,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor*",10,TEASER
+milestone-16,campaign-35,"Lorem ipsum dolor sit amet, consectetu",โลเร็ม อิปซัม,10,TEASER
+milestone-17,campaign-35,"Lorem ipsum dolor sit amet, consectetu",لوريم إيبسوم,10,TEASER
+milestone-18,campaign-35,"Lorem ipsum dolor sit amet, consectetu",洛伦·伊普森,10,TEASER
+milestone-19,campaign-35,"Lorem ipsum dolor sit amet, consectetu",<marquee>Hacked</marquee>,10,TEASER
+milestone-20,campaign-35,"Lorem ipsum dolor sit amet, consectetu",<script>alert(‘Hacked!’);</script>,10,TEASER
+milestone-21,campaign-35,"Lorem ipsum dolor sit amet, consectetu",' or 'A' = 'A,10,TEASER
+#money - standar
+milestone-22,campaign-35,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",0.00,TEASER
+milestone-23,campaign-35,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",0.01,TEASER
+milestone-24,campaign-35,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",999999.99,TEASER
+milestone-25,campaign-35,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",1000000.00,TEASER
+#kind - standar
+milestone-26,campaign-35,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",10,ENGAGING
+milestone-27,campaign-35,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",10,CONVERSION
+#sponsorship - standar
+milestone-28,campaign-01,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",10,TEASER
+milestone-29,campaign-02,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",10,TEASER

@@ -8,3 +8,6 @@ user-account-provider-03,true,"UserIdentity{name: 'Antonia', surname: 'אבטי�
 user-account-sponsor-01,true,"UserIdentity{name: 'Student', surname: 'Uno', email: 'st1@acme.com'}",sponsor1,sponsor1
 user-account-sponsor-02,true,"UserIdentity{name: 'Student', surname: 'Dos', email: 'st2@acme.com'}",sponsor2,sponsor2
 user-account-sponsor-03,true,"UserIdentity{name: 'Student', surname: 'Tres', email: 's@acme.com'}",sponsor3,sponsor3
+user-account-spokesperson-01,true,"UserIdentity{name: 'Spokesperson', surname: 'Uno', email: 'sp1@acme.com'}",spokesperson1,spokesperson1
+user-account-spokesperson-02,true,"UserIdentity{name: 'Spokesperson', surname: 'Dos', email: 'sp2@acme.com'}",spokesperson2,spokesperson2
+user-account-spokesperson-03,true,"UserIdentity{name: 'Spokesperson', surname: 'Tres', email: 'sp@acme.com'}",spokesperson3,spokesperson3

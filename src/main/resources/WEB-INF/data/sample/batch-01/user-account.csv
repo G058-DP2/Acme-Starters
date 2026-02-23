@@ -8,3 +8,6 @@ user-account-provider-03,true,"UserIdentity{name: 'Antonia', surname: 'אבטי�
 user-account-sponsor-01,true,"UserIdentity{name: 'Student', surname: 'Uno', email: 'st1@acme.com'}",sponsor1,sponsor1
 user-account-sponsor-02,true,"UserIdentity{name: 'Student', surname: 'Dos', email: 'st2@acme.com'}",sponsor2,sponsor2
 user-account-sponsor-03,true,"UserIdentity{name: 'Student', surname: 'Tres', email: 's@acme.com'}",sponsor3,sponsor3
+user-account-auditor-01,true,"UserIdentity{name: 'Jacobo', surname: 'Ordoñez', email: 'audit1@acme.com'}",auditor1,auditor1
+user-account-auditor-02,true,"UserIdentity{name: 'Jan', surname: 'Estrada', email: 'audit2@acme.com'}",auditor2,auditor2
+user-account-auditor-03,true,"UserIdentity{name: 'Unai', surname: 'Saez', email: 'audit3@acme.com'}",auditor3,auditor3

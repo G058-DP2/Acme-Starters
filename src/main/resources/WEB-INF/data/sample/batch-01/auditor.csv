@@ -1,0 +1,4 @@
+key,key:userAccount,firm,highlights,solicitor
+auditor-01,user-account-auditor-01,"Müller & Söhne Wirtschaftsprüfung GmbH", "Überprüfung der Finanzberichte gemäß HGB & IFRS",true 
+auditor-02,user-account-auditor-02,"Société Générale d’Audit & Conseil", "Évaluation des risques liés aux opérations transfrontalières",false 
+auditor-03,user-account-auditor-03,"株式会社さくら監査法人 (Sakura Kansā Hōjin)", "反腐敗コンプライアンス監査および内部統制レビュー",false

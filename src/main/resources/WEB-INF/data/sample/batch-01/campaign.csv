@@ -42,9 +42,9 @@ campaign-32,CA31-aaaaa,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dol
 campaign-33,CA32-aaaaa,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2025/02/01 0:00,"http://example.org/a/b?",true,spokesperson-01
 campaign-34,CA33-aaaaa,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2025/02/01 0:00,"http://example.org/a/b?a&b",true,spokesperson-01
 #draftMode - standar
-#campaign-35,CA48-aaaaa,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2025/02/01 0:00,http://lorem.com/ipsum,false,spokesperson-01
+campaign-35,CA48-aaaaa,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2025/02/01 0:00,http://lorem.com/ipsum,false,spokesperson-01
 #sponsor - standar
-campaign-35,CA34-aaaaa,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2025/02/01 0:00,http://lorem.com/ipsum,true,spokesperson-01
+campaign-36,CA34-aaaaa,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2025/02/01 0:00,http://lorem.com/ipsum,true,spokesperson-01
 campaign-37,CA35-aaaaa,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2025/02/01 0:00,http://lorem.com/ipsum,true,spokesperson-02
 #name - standar
 campaign-38,CA37-aaaaa,"L","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2025/02/01 0:00,http://lorem.com/ipsum,true,spokesperson-01

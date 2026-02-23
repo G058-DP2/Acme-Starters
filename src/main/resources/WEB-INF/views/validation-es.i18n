@@ -17,3 +17,8 @@ acme.validation.invention.ticker.non-unique = El ticker ya está en uso por otro
 #Strategy
 acme.validation.strategy.duplicated-ticker.message = La Estrategia está duplicada
 acme.validation.strategy.tactics.error.message = Una Estrategia no puede publicarse a menos que tenga al menos una táctica.
+
+##################################### AUDIT 
+acme.validation.auditReport.auditSection.error = Los informes de auditoría no se pueden publicar a menos que tengan al menos una sección de auditoría.
+acme.validation.auditReport.dates.error = Los momentos de inicio y finalización deben formar un intervalo de tiempo válido en el futuro tras la publicación.
+acme.validation.auditReport.ticker.non-unique = El ticker ya está siendo utilizado por otro informe de auditoría.

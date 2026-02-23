@@ -1,0 +1,29 @@
+key,key:auditReport,name,notes,hours,kind
+#base - entity
+auditSection-01,auditReport-01,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",5,PRELIMINARY
+#name - standar
+auditSection-02,auditReport-02,"A","Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",5,PRELIMINARY
+auditSection-03,auditReport-03,"Lo","Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",5,PRELIMINARY
+auditSection-04,auditReport-04,"Audit Financial Review Section","Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",5,PRELIMINARY
+auditSection-05,auditReport-05,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tem","Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",5,PRELIMINARY
+auditSection-06,auditReport-06,"<b>Preliminary Audit</b>","Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",5,PRELIMINARY
+auditSection-07,auditReport-07,"Section'; DROP TABLE audit; --","Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",5,PRELIMINARY
+auditSection-08,auditReport-08,"Überprüfung Abschnitt","Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",5,PRELIMINARY
+#notes - standar
+auditSection-09,auditReport-09,"Lorem ipsum dolor sit amet, consectetu","A",5,PRELIMINARY
+auditSection-10,auditReport-10,"Lorem ipsum dolor sit amet, consectetu","Short descriptive note.",5,PRELIMINARY
+auditSection-11,auditReport-11,"Lorem ipsum dolor sit amet, consectetu","This section contains preliminary findings and audit scope description.",5,PRELIMINARY
+auditSection-12,auditReport-12,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.",5,PRELIMINARY
+auditSection-13,auditReport-13,"Lorem ipsum dolor sit amet, consectetu","<p>Preliminary <strong>audit findings</strong> with detailed observations.</p>",5,PRELIMINARY
+auditSection-14,auditReport-14,"Lorem ipsum dolor sit amet, consectetu","Review completed'; UPDATE audit_section SET hours=10; --",5,PRELIMINARY
+auditSection-15,auditReport-15,"Lorem ipsum dolor sit amet, consectetu","Revisión preliminar con análisis financiero y evaluación de riesgos operativos.",5,PRELIMINARY
+#hours - standar
+auditSection-16,auditReport-16,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",0,PRELIMINARY
+auditSection-17,auditReport-17,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",1,PRELIMINARY
+auditSection-18,auditReport-18,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",120,PRELIMINARY
+auditSection-19,auditReport-19,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",99999,PRELIMINARY
+auditSection-20,auditReport-20,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",999999,PRELIMINARY
+#kind - standar
+auditSection-21,auditReport-21,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",5,PRELIMINARY
+auditSection-22,auditReport-22,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",5,EVALUATION
+auditSection-23,auditReport-41,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",5,CONCLUSION

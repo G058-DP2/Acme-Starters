@@ -1,7 +1,6 @@
 
 package acme.entities.invention;
 
-import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -12,14 +11,14 @@ import javax.persistence.TemporalType;
 import javax.persistence.Transient;
 import javax.validation.Valid;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import acme.client.components.basis.AbstractEntity;
 import acme.client.components.datatypes.Money;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidUrl;
-import acme.client.helpers.MomentHelper;
-import acme.client.helpers.SpringHelper;
 import acme.constraints.ValidHeader;
 import acme.constraints.ValidInvention;
 import acme.constraints.ValidText;
@@ -36,6 +35,9 @@ import lombok.Setter;
 public class Invention extends AbstractEntity {
 
 	private static final long	serialVersionUID	= 1L;
+
+	@Autowired
+	PartRepository				partRepository;
 
 	@Mandatory
 	@ValidTicker
@@ -73,19 +75,20 @@ public class Invention extends AbstractEntity {
 	private Boolean				draftMode;
 
 
+	@Valid
 	@Transient
 	public Double getMonthsActive() {
-		return (double) MomentHelper.computeDuration(this.startMoment, this.endMoment).get(ChronoUnit.MONTHS);
+		// return (double) MomentHelper.computeDuration(this.startMoment, this.endMoment).get(ChronoUnit.MONTHS);
+		return 0.00;
 	}
 
 	@Valid
 	@Transient
 	public Money getCost() {
 		Money res = new Money();
+		res.setCurrency("EUR");
 
-		PartRepository r;
-		r = SpringHelper.getBean(PartRepository.class);
-		Double total = r.getSumCostsByInvention(this.getId());
+		Double total = this.partRepository.getSumCostsByInvention(this.getId());
 
 		res.setAmount(total);
 		return res;

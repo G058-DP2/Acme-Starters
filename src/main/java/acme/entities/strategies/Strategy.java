@@ -81,7 +81,6 @@ public class Strategy extends AbstractEntity {
 	private StrategyRepository	repository;
 
 
-	@Valid
 	@Transient
 	public Double getMonthsActive() {
 		return (double) MomentHelper.computeDuration(this.startMoment, this.endMoment).get(ChronoUnit.MONTHS);

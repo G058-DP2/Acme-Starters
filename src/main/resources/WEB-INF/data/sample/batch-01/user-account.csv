@@ -11,3 +11,9 @@ user-account-sponsor-03,true,"UserIdentity{name: 'Student', surname: 'Tres', ema
 user-account-spokesperson-01,true,"UserIdentity{name: 'Spokesperson', surname: 'Uno', email: 'sp1@acme.com'}",spokesperson1,spokesperson1
 user-account-spokesperson-02,true,"UserIdentity{name: 'Spokesperson', surname: 'Dos', email: 'sp2@acme.com'}",spokesperson2,spokesperson2
 user-account-spokesperson-03,true,"UserIdentity{name: 'Spokesperson', surname: 'Tres', email: 'sp@acme.com'}",spokesperson3,spokesperson3
+user-account-fundraiser-01,true,"UserIdentity{name: 'Student', surname: 'Cuatro', email: 'st4@acme.com'}",fundraiser1,fundraiser1
+user-account-fundraiser-02,true,"UserIdentity{name: 'Student', surname: 'Cinco', email: 'st5@acme.com'}",fundraiser2,fundraiser2
+user-account-fundraiser-03,true,"UserIdentity{name: 'Student', surname: 'Seis', email: 'st6@acme.com'}",fundraiser3,fundraiser3
+user-account-inventor-01,true,"UserIdentity{name: 'Jose', surname: 'González', email: 'josgon@acme.com'}",inventor1,inventor1
+user-account-inventor-02,true,"UserIdentity{name: 'Miguel', surname: 'Díaz', email: 'migdia@acme.com'}",inventor2,inventor2
+user-account-inventor-03,true,"UserIdentity{name: 'Juan', surname: 'Torres', email: 'juator@acme.com'}",inventor3,inventor3

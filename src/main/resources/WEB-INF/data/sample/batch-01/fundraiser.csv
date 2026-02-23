@@ -1,0 +1,5 @@
+key,key:userAccount,bank,statement,agent
+fundraiser-01,user-account-fundraiser-01,"Bank 1","Statement 1",true
+fundraiser-02,user-account-fundraiser-02,"Bank 2","Statement 2",false
+fundraiser-03,user-account-fundraiser-03,"Bank 3","Statement 3",true
+

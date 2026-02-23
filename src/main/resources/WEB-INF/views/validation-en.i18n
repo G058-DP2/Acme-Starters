@@ -1,8 +1,19 @@
 acme.validation.text.message   	    = Must have from 1 to 255 characters
 acme.validation.header.message   	= Must have from 1 to 75 characters
 acme.validation.ticker.message 		= The ticker must start with 2 uppercase letters and 2 digits, followed by a hyphen and 5 to 10 alphanumeric characters
+acme.validation.campaign.ticker.duplicated = This ticker is already in use.
+acme.validation.campaign.no-milestones = A campaign cannot be published without at least one milestone.
+acme.validation.campaign.invalid-interval = Start/end moments must define a valid future time interval.
+acme.validation.campaign.effort-not-positive = The campaign effort must be positive when published.
 acme.validation.sponsorship.donations.error = A sponsorship cannot be published unless it has at least one donation.
 acme.validation.sponsorship.dates.error = Start and end moments must form a valid time interval in the future upon publication.
 acme.validation.sponsorship.ticker.non-unique = The ticker is already in use by another sponsorship.
 acme.validation.money.eur.error = The currency must be exclusively EUR.
-acme.validation.money.eur.error = La moneda debe ser exclusivamente EUR. 
+acme.validation.money.amount.error = The money amount must be positive.
+acme.validation.invention.dates.error = To publish an invention, both dates must be in the future.
+acme.validation.invention.parts.error = An invention cannot be published unless it has at least one part.
+acme.validation.invention.ticker.non-unique = The ticker is already used by another invention. 
+
+#Strategy
+acme.validation.strategy.duplicated-ticker.message = The strategy is duplicated
+acme.validation.strategy.tactics.error.message = A Strategy cannot be published unless they have at least one tactic.

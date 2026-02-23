@@ -1,0 +1,36 @@
+key,name,notes,expectedPercentage,kind,key:strategy
+#base entity
+tactic-00,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",50,SUBTLE,strategy-00
+#name - standar variations
+tactic-01,L,"Lorem ipsum dolor sit amet, consectetur adipiscing",50,SUBTLE,strategy-00
+tactic-02,Lo,"Lorem ipsum dolor sit amet, consectetur adipiscing",50,SUBTLE,strategy-00
+tactic-03,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod t","Lorem ipsum dolor sit amet, consectetur adipiscing",50,SUBTLE,strategy-00
+tactic-04,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod te","Lorem ipsum dolor sit amet, consectetur adipiscing",50,SUBTLE,strategy-00
+tactic-05,โลเร็ม อิปซัม,"Lorem ipsum dolor sit amet, consectetur adipiscing",50,SUBTLE,strategy-00
+tactic-06,لوريم إيبسوم,"Lorem ipsum dolor sit amet, consectetur adipiscing",50,SUBTLE,strategy-00
+tactic-07,洛伦·伊普森,"Lorem ipsum dolor sit amet, consectetur adipiscing",50,SUBTLE,strategy-00
+tactic-08,<marquee>Hacked</marquee>,"Lorem ipsum dolor sit amet, consectetur adipiscing",50,SUBTLE,strategy-00
+tactic-09,<script>alert(‘Hacked!’);</script>,"Lorem ipsum dolor sit amet, consectetur adipiscing",50,SUBTLE,strategy-00
+tactic-10,' or 'A' = 'A,"Lorem ipsum dolor sit amet, consectetur adipiscing",50,SUBTLE,strategy-00
+#notes - standar variations
+tactic-11,"Lorem ipsum dolor sit amet, consectetur adipiscing",L,50,SUBTLE,strategy-00
+tactic-12,"Lorem ipsum dolor sit amet, consectetur adipiscing",Lo,50,SUBTLE,strategy-00
+tactic-13,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",50,SUBTLE,strategy-00
+tactic-14,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor*",50,SUBTLE,strategy-00
+tactic-15,"Lorem ipsum dolor sit amet, consectetur adipiscing",โลเร็ม อิปซัม,50,SUBTLE,strategy-00
+tactic-16,"Lorem ipsum dolor sit amet, consectetur adipiscing",لوريم إيبسوم,50,SUBTLE,strategy-00
+tactic-17,"Lorem ipsum dolor sit amet, consectetur adipiscing",洛伦·伊普森,50,SUBTLE,strategy-00
+tactic-18,"Lorem ipsum dolor sit amet, consectetur adipiscing",<marquee>Hacked</marquee>,50,SUBTLE,strategy-00
+tactic-19,"Lorem ipsum dolor sit amet, consectetur adipiscing",<script>alert(‘Hacked!’);</script>,50,SUBTLE,strategy-00
+tactic-20,"Lorem ipsum dolor sit amet, consectetur adipiscing",' or 'A' = 'A,50,SUBTLE,strategy-00
+#expectedPercentage - standar variations
+tactic-30,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",0.00,SUBTLE,strategy-00
+tactic-31,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",0.01,SUBTLE,strategy-00
+tactic-32,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",99.99,SUBTLE,strategy-00
+tactic-33,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",100,SUBTLE,strategy-00
+#kind - standar variations
+tactic-34,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",50,AGGRESIVE,strategy-00
+tactic-35,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",50,TENDER,strategy-00
+#strategy - standar variations
+tactic-36,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",50,SUBTLE,strategy-01
+tactic-37,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",50,SUBTLE,strategy-02

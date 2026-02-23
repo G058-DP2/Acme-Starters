@@ -36,9 +36,6 @@ public class Invention extends AbstractEntity {
 
 	private static final long	serialVersionUID	= 1L;
 
-	@Autowired
-	PartRepository				partRepository;
-
 	@Mandatory
 	@ValidTicker
 	@Column(unique = true)
@@ -55,12 +52,12 @@ public class Invention extends AbstractEntity {
 	private String				description;
 
 	@Mandatory
-	@ValidMoment(constraint = ValidMoment.Constraint.ENFORCE_FUTURE)
+	@ValidMoment
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date				startMoment;
 
 	@Mandatory
-	@ValidMoment(constraint = ValidMoment.Constraint.ENFORCE_FUTURE)
+	@ValidMoment
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date				endMoment;
 
@@ -73,6 +70,10 @@ public class Invention extends AbstractEntity {
 	@Valid
 	@Column
 	private Boolean				draftMode;
+
+	@Transient
+	@Autowired
+	private PartRepository		partRepository;
 
 
 	@Valid

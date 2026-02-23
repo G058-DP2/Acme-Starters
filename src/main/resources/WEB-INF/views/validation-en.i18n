@@ -10,9 +10,11 @@ acme.validation.sponsorship.dates.error = Start and end moments must form a vali
 acme.validation.sponsorship.ticker.non-unique = The ticker is already in use by another sponsorship.
 acme.validation.money.eur.error = The currency must be exclusively EUR.
 acme.validation.money.amount.error = The money amount must be positive.
-acme.validation.invention.dates.error = To publish an invention, both dates must be in the future.
-acme.validation.invention.parts.error = An invention cannot be published unless it has at least one part.
-acme.validation.invention.ticker.non-unique = The ticker is already used by another invention. 
+acme.validation.invention.dates.error = The end moment must be after the start moment
+acme.validation.invention.dates.error-publish = To publish an invention, both dates must be in the future
+acme.validation.invention.parts.error = An invention cannot be published unless it has at least one part
+acme.validation.invention.ticker.non-unique = The ticker is already used by another invention.
+acme.validation.part.cost.error-currency = The currency must be EUR
 
 #Strategy
 acme.validation.strategy.duplicated-ticker.message = The strategy is duplicated

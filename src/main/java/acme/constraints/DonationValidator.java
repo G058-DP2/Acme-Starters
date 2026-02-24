@@ -22,7 +22,7 @@ public class DonationValidator extends AbstractValidator<ValidDonation, Donation
 		if (donation == null)
 			return true;
 
-		boolean isEur = donation.getMoney().getCurrency() != null && donation.getMoney().getCurrency().trim().equalsIgnoreCase("EUR");
+		boolean isEur = donation.getMoney() != null && donation.getMoney().getCurrency() != null && donation.getMoney().getCurrency().trim().equalsIgnoreCase("EUR");
 
 		super.state(context, isEur, "money", "acme.validation.money.eur.error");
 

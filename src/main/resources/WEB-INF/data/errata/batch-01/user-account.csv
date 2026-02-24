@@ -1,2 +1,2 @@
 key,enabled,identity,password,username
-user-account-sponsor-01,true,"UserIdentity{name: 'Student', surname: 'Uno', email: 'st1@acme.com'}",sponsor1,sponsor1
+user-account-sponsor-01,false,,,

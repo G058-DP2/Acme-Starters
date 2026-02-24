@@ -60,7 +60,7 @@ public class InventionValidator extends AbstractValidator<ValidInvention, Invent
 
 				boolean validPublishedInvention = invention.getDraftMode() || validDates;
 
-				super.state(context, validPublishedInvention, "*", "acme.validation.invention.dates.error");
+				super.state(context, validPublishedInvention, "startMoment", "acme.validation.invention.dates.error");
 			}
 
 		}

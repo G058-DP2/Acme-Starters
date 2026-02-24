@@ -11,7 +11,6 @@ import acme.client.components.basis.AbstractEntity;
 import acme.client.components.datatypes.Money;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.ValidMoney;
-import acme.constraints.ValidEUR;
 import acme.constraints.ValidHeader;
 import acme.constraints.ValidText;
 import lombok.Getter;
@@ -39,8 +38,7 @@ public class Donation extends AbstractEntity {
 	private String				notes;
 
 	@Mandatory
-	@ValidMoney(min = 0.0)
-	@ValidEUR
+	@ValidMoney
 	@Column
 	private Money				money;
 

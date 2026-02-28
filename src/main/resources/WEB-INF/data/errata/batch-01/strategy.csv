@@ -1,0 +1,34 @@
+key,ticker,name,description,startMoment,endMoment,moreInfo,draftMode,key:fundraiser
+#base entity
+strategy-00,,,,,,,TRUE,
+# ticker - standard variations
+strategy-01,,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,fundraiser-01
+strategy-02,T00-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,fundraiser-01
+strategy-03,TKK00-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,fundraiser-01
+strategy-04,TK0-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,fundraiser-01
+strategy-05,TK000-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,fundraiser-01
+strategy-06,TK00-abcd,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,fundraiser-01
+strategy-07,TK00-abcdefghijklmnop,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,fundraiser-01
+strategy-08,A&B&C,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,fundraiser-01
+#name - standard variations
+strategy-09,TK01-abcde,,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,fundraiser-01
+strategy-10,TK02-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tem","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,fundraiser-01
+#description - standard variations
+strategy-11,TK03-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing",,2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,fundraiser-01
+strategy-12,TK03-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,fundraiser-01
+#starMoment - standard variations
+strategy-13,TK04-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2024/12/31 23:59,2025/02/01 0:00,http://lorem.com/ipsum,TRUE,fundraiser-01
+strategy-14,TK05-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2201/01/01 0:00,http://lorem.com/ipsum,TRUE,fundraiser-01
+#endMoment - standard variations
+strategy-15,TK06-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2024/12/31 23:59,http://lorem.com/ipsum,TRUE,fundraiser-01
+strategy-16,TK07-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2201/01/01 0:00,http://lorem.com/ipsum,TRUE,fundraiser-01
+#moreInfo - standard variations
+strategy-33,TK29-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://,TRUE,fundraiser-01
+strategy-34,TK29-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,ftp://,TRUE,fundraiser-01
+strategy-35,TK29-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://a,TRUE,fundraiser-01
+strategy-36,TK29-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,ftp://a,TRUE,fundraiser-01
+strategy-37,TK29-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,"http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/dolore/magna/aliqua/Ut/enim/ad/minim/veniam/quis/nostrud/exercitation/ullamco/laboris/nisi/ut/aliquip/ex/ea/commodo/consequat/duis/aute/xa",TRUE,fundraiser-01
+#draftMode - standard variations
+#draftMode - no singular variations
+#fundraiser - standard variations
+#fundraiser - no singular variations

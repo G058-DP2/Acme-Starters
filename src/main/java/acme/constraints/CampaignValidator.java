@@ -45,8 +45,8 @@ public class CampaignValidator extends AbstractValidator<ValidCampaign, Campaign
 
 			// 2) Debe tener al menos 1 milestone
 			int id = campaign.getId();
-			Integer count = id > 0 ? this.repository.countMilestonesByCampaignId(id) : 0;
-			boolean hasMilestones = count != null && count >= 1;
+			Integer milestoneCount = this.repository.countMilestonesByCampaignId(id);
+			boolean hasMilestones = milestoneCount != null && milestoneCount >= 1;
 			super.state(context, hasMilestones, "draftMode", "acme.validation.campaign.no-milestones");
 
 			// 3) start/end: intervalo válido en futuro respecto a "ahora"
@@ -58,9 +58,9 @@ public class CampaignValidator extends AbstractValidator<ValidCampaign, Campaign
 			super.state(context, validInterval, "startMoment", "acme.validation.campaign.invalid-interval");
 
 			// 4) effort (suma milestones) debe ser > 0 cuando se publica
-			Double sum = id > 0 ? this.repository.calculateTotalEffortByCampaignId(id) : 0.0;
-			double effort = sum != null ? sum.doubleValue() : 0.0;
-			super.state(context, effort > 0.0, "draftMode", "acme.validation.campaign.effort-not-positive");
+			Double sum = this.repository.calculateTotalEffortByCampaignId(id);
+			boolean positive = sum != null && sum >= 0.0;
+			super.state(context, positive, "draftMode", "acme.validation.campaign.effort-not-positive");
 		}
 
 		return !super.hasErrors(context);

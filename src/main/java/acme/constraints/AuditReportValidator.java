@@ -9,7 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import acme.client.components.validation.AbstractValidator;
 import acme.client.components.validation.Validator;
-import acme.client.helpers.MomentHelper;
 import acme.entities.auditReport.AuditReport;
 import acme.features.auditor.auditReport.AuditReportRepository;
 
@@ -48,11 +47,11 @@ public class AuditReportValidator extends AbstractValidator<ValidAuditReport, Au
 
 			super.state(context, hasAuditSections, "draftMode", "acme.validation.auditReport.auditSection.error");
 
-			Date now = MomentHelper.getBaseMoment();
+			//Date now = MomentHelper.getBaseMoment();
 			Date start = auditReport.getStartMoment();
 			Date end = auditReport.getEndMoment();
 
-			boolean validDates = start != null && end != null && !MomentHelper.isBefore(start, now) && MomentHelper.isAfter(end, start);
+			boolean validDates = start != null && end != null;//&& !MomentHelper.isBefore(start, now) && MomentHelper.isAfter(end, start);
 
 			super.state(context, validDates, "startMoment", "acme.validation.auditReport.dates.error");
 		}

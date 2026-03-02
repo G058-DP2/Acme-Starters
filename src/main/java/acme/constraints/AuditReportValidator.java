@@ -48,15 +48,14 @@ public class AuditReportValidator extends AbstractValidator<ValidAuditReport, Au
 
 			super.state(context, hasAuditSections, "draftMode", "acme.validation.auditReport.auditSection.error");
 
+			Date now = MomentHelper.getBaseMoment();
+			Date start = auditReport.getStartMoment();
+			Date end = auditReport.getEndMoment();
+
+			boolean validDates = start != null && end != null && !MomentHelper.isBefore(start, now) && MomentHelper.isAfter(end, start);
+
+			super.state(context, validDates, "startMoment", "acme.validation.auditReport.dates.error");
 		}
-
-		Date now = MomentHelper.getBaseMoment();
-		Date start = auditReport.getStartMoment();
-		Date end = auditReport.getEndMoment();
-
-		boolean validDates = start != null && end != null && !start.before(now) && end.after(start);
-
-		super.state(context, validDates, "startMoment", "acme.validation.auditReport.dates.error");
 
 		return !super.hasErrors(context);
 	}

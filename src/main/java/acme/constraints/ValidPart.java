@@ -9,15 +9,11 @@ import java.lang.annotation.Target;
 import javax.validation.Constraint;
 import javax.validation.Payload;
 
-@Target(ElementType.FIELD)
+@Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-@Constraint(validatedBy = {
-	CostValidator.class
-})
+@Constraint(validatedBy = PartValidator.class)
 
-public @interface ValidCost {
-
-	// Standard validation properties -----------------------------------------
+public @interface ValidPart {
 
 	String message() default "";
 

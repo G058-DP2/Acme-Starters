@@ -1,0 +1,15 @@
+key,name,notes,expectedPercentage,kind,key:strategy
+#base entity
+tactic-00,"","",50,"",""
+#name - standard variations
+tactic-01,,"Lorem ipsum dolor sit amet, consectetur adipiscing",50,SUBTLE,strategy-00
+tactic-02,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tem","Lorem ipsum dolor sit amet, consectetur adipiscing",50,SUBTLE,strategy-00
+#notes - standard variations
+tactic-03,"Lorem ipsum dolor sit amet, consectetur adipiscing",,50,SUBTLE,strategy-00
+tactic-04,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i",50,SUBTLE,strategy-00
+#expectedPercentage - standard variations
+tactic-05,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",-0.01,SUBTLE,strategy-00
+tactic-06,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",100.01,SUBTLE,strategy-00
+#kind - standard variations
+#strategy - standard variations
+#strategy - no singular variations

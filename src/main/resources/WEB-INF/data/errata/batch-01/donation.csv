@@ -1,6 +1,6 @@
 key,key:sponsorship,name,notes,money,kind
 #base - entity
-donation-01,sponsorship-01,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",EUR 500000.00,ALTRUIST
+donation-01,,,,,
 #name - errata
 donation-02,sponsorship-01,,"Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",EUR 500000.00,ALTRUIST
 donation-03,sponsorship-01,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tem","Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",EUR 500000.00,ALTRUIST

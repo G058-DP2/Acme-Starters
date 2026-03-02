@@ -90,6 +90,8 @@ public class Invention extends AbstractEntity {
 		res.setCurrency("EUR");
 
 		Double total = this.partRepository.getSumCostsByInvention(this.getId());
+		if (total == null)
+			total = 0.00;
 
 		res.setAmount(total);
 		return res;

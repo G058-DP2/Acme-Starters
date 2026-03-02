@@ -55,13 +55,16 @@ public class InventionValidator extends AbstractValidator<ValidInvention, Invent
 			{
 				Date start = invention.getStartMoment();
 				Date end = invention.getEndMoment();
-				boolean datesInFuture = start != null && end != null && MomentHelper.isFuture(start) && MomentHelper.isFuture(end);
 
-				boolean validDates = MomentHelper.isBefore(start, end);
-				boolean validPublishedInvention = invention.getDraftMode() || datesInFuture;
-
+				boolean validDates = invention.getDraftMode() || MomentHelper.isBefore(start, end);
 				super.state(context, validDates, "endMoment", "acme.validation.invention.dates.error");
-				super.state(context, validPublishedInvention, "startMoment", "acme.validation.invention.dates.error-publish");
+
+				/*
+				 * boolean datesInFuture = start != null && end != null && MomentHelper.isFuture(start) && MomentHelper.isFuture(end);
+				 * 
+				 * boolean validPublishedInvention = invention.getDraftMode() || datesInFuture;
+				 * super.state(context, validPublishedInvention, "startMoment", "acme.validation.invention.dates.error-publish");
+				 */
 			}
 		}
 

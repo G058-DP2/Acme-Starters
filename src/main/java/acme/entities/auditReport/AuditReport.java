@@ -10,7 +10,6 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.persistence.Transient;
 import javax.validation.Valid;
-import javax.validation.constraints.NotNull;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -77,7 +76,6 @@ public class AuditReport extends AbstractEntity {
 
 	// Relationships ----------------------------------------------------------
 
-	@NotNull
 	@Valid
 	@ManyToOne(optional = false)
 	private Auditor					auditor;

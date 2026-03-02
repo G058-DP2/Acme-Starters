@@ -1,0 +1,20 @@
+key,key:auditReport,name,notes,hours,kind
+#base - entity
+auditSection-01,auditReport-01,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",5,PRELIMINARY
+#name - errata
+auditSection-101,auditReport-01,"","Lorem ipsum dolor sit amet,consectetur adipiscing elit.",5,PRELIMINARY
+auditSection-102,auditReport-01,"   ","Lorem ipsum dolor sit amet,consectetur adipiscing elit.",5,PRELIMINARY
+auditSection-103,auditReport-01,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut","Lorem ipsum dolor sit amet,consectetur adipiscing elit.",5,PRELIMINARY
+#notes - errata
+auditSection-104,auditReport-01,"Lorem ipsum dolor sit amet, consectetu","",5,PRELIMINARY
+auditSection-105,auditReport-01,"Lorem ipsum dolor sit amet, consectetu","   ",5,PRELIMINARY
+auditSection-106,auditReport-01,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur extra overflow text.",5,PRELIMINARY
+#hours - errata
+auditSection-107,auditReport-01,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet.",-1,PRELIMINARY
+auditSection-108,auditReport-01,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet.",1000000,PRELIMINARY
+auditSection-109,auditReport-01,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet.",,PRELIMINARY
+#kind - errata
+auditSection-110,auditReport-01,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet.",5,
+auditSection-111,auditReport-01,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet.",5,null
+#auditReport - errata
+auditSection-112,,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet.",5,PRELIMINARY

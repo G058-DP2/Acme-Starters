@@ -1,0 +1,27 @@
+key,ticker,name,description,startMoment,endMoment,moreInfo,draftMode,key:auditor
+#base - entity
+auditReport-01,AB01-\wwwwwww,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2025/02/01 0:00,http://lorem.com/ipsum,true,auditor-01
+#ticker - errata
+auditReport-101,,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2025/02/01 0:00,http://lorem.com/ipsum,true,auditor-01
+auditReport-102,AB01wwwww,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2025/02/01 0:00,http://lorem.com/ipsum,true,auditor-01
+auditReport-103,ab01-abcde,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2025/02/01 0:00,http://lorem.com/ipsum,true,auditor-01
+auditReport-104,ABC123-abcde,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2025/02/01 0:00,http://lorem.com/ipsum,true,auditor-01
+auditReport-105,AB01-@@@@@,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2025/02/01 0:00,http://lorem.com/ipsum,true,auditor-01
+#name - errata
+auditReport-106,AB40-\wwwwwww,"","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2025/02/01 0:00,http://lorem.com/ipsum,true,auditor-01
+auditReport-107,AB41-\wwwwwww,"   ","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2025/02/01 0:00,http://lorem.com/ipsum,true,auditor-01
+auditReport-108,AB42-\wwwwwww,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2025/02/01 0:00,http://lorem.com/ipsum,true,auditor-01
+#description - errata
+auditReport-109,AB43-\wwwwwww,"Lorem ipsum dolor sit amet, consectetu","",2025/01/01 0:00,2025/02/01 0:00,http://lorem.com/ipsum,true,auditor-01
+auditReport-110,AB44-\wwwwwww,"Lorem ipsum dolor sit amet, consectetu","   ",2025/01/01 0:00,2025/02/01 0:00,http://lorem.com/ipsum,true,auditor-01
+auditReport-111,AB45-\wwwwwww,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur extra text.",2025/01/01 0:00,2025/02/01 0:00,http://lorem.com/ipsum,true,auditor-01
+#startMoment/endMoment - errata
+auditReport-112,AB46-\wwwwwww,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit.",2025/01/01 0:00,2025/01/01 0:00,http://lorem.com/ipsum,true,auditor-01
+auditReport-113,AB47-\wwwwwww,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit.",2025/02/01 0:00,2025/01/01 0:00,http://lorem.com/ipsum,true,auditor-01
+auditReport-114,AB48-\wwwwwww,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit.",2024/12/29 0:00,2025/12/30 0:00,http://lorem.com/ipsum,true,auditor-01
+#moreInfo - errata
+auditReport-115,AB49-\wwwwwww,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit.",2025/01/01 0:00,2025/02/01 0:00,not-a-url,true,auditor-01
+auditReport-116,AB50-\wwwwwww,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit.",2025/01/01 0:00,2025/02/01 0:00,ftp://example.com,true,auditor-01
+auditReport-117,AB51-\wwwwwww,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit.",2025/01/01 0:00,2025/02/01 0:00,example,true,auditor-01
+#draftMode - errata
+auditReport-118,AB52-\wwwwwww,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit.",2025/01/01 0:00,2025/02/01 0:00,http://lorem.com/ipsum,,auditor-01

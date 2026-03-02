@@ -22,6 +22,6 @@ part-16,"Lorem ipsum dolor sit amet.","Lorem ipsum dolor sit amet, consectetur a
 part-17,"Lorem ipsum dolor sit amet.","Lorem ipsum dolor sit amet, consectetur adipiscing elit",EUR 999999.99,CORE,invention-01
 part-18,"Lorem ipsum dolor sit amet.","Lorem ipsum dolor sit amet, consectetur adipiscing elit",EUR 1000000.00,CORE,invention-01
 # kind
-part-19,"Lorem ipsum dolor sit amet.","Lorem ipsum dolor sit amet, consectetur adipiscing elit",EUR 10.00,CORE,invention-33
-part-20,"Lorem ipsum dolor sit amet.","Lorem ipsum dolor sit amet, consectetur adipiscing elit",EUR 10.00,MANDATORY,invention-33
-part-21,"Lorem ipsum dolor sit amet.","Lorem ipsum dolor sit amet, consectetur adipiscing elit",EUR 10.00,OPTIONAL,invention-33
+part-19,"Lorem ipsum dolor sit amet.","Lorem ipsum dolor sit amet, consectetur adipiscing elit",EUR 10.00,CORE,invention-43
+part-20,"Lorem ipsum dolor sit amet.","Lorem ipsum dolor sit amet, consectetur adipiscing elit",EUR 10.00,MANDATORY,invention-43
+part-21,"Lorem ipsum dolor sit amet.","Lorem ipsum dolor sit amet, consectetur adipiscing elit",EUR 10.00,OPTIONAL,invention-43

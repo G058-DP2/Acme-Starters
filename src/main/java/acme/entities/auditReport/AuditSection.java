@@ -37,7 +37,7 @@ public class AuditSection extends AbstractEntity {
 	private String				notes;
 
 	@Mandatory
-	@ValidNumber(min = 0)
+	@ValidNumber(min = 0, max = 1000)
 	@Column
 	private Integer				hours;
 

@@ -9,15 +9,15 @@ import java.lang.annotation.Target;
 import javax.validation.Constraint;
 import javax.validation.Payload;
 
-@Target({
-	ElementType.FIELD, ElementType.METHOD
-})
+@Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-@Constraint(validatedBy = EURCurrencyValidator.class)
-public @interface ValidEUR {
+@Constraint(validatedBy = DonationValidator.class)
+
+public @interface ValidDonation {
 
 	String message() default "";
 
 	Class<?>[] groups() default {};
 	Class<? extends Payload>[] payload() default {};
+
 }

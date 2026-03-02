@@ -1,0 +1,41 @@
+key,ticker,name,description,startMoment,endMoment,moreInfo,draftMode,key:manager
+#base - entity
+
+campaign-01,CA00-aaaaa,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2025/02/01 0:00,"http://lorem.com/ipsum",true,spokesperson-01
+
+#ticker - standar
+campaign-02,00-aaaaa,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2025/02/01 0:00,http://lorem.com/ipsum,true,spokesperson-01
+campaign-03,CAA00-aaaaa,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2025/02/01 0:00,http://lorem.com/ipsum,true,spokesperson-01
+campaign-04,CA-aaaaa,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2025/02/01 0:00,http://lorem.com/ipsum,true,spokesperson-01
+campaign-05,CA000-aaaaa,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2025/02/01 0:00,http://lorem.com/ipsum,true,spokesperson-01
+campaign-06,CA00-aaaa,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2025/02/01 0:00,http://lorem.com/ipsum,true,spokesperson-01
+campaign-07,CA00-aaaaabbbbbb,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2025/02/01 0:00,http://lorem.com/ipsum,true,spokesperson-01
+#name - standar
+campaign-08,CA08-aaaaa,,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2025/02/01 0:00,http://lorem.com/ipsum,true,spokesperson-01
+campaign-09,CA09-aaaaa,Looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2025/02/01 0:00,http://lorem.com/ipsum,true,spokesperson-01
+#description - standar
+campaign-10,CA10-aaaaa,Lorem ipsum dolor sit amet,,2025/01/01 0:00,2025/02/01 0:00,http://lorem.com/ipsum,true,spokesperson-01
+campaign-11,CA11-aaaaa,Lorem ipsum dolor sit amet,Looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo,2025/01/01 0:00,2025/02/01 0:00,http://lorem.com/ipsum,true,spokesperson-01
+#startMoment - standar
+campaign-12,CA12-aaaaa,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",,2025/02/01 0:00,http://lorem.com/ipsum,true,spokesperson-01
+campaign-13,CA13-aaaaa,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",,2025/02/01 0:00,http://lorem.com/ipsum,false,spokesperson-01
+campaign-14,CA14-aaaaa,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",1999/12/31 23:59,2025/02/01 0:00,http://lorem.com/ipsum,true,spokesperson-01
+campaign-15,CA15-aaaaa,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",1999/12/31 23:59,2025/02/01 0:00,http://lorem.com/ipsum,false,spokesperson-01
+campaign-16,CA16-aaaaa,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2024/12/31 23:59,2025/01/01 0:00,http://lorem.com/ipsum,true,spokesperson-01
+#endMoment - standar
+campaign-17,CA17-aaaaa,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/02/01 0:00,,http://lorem.com/ipsum,true,spokesperson-01
+campaign-18,CA18-aaaaa,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/02/01 0:00,,http://lorem.com/ipsum,false,spokesperson-01
+campaign-19,CA19-aaaaa,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",1999/12/31 23:58,1999/12/31 23:59,http://lorem.com/ipsum,true,spokesperson-01
+campaign-20,CA20-aaaaa,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",1999/12/31 23:58,1999/12/31 23:59,http://lorem.com/ipsum,false,spokesperson-01
+campaign-21,CA21-aaaaa,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2024/12/31 23:58,2024/12/31 23:59,http://lorem.com/ipsum,true,spokesperson-01
+#moreInfo - standar
+campaign-22,CA22-aaaaa,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2025/02/01 0:00,"ftp://",true,spokesperson-01
+campaign-23,CA23-aaaaa,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2025/02/01 0:00,"http://",true,spokesperson-01
+campaign-24,CA24-aaaaa,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2025/02/01 0:00,"http://a",true,spokesperson-01
+campaign-25,CA25-aaaaa,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2025/02/01 0:00,"ftp://a",true,spokesperson-01
+campaign-26,CA26-aaaaa,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2025/02/01 0:00,"http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/dolore/magna/aliqua/Ut/enim/ad/minim/veniam/quis/nostrud/exercitation/ullamco/laboris/nisi/ut/aliquip/ex/ea/commodo/consequat/duis/aute/xa",true,spokesperson-01
+#draftMode - standar
+campaign-27,CA27-aaaaa,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2025/02/01 0:00,"http://lorem.com/ipsum",,spokesperson-01
+campaign-28,CA28-aaaaa,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2025/02/01 0:00,"http://lorem.com/ipsum",truE,spokesperson-01
+campaign-29,CA29-aaaaa,Lorem ipsum dolor sit amet,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2025/02/01 0:00,"http://lorem.com/ipsum",falsE,spokesperson-01
+

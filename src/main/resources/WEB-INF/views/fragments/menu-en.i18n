@@ -13,6 +13,11 @@
 master.menu.anonymous = Anonymous
 master.menu.anonymous.favourite-link = Favourite link
 
+# master.menu.any #############################################################
+
+master.menu.any = Authenticated
+master.menu.any.list-sponsorships = List sponsorships
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrator

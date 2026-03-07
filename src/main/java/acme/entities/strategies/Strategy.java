@@ -105,7 +105,9 @@ public class Strategy extends AbstractEntity {
 		expectedPercentage = this.repository.expectedPercentage(this.getId());
 		result = expectedPercentage == null ? 0 : expectedPercentage.doubleValue();
 
-		return result;
+		double roundedResult = Math.round(result * 100) / 100;
+
+		return roundedResult;
 	}
 
 	// Relationships ----------------------------------------------------------

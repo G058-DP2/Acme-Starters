@@ -19,6 +19,7 @@ acme.validation.part.cost.error-currency = La divisa debe ser el euro
 #Strategy
 acme.validation.strategy.duplicated-ticker.message = La Estrategia está duplicada
 acme.validation.strategy.tactics.error.message = Una Estrategia no puede publicarse a menos que tenga al menos una táctica.
+acme.validation.strategy.dates.error = Las fechas de inicio y fin deben definir un intervalo válido de tiempo
 
 ##################################### AUDIT 
 acme.validation.auditReport.auditSection.error = Los informes de auditoría no se pueden publicar a menos que tengan al menos una sección de auditoría.

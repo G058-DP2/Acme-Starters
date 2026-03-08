@@ -55,13 +55,12 @@ public class StrategyValidator extends AbstractValidator<ValidStrategy, Strategy
 				super.state(context, hasTactic, "*", "acme.validation.strategy.tactics.error.message");
 			}
 			{
-				Date now = MomentHelper.getBaseMoment();
 				Date start = strategy.getStartMoment();
 				Date end = strategy.getEndMoment();
 				boolean validTime;
 
 				if (start != null && end != null)
-					validTime = MomentHelper.isAfter(strategy.getStartMoment(), now) && MomentHelper.isAfter(strategy.getEndMoment(), strategy.getStartMoment());
+					validTime = MomentHelper.isAfter(end, start);
 				else
 					validTime = false;
 

@@ -38,14 +38,17 @@ public class InventionValidator extends AbstractValidator<ValidInvention, Invent
 			return true;
 		else {
 			{
-				Invention existingInvention = this.inventionRepository.findInventionByTicker(invention.getTicker());
-				boolean uniqueInvention = existingInvention != null && existingInvention.equals(invention);
+				boolean uniqueInvention;
+				Invention existingInvention;
+
+				existingInvention = this.inventionRepository.findInventionByTicker(invention.getTicker());
+				uniqueInvention = existingInvention == null || existingInvention.equals(invention);
 
 				super.state(context, uniqueInvention, "ticker", "acme.validation.invention.ticker.non-unique");
 
 			}
 			{
-				if (invention.getDraftMode() != null && !invention.getDraftMode()) {
+				if (!invention.isDraftMode()) {
 					Integer partsCount = this.partRepository.countPartsByInventionId(invention.getId());
 					boolean hasParts = partsCount != null && partsCount > 0;
 
@@ -56,7 +59,7 @@ public class InventionValidator extends AbstractValidator<ValidInvention, Invent
 				Date start = invention.getStartMoment();
 				Date end = invention.getEndMoment();
 
-				boolean validDates = invention.getDraftMode() || MomentHelper.isBefore(start, end);
+				boolean validDates = invention.isDraftMode() || MomentHelper.isBefore(start, end);
 				super.state(context, validDates, "endMoment", "acme.validation.invention.dates.error");
 
 				/*

@@ -1,0 +1,13 @@
+any.milestone.list.title = Milestone list
+any.milestone.list.label.title = Title
+any.milestone.list.label.effort = Effort
+any.milestone.list.label.kind = Kind
+
+any.milestone.form.title = Milestone details
+
+any.milestone.form.label.title = Title:
+any.milestone.form.label.effort = Amount:
+any.milestone.form.label.kind = Milestone kind:
+any.milestone.form.label.achievements = Achievements:
+
+any.milestone.form.button.return = Return to list

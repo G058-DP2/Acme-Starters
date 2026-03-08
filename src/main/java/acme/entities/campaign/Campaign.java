@@ -12,6 +12,7 @@
 
 package acme.entities.campaign;
 
+import java.beans.Transient;
 import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
@@ -20,7 +21,6 @@ import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
-import javax.persistence.Transient;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -67,12 +67,16 @@ public class Campaign extends AbstractEntity {
 	private String				description;
 
 	@Mandatory
-	@ValidMoment(constraint = ValidMoment.Constraint.ENFORCE_FUTURE)
+	@ValidMoment
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date				startMoment;
 
+	/*
+	 * - startMoment/endMoment must be a valid time interval in future wrt. the moment when a campaign is published.
+	 */
+
 	@Mandatory
-	@ValidMoment(constraint = ValidMoment.Constraint.ENFORCE_FUTURE)
+	@ValidMoment
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date				endMoment;
 
@@ -80,6 +84,10 @@ public class Campaign extends AbstractEntity {
 	@ValidUrl
 	@Column
 	private String				moreInfo;
+
+	/*
+	 * - Campaigns cannot be published unless they have at least one milestone.
+	 */
 
 	@Mandatory
 	@Valid
@@ -92,12 +100,25 @@ public class Campaign extends AbstractEntity {
 	@Autowired
 	private CampaignRepository	repository;
 
+	/*
+	 * - monthsActive is computed as the number of months in interval startMoment/endMoment rounded to the nearest decimal.
+	 */
 
+
+	@Mandatory
+	@ValidNumber
 	@Transient
 	public Double getMonthsActive() {
-		return (double) MomentHelper.computeDuration(this.startMoment, this.endMoment).get(ChronoUnit.MONTHS);
+
+		if (this.startMoment == null || this.endMoment == null)
+			return null;
+		Double months = MomentHelper.computeDifference(this.startMoment, this.endMoment, ChronoUnit.MONTHS);
+
+		return Math.round(months * 100.0) / 100.0;
 	}
 
+	@Mandatory
+	@Valid
 	@Transient
 	public Double getEffort() {
 		if (this.getId() > 0 && this.repository != null) {

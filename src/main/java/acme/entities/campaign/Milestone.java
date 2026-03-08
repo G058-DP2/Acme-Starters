@@ -61,7 +61,7 @@ public class Milestone extends AbstractEntity {
 	// Relationships ----------------------------------------------------------
 
 	@Mandatory
-	// @Valid
+	@Valid
 	@ManyToOne(optional = false)
 	private Campaign			campaign;
 }

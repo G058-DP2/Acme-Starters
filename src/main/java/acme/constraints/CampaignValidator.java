@@ -49,18 +49,13 @@ public class CampaignValidator extends AbstractValidator<ValidCampaign, Campaign
 			boolean hasMilestones = milestoneCount != null && milestoneCount >= 1;
 			super.state(context, hasMilestones, "draftMode", "acme.validation.campaign.no-milestones");
 
-			// 3) start/end: intervalo válido en futuro respecto a "ahora"
-			Date now = MomentHelper.getBaseMoment();
+			// 3) start/end: intervalo válido en futuro a la hora de publicar
 			Date start = campaign.getStartMoment();
 			Date end = campaign.getEndMoment();
 
-			boolean validInterval = start != null && end != null && !start.before(now) && end.after(start);
-			super.state(context, validInterval, "startMoment", "acme.validation.campaign.invalid-interval");
+			boolean validDates = start != null && end != null && MomentHelper.isAfter(end, start);
+			super.state(context, validDates, "startMoment", "acme.validation.campaign.invalid-interval");
 
-			// 4) effort (suma milestones) debe ser > 0 cuando se publica
-			Double sum = this.repository.calculateTotalEffortByCampaignId(id);
-			boolean positive = sum != null && sum >= 0.0;
-			super.state(context, positive, "draftMode", "acme.validation.campaign.effort-not-positive");
 		}
 
 		return !super.hasErrors(context);

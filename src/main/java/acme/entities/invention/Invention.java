@@ -1,6 +1,7 @@
 
 package acme.entities.invention;
 
+import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -19,6 +20,7 @@ import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidUrl;
+import acme.client.helpers.MomentHelper;
 import acme.constraints.ValidHeader;
 import acme.constraints.ValidInvention;
 import acme.constraints.ValidText;
@@ -67,22 +69,30 @@ public class Invention extends AbstractEntity {
 	private String				moreInfo;
 
 	@Mandatory
-	@Valid
+	// HINT: @Valid by default
 	@Column
-	private Boolean				draftMode;
+	private boolean				draftMode;
 
-	@Transient
+	@Mandatory
+	@Valid
 	@Autowired
+	@Transient
 	private PartRepository		partRepository;
 
 
+	@Mandatory
 	@Valid
 	@Transient
 	public Double getMonthsActive() {
-		// return (double) MomentHelper.computeDuration(this.startMoment, this.endMoment).get(ChronoUnit.MONTHS);
-		return 0.00;
+		if (this.startMoment == null || this.endMoment == null)
+			return null;
+
+		Double months = MomentHelper.computeDifference(this.startMoment, this.endMoment, ChronoUnit.MONTHS);
+
+		return Math.round(months * 100.0) / 100.0;
 	}
 
+	@Mandatory
 	@Valid
 	@Transient
 	public Money getCost() {
@@ -90,6 +100,8 @@ public class Invention extends AbstractEntity {
 		res.setCurrency("EUR");
 
 		Double total = this.partRepository.getSumCostsByInvention(this.getId());
+		if (total == null)
+			total = 0.00;
 
 		res.setAmount(total);
 		return res;

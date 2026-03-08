@@ -1,0 +1,17 @@
+any.sponsorship.form.title = Sponsorship details
+any.sponsorship.list.title = Sponsorship list
+
+any.sponsorship.form.label.ticker = Ticker:
+any.sponsorship.form.label.name = Name:
+any.sponsorship.form.label.description = Description:
+any.sponsorship.form.label.startMoment = Start Date:
+any.sponsorship.form.label.endMoment = End Date:
+any.sponsorship.form.label.moreInfo = More info:
+
+any.sponsorship.form.button.donations = View Donations
+any.sponsorship.form.button.sponsor = View Sponsor Profile
+
+any.sponsorship.list.label.ticker = Ticker
+any.sponsorship.list.label.name = Name
+any.sponsorship.list.label.startMoment = Start Date
+any.sponsorship.list.label.endMoment = End Date

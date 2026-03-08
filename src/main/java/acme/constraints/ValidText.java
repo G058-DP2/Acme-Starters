@@ -12,7 +12,9 @@ import javax.validation.ReportAsSingleViolation;
 
 import org.hibernate.validator.constraints.Length;
 
-@Target(ElementType.FIELD)
+@Target({
+	ElementType.FIELD, ElementType.METHOD
+})
 @Retention(RetentionPolicy.RUNTIME)
 @Constraint(validatedBy = {})
 @ReportAsSingleViolation

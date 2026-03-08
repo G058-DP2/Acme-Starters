@@ -1,6 +1,6 @@
 key,ticker,name,description,startMoment,endMoment,moreInfo,draftMode,key:inventor
 # base - errata
-invention-01,,,,,,,,
+invention-01,,,,,,,true,
 # ticker - errata
 invention-02,A-wwwwwww,"Lorem ipsum dolor sit amet.","Lorem ipsum dolor sit amet, consectetur adipiscing elit",2025/01/01 0:00,2025/02/01 0:00,"http://lorem.com",true,inventor-01
 invention-03,AAA00-wwwwwww,"Lorem ipsum dolor sit amet.","Lorem ipsum dolor sit amet, consectetur adipiscing elit",2025/01/01 0:00,2025/02/01 0:00,"http://lorem.com",true,inventor-01

@@ -23,9 +23,11 @@ public class PartValidator extends AbstractValidator<ValidPart, Part> {
 		if (part == null)
 			return true;
 		else {
-			boolean validCurrency = part.getCost().getCurrency().equalsIgnoreCase("EUR");
+			if (part.getCost() != null) {
+				boolean validCurrency = part.getCost().getCurrency().equalsIgnoreCase("EUR");
 
-			super.state(context, validCurrency, "cost", "acme.validation.part.cost.error-currency");
+				super.state(context, validCurrency, "cost", "acme.validation.part.cost.error-currency");
+			}
 		}
 
 		return !super.hasErrors(context);

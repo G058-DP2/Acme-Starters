@@ -80,10 +80,9 @@ public class Sponsorship extends AbstractEntity {
 	private String					moreInfo;
 
 	@Mandatory
-	@Valid
 	@Column
 	//Sponsorships cannot be published unless they have at least one donation
-	private Boolean					draftMode;
+	private boolean					draftMode;
 
 	// Derived attributes -----------------------------------------------------
 

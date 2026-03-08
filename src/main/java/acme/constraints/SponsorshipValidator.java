@@ -41,7 +41,7 @@ public class SponsorshipValidator extends AbstractValidator<ValidSponsorship, Sp
 			super.state(context, uniqueTicker, "ticker", "acme.validation.sponsorship.ticker.non-unique");
 		}
 
-		if (sponsorship.getDraftMode() != null && !sponsorship.getDraftMode()) {
+		if (!sponsorship.isDraftMode()) {
 
 			Integer donationsCount = this.repository.countDonationsBySponsorshipId(sponsorship.getId());
 			boolean hasDonations = donationsCount != null && donationsCount >= 1;

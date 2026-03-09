@@ -39,7 +39,7 @@ public class AnyDonationListService extends AbstractService<Any, Donation> {
 	public void authorise() {
 		boolean status;
 
-		status = this.sponsorship != null && !this.sponsorship.getDraftMode();
+		status = this.sponsorship != null && !this.sponsorship.isDraftMode();
 
 		super.setAuthorised(status);
 	}

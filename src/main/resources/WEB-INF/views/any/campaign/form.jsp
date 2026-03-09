@@ -12,5 +12,5 @@
 	<acme:form-url code="any.campaign.form.label.moreInfo" path="moreInfo"/>
 	
 	<acme:button code="any.campaign.form.button.milestones" action="/any/milestone/list?campaignId=${id}"/>
-	<acme:button code="any.campaign.form.button.spokesperson" action="/any/spokesperson/show?id=${sponsorId}"/>
+	<acme:button code="any.campaign.form.button.spokesperson" action="/any/spokesperson/show?id=${spokespersonId}"/>
 </acme:form>

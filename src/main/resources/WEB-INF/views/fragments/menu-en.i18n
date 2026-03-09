@@ -15,16 +15,11 @@ master.menu.anonymous.favourite-link = Favourite link
 
 # master.menu.any #############################################################
 
-master.menu.any = Authenticated
+master.menu.any = Any
 master.menu.any.list-sponsorships = List sponsorships
-<<<<<<< Task-0017/D
 master.menu.any.list-inventions = List inventions
-=======
 master.menu.any.list-strategies = List strategies
 master.menu.any.list-campaigns = List campaigns
-
->>>>>>> main
-
 master.menu.any.list-auditReports = List audit reports
 
 # master.menu.administrator ###################################################

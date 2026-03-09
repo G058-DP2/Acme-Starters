@@ -22,12 +22,12 @@
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link" action="http://www.example.com/"/>
 		</acme:menu-option>
 		
-		<acme:menu-option code="master.menu.any" access="isAuthenticated()">
+		<acme:menu-option code="master.menu.any">
 			<acme:menu-suboption code="master.menu.any.list-sponsorships" action="/any/sponsorship/list"/>			
 			<acme:menu-suboption code="master.menu.any.list-inventions" action="/any/invention/list"/>
 			<acme:menu-suboption code="master.menu.any.list-strategies" action="/any/strategy/list"/>
 			<acme:menu-suboption code="master.menu.any.list-campaigns" action="/any/campaign/list"/>
-      <acme:menu-suboption code="master.menu.any.list-auditReports" action="/any/audit-report/list"/>
+      		<acme:menu-suboption code="master.menu.any.list-auditReports" action="/any/audit-report/list"/>
 			
 		</acme:menu-option>
 

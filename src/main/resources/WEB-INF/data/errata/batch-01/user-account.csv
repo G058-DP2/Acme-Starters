@@ -1,5 +1,5 @@
 key,enabled,identity,password,username
-user-account-spokesperson-01,true,"UserIdentity{name: 'Spokesperson', surname: 'Uno', email: 'spk@acme.com'}",spokesperson1,spokesperson1
+user-account-spokesperson-01,false,"UserIdentity{name: 'SPOKSEPERSON', surname: 'dos', email: 'spokes@acme.com'}","",""
 user-account-sponsor-01,false,,,
 user-account-inventor-01,true,"UserIdentity{name: 'John', surname: 'Doe', email: 'doe@acme.com'}",,
 user-account-auditor-01,true,"UserIdentity{name: 'Jacobo', surname: 'Ordoñez', email: 'audit1@acme.com'}",auditor1,auditor1

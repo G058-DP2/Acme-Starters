@@ -1,0 +1,26 @@
+
+sponsor.sponsorship.form.title = Detalles del patrocínio
+sponsor.sponsorship.list.title = Mis patrocínios
+
+sponsor.sponsorship.form.label.ticker       = Código:
+sponsor.sponsorship.form.label.name         = Nombre:
+sponsor.sponsorship.form.label.description  = Descripción:
+sponsor.sponsorship.form.label.startMoment  = Fecha de inicio:
+sponsor.sponsorship.form.label.endMoment    = Fecha de fin:
+sponsor.sponsorship.form.label.moreInfo     = Mas información: (Opcional)
+sponsor.sponsorship.form.label.monthsActive = Meses activo:
+sponsor.sponsorship.form.label.totalMoney   = Total de donaciones:
+
+sponsor.sponsorship.form.button.create    = Crear
+sponsor.sponsorship.form.button.update    = Actualizar
+sponsor.sponsorship.form.button.delete    = Borrar
+sponsor.sponsorship.form.button.publish   = Publicar
+sponsor.sponsorship.form.button.donations = Ver donaciones
+
+sponsor.sponsorship.list.label.ticker      = Código
+sponsor.sponsorship.list.label.name        = Nombre
+sponsor.sponsorship.list.label.startMoment = Fecha de inicio:
+sponsor.sponsorship.list.label.endMoment   = Fecha de fin:
+sponsor.sponsorship.list.label.draftMode   = ¿Borrador?
+
+sponsor.sponsorship.list.button.create = Crear patrocínio

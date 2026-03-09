@@ -1,0 +1,17 @@
+sponsor.donation.form.title = Detalles de la donación
+sponsor.donation.list.title = Donaciones
+
+sponsor.donation.form.label.name  = Nombre:
+sponsor.donation.form.label.notes = Notas:
+sponsor.donation.form.label.money = Cantidad:
+sponsor.donation.form.label.kind  = Tipo:
+
+sponsor.donation.form.button.create = Crear
+sponsor.donation.form.button.update = Actualizar
+sponsor.donation.form.button.delete = Borrar
+
+sponsor.donation.list.label.name  = Nombre
+sponsor.donation.list.label.money = Cantidad
+sponsor.donation.list.label.kind  = Tipo
+
+sponsor.donation.list.button.create = Añadir donación

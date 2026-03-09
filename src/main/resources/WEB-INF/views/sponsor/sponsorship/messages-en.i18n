@@ -1,0 +1,27 @@
+# src/main/resources/WEB-INF/views/sponsor/sponsorship/messages-en.i18n
+
+sponsor.sponsorship.form.title = Sponsorship details
+sponsor.sponsorship.list.title = My Sponsorships
+
+sponsor.sponsorship.form.label.ticker       = Ticker:
+sponsor.sponsorship.form.label.name         = Name:
+sponsor.sponsorship.form.label.description  = Description:
+sponsor.sponsorship.form.label.startMoment  = Start Date:
+sponsor.sponsorship.form.label.endMoment    = End Date:
+sponsor.sponsorship.form.label.moreInfo     = More info: (Optional)
+sponsor.sponsorship.form.label.monthsActive = Months active:
+sponsor.sponsorship.form.label.totalMoney   = Total donations:
+
+sponsor.sponsorship.form.button.create    = Create
+sponsor.sponsorship.form.button.update    = Update
+sponsor.sponsorship.form.button.delete    = Delete
+sponsor.sponsorship.form.button.publish   = Publish
+sponsor.sponsorship.form.button.donations = View Donations
+
+sponsor.sponsorship.list.label.ticker      = Ticker
+sponsor.sponsorship.list.label.name        = Name
+sponsor.sponsorship.list.label.startMoment = Start Date
+sponsor.sponsorship.list.label.endMoment   = End Date
+sponsor.sponsorship.list.label.draftMode   = Draft?
+
+sponsor.sponsorship.list.button.create = Create sponsorship

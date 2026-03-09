@@ -1,0 +1,14 @@
+any.strategy.form.title = Detalles de la Estrategia
+any.strategy.list.title = Lista de Estrategias
+
+any.strategy.form.label.ticker = Referencia:
+any.strategy.form.label.name = Nombre:
+any.strategy.form.label.description = Descripción:
+any.strategy.form.label.startMoment = Fecha de Inicio:
+any.strategy.form.label.endMoment = Fecha de Fin: 
+any.strategy.form.label.moreInfo = Más Información:
+
+any.strategy.list.label.ticker = Referencia
+any.strategy.list.label.name = Nombre
+any.strategy.list.label.startMoment = Fecha de Inicio
+any.strategy.list.label.endMoment = Fecha de Fin

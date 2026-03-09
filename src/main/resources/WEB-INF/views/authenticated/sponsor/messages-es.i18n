@@ -1,0 +1,11 @@
+
+authenticated.sponsor.form.title = Detalles de patrocinador
+
+authenticated.sponsor.form.label.address = Direccion
+authenticated.sponsor.form.label.im = Mensajeria instantanea
+authenticated.sponsor.form.label.gold = Miembro gold
+authenticated.sponsor.form.value.true = Si
+authenticated.sponsor.form.value.false = No
+
+authenticated.sponsor.form.button.create = Registrar
+authenticated.sponsor.form.button.update = Actualizar

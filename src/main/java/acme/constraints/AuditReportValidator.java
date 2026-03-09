@@ -11,7 +11,7 @@ import acme.client.components.validation.AbstractValidator;
 import acme.client.components.validation.Validator;
 import acme.client.helpers.MomentHelper;
 import acme.entities.auditReport.AuditReport;
-import acme.features.auditor.auditReport.AuditReportRepository;
+import acme.entities.auditReport.AuditReportRepository;
 
 @Validator
 public class AuditReportValidator extends AbstractValidator<ValidAuditReport, AuditReport> {

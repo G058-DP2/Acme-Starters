@@ -1,0 +1,18 @@
+any.invention.form.title = Detalles del invento
+any.invention.list.title = Lista de inventos
+
+any.invention.form.label.ticker = Referencia:
+any.invention.form.label.name = Nombre:
+any.invention.form.label.description = Descripción:
+any.invention.form.label.startMoment = Fecha de inicio:
+any.invention.form.label.endMoment = Fecha de fin:
+any.invention.form.label.cost = Coste:
+any.invention.form.label.moreInfo = Más información:
+
+any.invention.form.button.parts = Ver Partes
+any.invention.form.button.inventor = Ver Perfil del Inventor
+
+any.invention.list.label.ticker = Referencia
+any.invention.list.label.name = Nombre
+any.invention.list.label.startMoment = Fecha de inicio
+any.invention.list.label.endMoment = Fecha de fin

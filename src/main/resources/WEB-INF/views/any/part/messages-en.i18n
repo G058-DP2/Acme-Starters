@@ -1,0 +1,14 @@
+any.part.list.title = Part list
+any.part.list.label.name = Name
+any.part.list.label.description = Description
+any.part.list.label.cost = Cost
+any.part.list.label.kind = Kind
+
+any.part.form.title = Part details
+
+any.part.form.label.name = Name:
+any.part.form.label.description = Description:
+any.part.form.label.cost = Cost:
+any.part.form.label.kind = Part kind:
+
+any.part.form.button.return = Return to list

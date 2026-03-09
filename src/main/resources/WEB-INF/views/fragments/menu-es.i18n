@@ -17,7 +17,12 @@ master.menu.anonymous.favourite-link = Enlace favorito
 
 master.menu.any = Autenticado
 master.menu.any.list-sponsorships = Listar patrocinios
+<<<<<<< Task-0017/D
 master.menu.any.list-inventions = Listar inventos
+=======
+master.menu.any.list-strategies = Listar estrategias
+master.menu.any.list-campaigns = Listar campañas
+>>>>>>> main
 
 # master.menu.administrator ###################################################
 

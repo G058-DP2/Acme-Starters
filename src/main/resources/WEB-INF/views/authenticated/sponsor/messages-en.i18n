@@ -1,0 +1,11 @@
+
+authenticated.sponsor.form.title = Sponsor form
+
+authenticated.sponsor.form.label.address = Address
+authenticated.sponsor.form.label.im = Instant messaging
+authenticated.sponsor.form.label.gold = Gold member
+authenticated.sponsor.form.value.true = Yes
+authenticated.sponsor.form.value.false = No
+
+authenticated.sponsor.form.button.create = Register
+authenticated.sponsor.form.button.update = Update

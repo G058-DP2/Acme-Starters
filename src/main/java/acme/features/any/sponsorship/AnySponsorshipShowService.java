@@ -34,7 +34,7 @@ public class AnySponsorshipShowService extends AbstractService<Any, Sponsorship>
 	public void authorise() {
 		boolean status;
 
-		status = this.sponsorship != null && !this.sponsorship.getDraftMode();
+		status = this.sponsorship != null && !this.sponsorship.isDraftMode();
 
 		super.setAuthorised(status);
 	}

@@ -22,13 +22,16 @@
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link" action="http://www.example.com/"/>
 		</acme:menu-option>
 		
-		<acme:menu-option code="master.menu.any">
-			<acme:menu-suboption code="master.menu.any.list-sponsorships" action="/any/sponsorship/list"/>			
+		<acme:menu-option code="master.menu.sponsor" access="hasRealm('Sponsor')">
+    		<acme:menu-suboption code="master.menu.sponsor.list-my-sponsorships" action="/sponsor/sponsorship/list"/>
+		</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.any">		
 			<acme:menu-suboption code="master.menu.any.list-inventions" action="/any/invention/list"/>
+      <acme:menu-suboption code="master.menu.any.list-campaigns" action="/any/campaign/list"/>
 			<acme:menu-suboption code="master.menu.any.list-strategies" action="/any/strategy/list"/>
-			<acme:menu-suboption code="master.menu.any.list-campaigns" action="/any/campaign/list"/>
-      		<acme:menu-suboption code="master.menu.any.list-auditReports" action="/any/audit-report/list"/>
-			
+      <acme:menu-suboption code="master.menu.any.list-sponsorships" action="/any/sponsorship/list"/>	
+      <acme:menu-suboption code="master.menu.any.list-auditReports" action="/any/audit-report/list"/>		
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRealm('Administrator')">

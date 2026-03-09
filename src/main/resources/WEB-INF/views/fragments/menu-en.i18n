@@ -22,6 +22,11 @@ master.menu.any.list-strategies = List strategies
 master.menu.any.list-campaigns = List campaigns
 master.menu.any.list-auditReports = List audit reports
 
+# master.menu.sponsor #########################################################
+
+master.menu.sponsor                        = Sponsor
+master.menu.sponsor.list-my-sponsorships   = My sponsorships
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrator

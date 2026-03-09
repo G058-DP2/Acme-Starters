@@ -1,7 +1,6 @@
 
 package acme.entities.auditReport;
 
-import java.time.Duration;
 import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
@@ -12,7 +11,6 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.persistence.Transient;
 import javax.validation.Valid;
-import javax.validation.constraints.NotNull;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -20,13 +18,13 @@ import acme.client.components.basis.AbstractEntity;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
+import acme.client.components.validation.ValidNumber;
 import acme.client.components.validation.ValidUrl;
 import acme.client.helpers.MomentHelper;
 import acme.constraints.ValidAuditReport;
 import acme.constraints.ValidHeader;
 import acme.constraints.ValidText;
 import acme.constraints.ValidTicker;
-import acme.features.auditor.auditReport.AuditReportRepository;
 import acme.realms.Auditor;
 import lombok.Getter;
 import lombok.Setter;
@@ -74,30 +72,34 @@ public class AuditReport extends AbstractEntity {
 	private String					moreInfo;
 
 	@Mandatory
-	@Valid
+	//@Valid
 	@Column
 	private Boolean					draftMode;
 
-	// Relationships ----------------------------------------------------------
-
-	@NotNull
-	@Valid
-	@ManyToOne(optional = false)
-	private Auditor					auditor;
-
 	// Derived attributes -----------------------------------------------------
 
+	@Mandatory
+	@Valid
 	@Transient
 	@Autowired
 	private AuditReportRepository	repository;
 
 
+	@Mandatory
+	@ValidNumber
 	@Transient
 	public Double getMonthsActive() {
-		Duration d = MomentHelper.computeDuration(this.startMoment, this.endMoment);
-		return (double) d.get(ChronoUnit.MONTHS);
+
+		if (this.startMoment == null || this.endMoment == null)
+			return null;
+
+		Double months = MomentHelper.computeDifference(this.startMoment, this.endMoment, ChronoUnit.MONTHS);
+
+		return Math.round(months * 100.0) / 100.0;
 	}
 
+	@Mandatory
+	@ValidNumber(min = 0)
 	@Transient
 	public Integer getHours() {
 
@@ -108,5 +110,13 @@ public class AuditReport extends AbstractEntity {
 
 		return total == null ? 0 : total;
 	}
+
+	// Relationships ----------------------------------------------------------
+
+
+	@Mandatory
+	@Valid
+	@ManyToOne(optional = false)
+	private Auditor auditor;
 
 }

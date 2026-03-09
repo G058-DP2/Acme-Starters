@@ -24,6 +24,8 @@ master.menu.any.list-strategies = Listar estrategias
 master.menu.any.list-campaigns = Listar campañas
 >>>>>>> main
 
+master.menu.any.list-auditReports = Listar informes de auditoria
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador

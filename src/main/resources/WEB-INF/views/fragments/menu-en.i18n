@@ -25,6 +25,8 @@ master.menu.any.list-campaigns = List campaigns
 
 >>>>>>> main
 
+master.menu.any.list-auditReports = List audit reports
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrator

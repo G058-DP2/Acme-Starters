@@ -5,7 +5,6 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 import javax.validation.Valid;
-import javax.validation.constraints.NotNull;
 
 import acme.client.components.basis.AbstractEntity;
 import acme.client.components.validation.Mandatory;
@@ -42,13 +41,13 @@ public class AuditSection extends AbstractEntity {
 	private Integer				hours;
 
 	@Mandatory
-	@Valid
+	//@Valid
 	@Column
 	private SectionKind			kind;
 
 	// Relationships ----------------------------------------------------------
 
-	@NotNull
+	@Mandatory
 	@Valid
 	@ManyToOne(optional = false)
 	private AuditReport			auditReport;

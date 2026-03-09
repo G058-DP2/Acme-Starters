@@ -75,8 +75,8 @@ public class Invention extends AbstractEntity {
 
 	@Mandatory
 	@Valid
-	@Autowired
 	@Transient
+	@Autowired
 	private PartRepository		partRepository;
 
 

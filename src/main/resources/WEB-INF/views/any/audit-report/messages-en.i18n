@@ -1,0 +1,17 @@
+any.audit-report.form.title = Audit Report details
+any.audit-report.list.title = Audit Report list
+
+any.auditReport.form.label.ticker = Ticker:
+any.auditReport.form.label.name = Name:
+any.auditReport.form.label.description = Description:
+any.auditReport.form.label.startMoment = Start Date:
+any.auditReport.form.label.endMoment = End Date:
+any.auditReport.form.label.moreInfo = More info:
+
+any.auditReport.form.button.auditSections = View Audit Sections
+any.auditReport.form.button.auditor = View Auditor Profile
+
+any.auditReport.list.label.ticker = Ticker
+any.auditReport.list.label.name = Name
+any.auditReport.list.label.startMoment = Start Date
+any.auditReport.list.label.endMoment = End Date

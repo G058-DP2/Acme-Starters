@@ -1,0 +1,13 @@
+any.audit-section.list.title = Audit Section list
+any.auditSection.list.label.name = Name
+any.auditSection.list.label.hours = Hours
+any.auditSection.list.label.kind = Kind
+
+any.audit-section.form.title = Audit Section details
+
+any.auditSection.form.label.name = Name:
+any.auditSection.form.label.hours = Hours:
+any.auditSection.form.label.kind = Donation kind:
+any.auditSection.form.label.notes = Additional notes:
+
+any.auditSection.form.button.return = Return to list

@@ -1,11 +1,10 @@
 
-package acme.features.auditor.auditReport;
+package acme.entities.auditReport;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import acme.client.repositories.AbstractRepository;
-import acme.entities.auditReport.AuditReport;
 
 @Repository
 public interface AuditReportRepository extends AbstractRepository {

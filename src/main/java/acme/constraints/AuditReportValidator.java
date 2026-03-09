@@ -11,7 +11,7 @@ import acme.client.components.validation.AbstractValidator;
 import acme.client.components.validation.Validator;
 import acme.client.helpers.MomentHelper;
 import acme.entities.auditReport.AuditReport;
-import acme.features.auditor.auditReport.AuditReportRepository;
+import acme.entities.auditReport.AuditReportRepository;
 
 @Validator
 public class AuditReportValidator extends AbstractValidator<ValidAuditReport, AuditReport> {
@@ -44,15 +44,14 @@ public class AuditReportValidator extends AbstractValidator<ValidAuditReport, Au
 		if (auditReport.getDraftMode() != null && !auditReport.getDraftMode()) {
 
 			Integer auditSectionCount = this.repository.countAuditSectionsByAuditReportId(auditReport.getId());
-			boolean hasAuditSections = auditSectionCount != null && auditSectionCount >= 1;
+			boolean hasAuditSections = auditSectionCount != null && auditSectionCount > 0;
 
 			super.state(context, hasAuditSections, "draftMode", "acme.validation.auditReport.auditSection.error");
 
-			Date now = MomentHelper.getBaseMoment();
 			Date start = auditReport.getStartMoment();
 			Date end = auditReport.getEndMoment();
 
-			boolean validDates = start != null && end != null && !MomentHelper.isBefore(start, now) && MomentHelper.isAfter(end, start);
+			boolean validDates = start != null && end != null && MomentHelper.isAfter(end, start);
 
 			super.state(context, validDates, "startMoment", "acme.validation.auditReport.dates.error");
 		}

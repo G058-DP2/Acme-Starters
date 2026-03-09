@@ -1,5 +1,5 @@
-any.auditReport.form.title = Audit Report details
-any.auditReport.list.title = Audit Report list
+any.audit-report.form.title = Audit Report details
+any.audit-report.list.title = Audit Report list
 
 any.auditReport.form.label.ticker = Ticker:
 any.auditReport.form.label.name = Name:

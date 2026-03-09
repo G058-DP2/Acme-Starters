@@ -11,6 +11,6 @@
 	<acme:form-moment code="any.auditReport.form.label.endMoment" path="endMoment"/>
 	<acme:form-url code="any.auditReport.form.label.moreInfo" path="moreInfo"/>
 	
-	<acme:button code="any.auditReport.form.button.auditSections" action="/any/auditSection/list?auditReportId=${id}"/>
+	<acme:button code="any.auditReport.form.button.auditSections" action="/any/audit-section/list?auditReportId=${id}"/>
 	<acme:button code="any.auditReport.form.button.auditor" action="/any/auditor/show?id=${auditorId}"/>
 </acme:form>

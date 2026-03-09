@@ -1,9 +1,9 @@
-any.auditSection.list.title = Lista de secciones de auditoría
+any.audit-section.list.title = Lista de secciones de auditoría
 any.auditSection.list.label.name = Nombre
 any.auditSection.list.label.hours = Horas:
 any.auditSection.list.label.kind = Tipo
 
-any.auditSection.form.title = Detalles de la sección  de auditoria
+any.audit-section.form.title = Detalles de la sección  de auditoria
 
 any.auditSection.form.label.name = Nombre:
 any.auditSection.form.label.hours = Horas:

@@ -1,5 +1,5 @@
-any.auditReport.form.title = Informes de auditoría
-any.auditReport.list.title = Lista de informes de auditoria
+any.audit-report.form.title = Informes de auditoría
+any.audit-report.list.title = Lista de informes de auditoria
 
 any.auditReport.form.label.ticker = Referencia:
 any.auditReport.form.label.name = Nombre:

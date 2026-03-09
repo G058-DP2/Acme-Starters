@@ -1,0 +1,13 @@
+any.milestone.list.title = Lista de hitos
+any.milestone.list.label.title = Título
+any.milestone.list.label.effort = Esfuerzo
+any.milestone.list.label.kind = Tipo
+
+any.milestone.form.title = Detalles del hito
+
+any.milestone.form.label.title = Título:
+any.milestone.form.label.effort = Esfuerzo:
+any.milestone.form.label.kind = Tipo de hito:
+any.milestone.form.label.achievements = Logros:
+
+any.milestone.form.button.return = Volver a la lista

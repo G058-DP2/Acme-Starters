@@ -1,0 +1,17 @@
+any.campaign.form.title = campaign details
+any.campaign.list.title = campaign list
+
+any.campaign.form.label.ticker = Ticker:
+any.campaign.form.label.name = Name:
+any.campaign.form.label.description = Description:
+any.campaign.form.label.startMoment = Start Date:
+any.campaign.form.label.endMoment = End Date:
+any.campaign.form.label.moreInfo = More info:
+
+any.campaign.form.button.milestones = View Milestones
+any.campaign.form.button.spokesperson = View Spokesperson Profile
+
+any.campaign.list.label.ticker = Ticker
+any.campaign.list.label.name = Name
+any.campaign.list.label.startMoment = Start Date
+any.campaign.list.label.endMoment = End Date

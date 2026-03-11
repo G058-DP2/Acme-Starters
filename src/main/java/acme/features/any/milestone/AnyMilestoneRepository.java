@@ -20,5 +20,5 @@ public interface AnyMilestoneRepository extends AbstractRepository {
 	Milestone findMilestoneById(int id);
 
 	@Query("select c from Campaign c where c.id = :id")
-	Campaign findCampaignById(int campaignId);
+	Campaign findCampaignById(int id);
 }

@@ -1,0 +1,26 @@
+
+spokesperson.campaign.form.title = Detalles de la campaña
+spokesperson.campaign.list.title = Mis campañas
+
+spokesperson.campaign.form.label.ticker       = Código:
+spokesperson.campaign.form.label.name         = Nombre:
+spokesperson.campaign.form.label.description  = Descripción:
+spokesperson.campaign.form.label.startMoment  = Fecha de inicio:
+spokesperson.campaign.form.label.endMoment    = Fecha de fin:
+spokesperson.campaign.form.label.moreInfo     = Mas información: (Opcional)
+spokesperson.campaign.form.label.monthsActive = Meses activo:
+spokesperson.campaign.form.label.effort   = Esfuerzo:
+
+spokesperson.campaign.form.button.create    = Crear
+spokesperson.campaign.form.button.update    = Actualizar
+spokesperson.campaign.form.button.delete    = Borrar
+spokesperson.campaign.form.button.publish   = Publicar
+spokesperson.campaign.form.button.milestones = Ver hitos
+
+spokesperson.campaign.list.label.ticker      = Código
+spokesperson.campaign.list.label.name        = Nombre
+spokesperson.campaign.list.label.startMoment = Fecha de inicio:
+spokesperson.campaign.list.label.endMoment   = Fecha de fin:
+spokesperson.campaign.list.label.draftMode   = ¿Borrador?
+
+spokesperson.campaign.list.button.create = Crear campaña

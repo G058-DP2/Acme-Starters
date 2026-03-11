@@ -27,6 +27,11 @@ master.menu.any.list-auditReports = List audit reports
 master.menu.sponsor                        = Sponsor
 master.menu.sponsor.list-my-sponsorships   = My sponsorships
 
+# master.menu.spokesperson #########################################################
+
+master.menu.spokesperson                        = Spokesperson
+master.menu.spokesperson.list-my-campaigns   = My campaigns
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrator

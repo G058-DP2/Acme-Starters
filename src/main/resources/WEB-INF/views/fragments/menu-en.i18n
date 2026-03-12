@@ -22,6 +22,11 @@ master.menu.any.list-strategies = List strategies
 master.menu.any.list-campaigns = List campaigns
 master.menu.any.list-auditReports = List audit reports
 
+# master.menu.inventor #########################################################
+
+master.menu.inventor                       = Inventor
+master.menu.inventor.list-my-inventions    = My inventions
+
 # master.menu.sponsor #########################################################
 
 master.menu.sponsor                        = Sponsor

@@ -20,7 +20,7 @@ public class AuthenticatedFundraiserController extends AbstractController<Authen
 		super.setMediaType(MediaType.TEXT_HTML);
 
 		super.addBasicCommand("create", AuthenticatedFundraiserCreateService.class);
-		//super.addBasicCommand("update", AuthenticatedWorkerUpdateService.class);
+		super.addBasicCommand("update", AuthenticatedFundraiserUpdateService.class);
 	}
 
 }

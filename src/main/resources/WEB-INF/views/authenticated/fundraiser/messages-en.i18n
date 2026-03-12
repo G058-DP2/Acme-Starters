@@ -8,3 +8,4 @@ authenticated.fundraiser.form.value.false = No
 
 
 authenticated.fundraiser.form.button.create = Register
+authenticated.fundraiser.form.button.update = Update

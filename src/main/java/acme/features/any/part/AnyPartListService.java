@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import acme.client.components.principals.Any;
 import acme.client.services.AbstractService;
+import acme.entities.invention.Invention;
 import acme.entities.invention.Part;
 
 public class AnyPartListService extends AbstractService<Any, Part> {
@@ -27,7 +28,11 @@ public class AnyPartListService extends AbstractService<Any, Part> {
 
 	@Override
 	public void authorise() {
-		super.setAuthorised(true);
+		int inventionId = super.getRequest().getData("inventionId", int.class);
+		Invention invention = this.repository.findInventionById(inventionId);
+
+		boolean status = invention != null && !invention.isDraftMode();
+		super.setAuthorised(status);
 	}
 
 	@Override

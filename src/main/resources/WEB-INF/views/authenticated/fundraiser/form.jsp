@@ -12,4 +12,8 @@
 		<acme:submit code="authenticated.fundraiser.form.button.create" action="/authenticated/fundraiser/create"/>
 	</jstl:if>
 	
+	<jstl:if test="${_command == 'update' }">
+		<acme:submit code="authenticated.fundraiser.form.button.update" action="/authenticated/fundraiser/update"/>
+	</jstl:if>
+	
 </acme:form>

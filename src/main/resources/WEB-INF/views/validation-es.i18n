@@ -24,6 +24,10 @@ acme.validation.strategy.tactics.error.message = Una Estrategia no puede publica
 acme.validation.strategy.dates.error = Las fechas de inicio y fin deben definir un intervalo válido de tiempo
 acme.validation.strategy.startMoment.future = La fecha de inicio debe estar en el futuro
 acme.validation.strategy.endMoment.future = La fecha de fin debe estar en el futuro
+
+acme.validation.tactic.sumPercentages = La suma de los porcentajes de las tácticas tiene que ser menor o igual que 100.00.
+
+
 ##################################### AUDIT 
 acme.validation.auditReport.auditSection.error = Los informes de auditoría no se pueden publicar a menos que tengan al menos una sección de auditoría
 acme.validation.auditReport.dates.error = Los momentos de inicio y finalización deben formar un intervalo de tiempo válido en el futuro tras la publicación

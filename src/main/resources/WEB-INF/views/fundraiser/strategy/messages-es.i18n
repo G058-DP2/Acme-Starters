@@ -22,4 +22,6 @@ fundraiser.strategy.form.button.delete = Borrar
 fundraiser.strategy.form.button.update = Actualizar
 fundraiser.strategy.form.button.create = Crear
 fundraiser.strategy.form.button.publish = Publicar
+fundraiser.strategy.form.button.tactics = Ver Tácticas
+
 fundraiser.strategy.list.button.create = Crear Estrategia

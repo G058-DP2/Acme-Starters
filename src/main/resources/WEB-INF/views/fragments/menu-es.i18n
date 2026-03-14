@@ -32,6 +32,11 @@ master.menu.inventor.list-my-inventions    = Mis inventos
 master.menu.sponsor                        = Patrocinador
 master.menu.sponsor.list-my-sponsorships   = Mis patrocínios
 
+# master.menu.fundraiser #########################################################
+
+master.menu.fundraiser = Recaudador
+master.menu.fundraiser.list-my-strategies = Mis estrategias
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador

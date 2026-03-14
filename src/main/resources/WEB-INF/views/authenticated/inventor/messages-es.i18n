@@ -1,0 +1,11 @@
+authenticated.inventor.form.title = Detalles del inventor
+
+authenticated.inventor.form.label.bio = Biografía
+authenticated.inventor.form.label.keyWords = Palabras claves
+authenticated.inventor.form.label.licensed = Licenciado
+
+authenticated.inventor.form.value.true = Sí
+authenticated.inventor.form.value.false = No
+
+authenticated.inventor.form.button.create = Registrar
+authenticated.inventor.form.button.update = Actualizar

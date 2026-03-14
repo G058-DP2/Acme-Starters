@@ -1,0 +1,11 @@
+authenticated.inventor.form.title = Inventor form
+
+authenticated.inventor.form.label.bio = Bio
+authenticated.inventor.form.label.keyWords = Key words
+authenticated.inventor.form.label.licensed = Licensed
+
+authenticated.inventor.form.value.true = Yes
+authenticated.inventor.form.value.false = No
+
+authenticated.inventor.form.button.create = Register
+authenticated.inventor.form.button.update = Update

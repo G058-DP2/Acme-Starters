@@ -6,6 +6,7 @@ any.invention.form.label.name = Nombre:
 any.invention.form.label.description = Descripción:
 any.invention.form.label.startMoment = Fecha de inicio:
 any.invention.form.label.endMoment = Fecha de fin:
+any.invention.form.label.monthsActive = Meses activo:
 any.invention.form.label.cost = Coste:
 any.invention.form.label.moreInfo = Más información:
 

@@ -22,6 +22,11 @@ master.menu.any.list-strategies = List strategies
 master.menu.any.list-campaigns = List campaigns
 master.menu.any.list-auditReports = List audit reports
 
+# master.menu.inventor #########################################################
+
+master.menu.inventor                       = Inventor
+master.menu.inventor.list-my-inventions    = My inventions
+
 # master.menu.sponsor #########################################################
 
 master.menu.sponsor                        = Sponsor
@@ -57,3 +62,5 @@ master.menu.user-account.become-fundraiser = Become a fundraiser
 master.menu.user-account.fundraiser-profile = Fundraiser profile
 master.menu.user-account.become-sponsor = Become a sponsor
 master.menu.user-account.sponsor-profile = Sponsor profile
+master.menu.user-account.become-inventor = Become an inventor
+master.menu.user-account.inventor-profile = Inventor profile

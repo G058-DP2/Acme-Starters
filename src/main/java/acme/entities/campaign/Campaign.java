@@ -91,7 +91,7 @@ public class Campaign extends AbstractEntity {
 	 */
 
 	@Mandatory
-	// @Valid ;por ser primitivo, nunca puede ser null
+	// @Valid  ;por ser primitivo, nunca puede ser null
 	@Column
 	private boolean				draftMode;
 

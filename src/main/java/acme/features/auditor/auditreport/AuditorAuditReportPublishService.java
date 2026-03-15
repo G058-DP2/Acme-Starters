@@ -58,7 +58,7 @@ public class AuditorAuditReportPublishService extends AbstractService<Auditor, A
 
 			auditSections = this.repository.findAuditSectionsByAuditReportId(this.auditReport.getId());
 			hasAuditSectionts = auditSections != null && !auditSections.isEmpty();
-			super.state(hasAuditSectionts, "expectedPercentage", "acme.validation.AuditReport.AuditSections.error.message");
+			super.state(hasAuditSectionts, "hours", "acme.validation.auditReport.auditSections.error.message");
 		}
 
 		{
@@ -69,7 +69,7 @@ public class AuditorAuditReportPublishService extends AbstractService<Auditor, A
 			start = this.auditReport.getStartMoment();
 			end = this.auditReport.getEndMoment();
 			validInterval = start != null && end != null && MomentHelper.isAfter(end, start);
-			super.state(validInterval, "startMoment", "acme.validation.AuditReport.dates.error");
+			super.state(validInterval, "startMoment", "acme.validation.auditReport.dates.error");
 		}
 		{
 			Date now;
@@ -83,10 +83,10 @@ public class AuditorAuditReportPublishService extends AbstractService<Auditor, A
 			end = this.auditReport.getEndMoment();
 
 			startInFuture = start != null && MomentHelper.isAfter(start, now);
-			super.state(startInFuture, "startMoment", "acme.validation.AuditReport.startMoment.future");
+			super.state(startInFuture, "startMoment", "acme.validation.auditReport.startMoment.future");
 
 			endInFuture = end != null && MomentHelper.isAfter(end, now);
-			super.state(endInFuture, "endMoment", "acme.validation.AuditReport.endMoment.future");
+			super.state(endInFuture, "endMoment", "acme.validation.auditReport.endMoment.future");
 		}
 	}
 

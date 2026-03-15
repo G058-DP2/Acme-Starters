@@ -13,12 +13,12 @@ import acme.entities.auditReport.AuditSection;
 @Repository
 public interface AuditorAuditReportRepository extends AbstractRepository {
 
-	@Query("select a from AuditReport a where a.Auditor.id = :id")
+	@Query("select a from AuditReport a where a.auditor.id = :id")
 	Collection<AuditReport> findAuditReportsByAuditorId(int id);
 
 	@Query("select a from AuditReport a where a.id = :id")
 	AuditReport findAuditReportById(int id);
 
-	@Query("select a from AuditSection a where a.AuditReport.id = :id")
+	@Query("select a from AuditSection a where a.auditReport.id = :id")
 	Collection<AuditSection> findAuditSectionsByAuditReportId(int id);
 }

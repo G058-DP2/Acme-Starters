@@ -59,7 +59,7 @@ public class SpokespersonCampaignPublishService extends AbstractService<Spokespe
 
 			milestones = this.repository.findMilestonesByCampaignId(this.campaign.getId());
 			hasMilestones = milestones != null && !milestones.isEmpty();
-			super.state(hasMilestones, "totalEffort", "acme.validation.campaign.milestones.error");
+			super.state(hasMilestones, "effort", "acme.validation.campaign.no-milestones");
 		}
 
 		{

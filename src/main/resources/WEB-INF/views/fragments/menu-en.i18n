@@ -32,6 +32,10 @@ master.menu.inventor.list-my-inventions    = My inventions
 master.menu.sponsor                        = Sponsor
 master.menu.sponsor.list-my-sponsorships   = My sponsorships
 
+# master.menu.spokesperson #########################################################
+
+master.menu.spokesperson                        = Spokesperson
+master.menu.spokesperson.list-my-campaigns   = My campaigns
 
 # master.menu.fundraiser #########################################################
 

@@ -1,0 +1,26 @@
+
+fundraiser.strategy.list.title = My Strategies
+fundraiser.strategy.form.title = Strategy details
+
+fundraiser.strategy.list.label.ticker      = Ticker
+fundraiser.strategy.list.label.name        = Name
+fundraiser.strategy.list.label.startMoment = Start Date
+fundraiser.strategy.list.label.endMoment   = End Date
+fundraiser.strategy.list.label.draftMode   = Draft?
+
+fundraiser.strategy.form.label.ticker       = Ticker:
+fundraiser.strategy.form.label.name         = Name:
+fundraiser.strategy.form.label.description  = Description:
+fundraiser.strategy.form.label.startMoment  = Start Date:
+fundraiser.strategy.form.label.endMoment    = End Date:
+fundraiser.strategy.form.label.moreInfo     = More info: (Optional)
+fundraiser.strategy.form.label.monthsActive = Months active:
+fundraiser.strategy.form.label.expectedPercentage   = Expected Percentage:
+
+fundraiser.strategy.form.button.delete = Delete
+fundraiser.strategy.form.button.update = Update
+fundraiser.strategy.form.button.create = Create
+fundraiser.strategy.form.button.publish = Publish
+fundraiser.strategy.form.button.tactics = View Tactics
+
+fundraiser.strategy.list.button.create = Create Strategy

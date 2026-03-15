@@ -1,0 +1,10 @@
+authenticated.fundraiser.form.title = Detalles de Recaudador
+
+authenticated.fundraiser.form.label.bank = Banco
+authenticated.fundraiser.form.label.statement = Declaración
+authenticated.fundraiser.form.label.agent = Agente
+authenticated.fundraiser.form.value.true = Si
+authenticated.fundraiser.form.value.false = No
+
+authenticated.fundraiser.form.button.create = Registrar
+authenticated.fundraiser.form.button.update = Actualizar

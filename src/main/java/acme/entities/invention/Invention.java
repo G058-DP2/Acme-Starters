@@ -20,6 +20,7 @@ import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidUrl;
+import acme.client.helpers.MathHelper;
 import acme.client.helpers.MomentHelper;
 import acme.constraints.ValidHeader;
 import acme.constraints.ValidInvention;
@@ -73,8 +74,6 @@ public class Invention extends AbstractEntity {
 	@Column
 	private boolean				draftMode;
 
-	@Mandatory
-	@Valid
 	@Transient
 	@Autowired
 	private PartRepository		partRepository;
@@ -89,7 +88,7 @@ public class Invention extends AbstractEntity {
 
 		Double months = MomentHelper.computeDifference(this.startMoment, this.endMoment, ChronoUnit.MONTHS);
 
-		return Math.round(months * 100.0) / 100.0;
+		return MathHelper.roundOff(months, 2);
 	}
 
 	@Mandatory

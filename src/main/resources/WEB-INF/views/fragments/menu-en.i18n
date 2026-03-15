@@ -38,6 +38,11 @@ master.menu.sponsor.list-my-sponsorships   = My sponsorships
 master.menu.fundraiser = Fundraiser
 master.menu.fundraiser.list-my-strategies = My Strategies
 
+# master.menu.auditor #########################################################
+
+master.menu.auditor = Auditor
+master.menu.auditor.list-my-audit-reports = My Audit Reports
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrator

@@ -1,0 +1,18 @@
+
+auditor.auditSection.form.title = Detalles de la sección de auditoría
+auditor.auditSection.list.title = Tácticas
+
+auditor.auditSection.form.label.name  = Nombre:
+auditor.auditSection.form.label.notes = Notas:
+auditor.auditSection.form.label.hours = Horas:
+auditor.auditSection.form.label.kind  = Tipo:
+
+auditor.auditSection.form.button.create = Crear
+auditor.auditSection.form.button.update = Actualizar
+auditor.auditSection.form.button.delete = Borrar
+
+auditor.auditSection.list.label.name  = Nombre
+auditor.auditSection.list.label.hours = Horas
+auditor.auditSection.list.label.kind  = Tipo
+
+auditor.auditSection.list.button.create = Añadir sección de auditoría

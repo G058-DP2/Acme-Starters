@@ -9,6 +9,7 @@
 	<acme:form-textarea code="any.invention.form.label.description" path="description"/>
 	<acme:form-moment code="any.invention.form.label.startMoment" path="startMoment"/>
 	<acme:form-moment code="any.invention.form.label.endMoment" path="endMoment"/>
+	<acme:form-double code="any.invention.form.label.monthsActive" path="monthsActive"/>
 	<acme:form-money code="any.invention.form.label.cost" path="cost"/>
 	<acme:form-url code="any.invention.form.label.moreInfo" path="moreInfo"/>
 	

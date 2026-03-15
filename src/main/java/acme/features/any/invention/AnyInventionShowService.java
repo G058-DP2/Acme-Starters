@@ -42,6 +42,7 @@ public class AnyInventionShowService extends AbstractService<Any, Invention> {
 		tuple = super.unbindObject(this.invention, "ticker", "name", //
 			"description", "startMoment", "endMoment", "moreInfo", "draftMode");
 		tuple.put("cost", this.invention.getCost());
+		tuple.put("monthsActive", this.invention.getMonthsActive());
 		tuple.put("inventorId", this.invention.getInventor().getId());
 	}
 

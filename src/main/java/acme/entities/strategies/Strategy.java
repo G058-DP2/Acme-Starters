@@ -20,6 +20,7 @@ import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidScore;
 import acme.client.components.validation.ValidUrl;
+import acme.client.helpers.MathHelper;
 import acme.client.helpers.MomentHelper;
 import acme.constraints.ValidHeader;
 import acme.constraints.ValidStrategy;
@@ -92,7 +93,7 @@ public class Strategy extends AbstractEntity {
 
 		Double months = MomentHelper.computeDifference(this.startMoment, this.endMoment, ChronoUnit.MONTHS);
 
-		return Math.round(months * 100.0) / 100.0;
+		return MathHelper.roundOff(months, 1);
 	}
 
 	@Mandatory
@@ -105,7 +106,7 @@ public class Strategy extends AbstractEntity {
 		expectedPercentage = this.repository.expectedPercentage(this.getId());
 		result = expectedPercentage == null ? 0 : expectedPercentage.doubleValue();
 
-		return (double) (Math.round(result * 100) / 100);
+		return MathHelper.roundOff(result, 1);
 
 	}
 

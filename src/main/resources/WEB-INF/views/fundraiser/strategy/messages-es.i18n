@@ -1,0 +1,27 @@
+
+fundraiser.strategy.list.title = Mis Estrategias
+fundraiser.strategy.form.title = Detalles de la Estrategia
+
+
+fundraiser.strategy.list.label.ticker      = Código
+fundraiser.strategy.list.label.name        = Nombre
+fundraiser.strategy.list.label.startMoment = Fecha de Inicio
+fundraiser.strategy.list.label.endMoment   = Fecha de Fin
+fundraiser.strategy.list.label.draftMode   = ¿Borrador?
+
+fundraiser.strategy.form.label.ticker       = Código:
+fundraiser.strategy.form.label.name         = Nombre:
+fundraiser.strategy.form.label.description  = Descripción:
+fundraiser.strategy.form.label.startMoment  = Fecha de Inicio:
+fundraiser.strategy.form.label.endMoment    = Fecha de Fin:
+fundraiser.strategy.form.label.moreInfo     = Más Información: (Opcional)
+fundraiser.strategy.form.label.monthsActive = Meses activo:
+fundraiser.strategy.form.label.expectedPercentage   = Porcentaje esperado:
+
+fundraiser.strategy.form.button.delete = Borrar
+fundraiser.strategy.form.button.update = Actualizar
+fundraiser.strategy.form.button.create = Crear
+fundraiser.strategy.form.button.publish = Publicar
+fundraiser.strategy.form.button.tactics = Ver Tácticas
+
+fundraiser.strategy.list.button.create = Crear Estrategia

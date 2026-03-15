@@ -1,0 +1,25 @@
+inventor.invention.list.title = Mis inventos
+inventor.invention.form.title = Detalles del invento
+
+inventor.invention.list.label.ticker = Referencia
+inventor.invention.list.label.name = Nombre
+inventor.invention.list.label.startMoment = Inicio
+inventor.invention.list.label.endMoment = Fin
+inventor.invention.list.label.draftMode = Borrador
+
+inventor.invention.list.button.create = Crear invento
+
+inventor.invention.form.label.ticker = Referencia:
+inventor.invention.form.label.name = Nombre:
+inventor.invention.form.label.description = Descripción:
+inventor.invention.form.label.startMoment = Incio:
+inventor.invention.form.label.endMoment = Fin:
+inventor.invention.form.label.moreInfo = Más información:
+inventor.invention.form.label.monthsActive = Meses activo:
+inventor.invention.form.label.cost = Coste:
+
+inventor.invention.form.button.parts = Ver partes
+inventor.invention.form.button.create = Crear
+inventor.invention.form.button.update = Actualizar
+inventor.invention.form.button.delete = Eliminar
+inventor.invention.form.button.publish = Publicar

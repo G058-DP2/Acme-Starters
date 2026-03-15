@@ -22,10 +22,20 @@ master.menu.any.list-strategies = Listar estrategias
 master.menu.any.list-campaigns = Listar campañas
 master.menu.any.list-auditReports = Listar informes de auditoria
 
+# master.menu.inventor #########################################################
+
+master.menu.inventor                       = Inventor
+master.menu.inventor.list-my-inventions    = Mis inventos
+
 # master.menu.sponsor #########################################################
 
 master.menu.sponsor                        = Patrocinador
 master.menu.sponsor.list-my-sponsorships   = Mis patrocínios
+
+# master.menu.fundraiser #########################################################
+
+master.menu.fundraiser = Recaudador
+master.menu.fundraiser.list-my-strategies = Mis estrategias
 
 # master.menu.administrator ###################################################
 
@@ -53,7 +63,12 @@ master.menu.user-account.become-provider = Hacerse proveedor
 master.menu.user-account.provider-profile = Perfil de proveedor
 master.menu.user-account.become-consumer = Hazte consumidor
 master.menu.user-account.consumer-profile = Perfil de consumidor
+master.menu.user-account.become-fundraiser = Hazte recaudador
+master.menu.user-account.fundraiser-profile = Perfil de recaudador
 master.menu.user-account.become-sponsor = Hazte patrocinador
 master.menu.user-account.sponsor-profile = Perfil de patrocinador
 master.menu.user-account.become-spokesperson = Hazte portavoz
 master.menu.user-account.spokesperson-profile = Perfil de portavoz
+master.menu.user-account.sponsor-profile = Perfil de patrocinador
+master.menu.user-account.become-inventor = Hazte inventor
+master.menu.user-account.inventor-profile = Perfil del inventor

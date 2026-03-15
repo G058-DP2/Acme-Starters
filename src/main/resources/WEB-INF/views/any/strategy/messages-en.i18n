@@ -8,6 +8,9 @@ any.strategy.form.label.startMoment = Start Date:
 any.strategy.form.label.endMoment = End Date:
 any.strategy.form.label.moreInfo = More info:
 
+any.strategy.form.button.tactics = View Tactics
+any.strategy.form.button.fundraiser = View Fundraiser Profile
+
 any.strategy.list.label.ticker = Ticker
 any.strategy.list.label.name = Name
 any.strategy.list.label.startMoment = Start Date

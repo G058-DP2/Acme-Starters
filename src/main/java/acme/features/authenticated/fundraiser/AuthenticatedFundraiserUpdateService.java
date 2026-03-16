@@ -34,7 +34,7 @@ public class AuthenticatedFundraiserUpdateService extends AbstractService<Authen
 	public void authorise() {
 		boolean status;
 
-		int id = super.getRequest().getPrincipal().getAccountId();
+		// int id = super.getRequest().getPrincipal().getAccountId();
 
 		status = super.getRequest().getPrincipal().hasRealmOfType(Fundraiser.class); // && id == this.fundraiser.getUserAccount().getId();
 

@@ -31,9 +31,13 @@ public class AnySponsorShowService extends AbstractService<Any, Sponsor> {
 
 	@Override
 	public void authorise() {
-		boolean status;
+		boolean status = false;
 
-		status = this.sponsor != null;
+		if (this.sponsor != null) {
+
+			Integer publishedCount = this.repository.countPublishedSponsorshipsBySponsorId(this.sponsor.getId());
+			status = publishedCount != null && publishedCount > 0;
+		}
 
 		super.setAuthorised(status);
 	}

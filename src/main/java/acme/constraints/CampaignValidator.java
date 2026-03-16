@@ -41,7 +41,7 @@ public class CampaignValidator extends AbstractValidator<ValidCampaign, Campaign
 		}
 
 		// Reglas que SOLO aplican cuando se publica (draftMode = false)
-		if (campaign.getDraftMode() != null && !campaign.getDraftMode()) {
+		if (!campaign.isDraftMode()) {
 
 			// 2) Debe tener al menos 1 milestone
 			int id = campaign.getId();

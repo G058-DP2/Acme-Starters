@@ -41,7 +41,7 @@ public class AuditReportValidator extends AbstractValidator<ValidAuditReport, Au
 			super.state(context, uniqueTicker, "ticker", "acme.validation.auditReport.ticker.non-unique");
 		}
 
-		if (auditReport.getDraftMode() != null && !auditReport.getDraftMode()) {
+		if (!auditReport.isDraftMode()) {
 
 			Integer auditSectionCount = this.repository.countAuditSectionsByAuditReportId(auditReport.getId());
 			boolean hasAuditSections = auditSectionCount != null && auditSectionCount > 0;

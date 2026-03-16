@@ -1,5 +1,5 @@
 
-package acme.features.any.auditSection;
+package acme.features.any.auditreport;
 
 import javax.annotation.PostConstruct;
 
@@ -8,16 +8,16 @@ import org.springframework.stereotype.Controller;
 
 import acme.client.components.principals.Any;
 import acme.client.controllers.AbstractController;
-import acme.entities.auditReport.AuditSection;
+import acme.entities.auditReport.AuditReport;
 
 @Controller
-public class AnyAuditSectionController extends AbstractController<Any, AuditSection> {
+public class AnyAuditReportController extends AbstractController<Any, AuditReport> {
 
 	@PostConstruct
 	protected void initialise() {
 		super.setMediaType(MediaType.TEXT_HTML);
 
-		super.addBasicCommand("list", AnyAuditSectionListService.class);
-		super.addBasicCommand("show", AnyAuditSectionShowService.class);
+		super.addBasicCommand("list", AnyAuditReportListService.class);
+		super.addBasicCommand("show", AnyAuditReportShowService.class);
 	}
 }

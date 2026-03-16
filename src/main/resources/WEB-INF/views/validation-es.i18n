@@ -28,9 +28,10 @@ acme.validation.strategy.startMoment.future = La fecha de inicio debe estar en e
 acme.validation.strategy.endMoment.future = La fecha de fin debe estar en el futuro
 
 acme.validation.tactic.sumPercentages = La suma de los porcentajes de las tácticas tiene que ser menor o igual que 100.00.
-
-
 ##################################### AUDIT 
 acme.validation.auditReport.auditSection.error = Los informes de auditoría no se pueden publicar a menos que tengan al menos una sección de auditoría
 acme.validation.auditReport.dates.error = Los momentos de inicio y finalización deben formar un intervalo de tiempo válido en el futuro tras la publicación
 acme.validation.auditReport.ticker.non-unique = El ticker ya está siendo utilizado por otro informe de auditoría
+acme.validation.auditReport.startMoment.future = Start date must be in the future
+acme.validation.auditReport.endMoment.future = End date must be in the future
+acme.validation.auditReport.auditSections.error.message = Un informe de auditoría no puede publicarse a menos que contenga al menos una sección de auditoría

@@ -1,5 +1,5 @@
 
-package acme.features.any.auditSection;
+package acme.features.any.auditreport;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -7,17 +7,17 @@ import org.springframework.stereotype.Service;
 import acme.client.components.models.Tuple;
 import acme.client.components.principals.Any;
 import acme.client.services.AbstractService;
-import acme.entities.auditReport.AuditSection;
+import acme.entities.auditReport.AuditReport;
 
 @Service
-public class AnyAuditSectionShowService extends AbstractService<Any, AuditSection> {
+public class AnyAuditReportShowService extends AbstractService<Any, AuditReport> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private AnyAuditSectionRepository	repository;
+	private AnyAuditReportRepository	repository;
 
-	private AuditSection				auditSection;
+	private AuditReport					auditReport;
 
 	// AbstractService interface -------------------------------------------
 
@@ -27,14 +27,14 @@ public class AnyAuditSectionShowService extends AbstractService<Any, AuditSectio
 		int id;
 
 		id = super.getRequest().getData("id", int.class);
-		this.auditSection = this.repository.findAuditSectionById(id);
+		this.auditReport = this.repository.findAuditReportById(id);
 	}
 
 	@Override
 	public void authorise() {
 		boolean status;
 
-		status = this.auditSection != null;
+		status = this.auditReport != null && !this.auditReport.isDraftMode();
 
 		super.setAuthorised(status);
 	}
@@ -42,9 +42,9 @@ public class AnyAuditSectionShowService extends AbstractService<Any, AuditSectio
 	@Override
 	public void unbind() {
 		Tuple tuple;
-		tuple = super.unbindObject(this.auditSection, "name", "notes", "hours", "kind");
-		int auditReportId = this.auditSection.getAuditReport().getId();
-		tuple.put("auditReportId", auditReportId);
 
+		tuple = super.unbindObject(this.auditReport, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo", "draftMode");
+
+		tuple.put("auditorId", this.auditReport.getAuditor().getId());
 	}
 }

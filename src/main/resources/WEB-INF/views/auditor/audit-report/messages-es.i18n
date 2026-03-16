@@ -1,0 +1,26 @@
+
+auditor.audit-report.list.title = Mis Estrategias
+auditor.audit-report.form.title = Detalles de la Estrategia
+
+auditor.auditReport.list.label.ticker      = Código
+auditor.auditReport.list.label.name        = Nombre
+auditor.auditReport.list.label.startMoment = Fecha de Inicio
+auditor.auditReport.list.label.endMoment   = Fecha de Fin
+auditor.auditReport.list.label.draftMode   = ¿Borrador?
+
+auditor.auditReport.form.label.ticker       = Código:
+auditor.auditReport.form.label.name         = Nombre:
+auditor.auditReport.form.label.description  = Descripción:
+auditor.auditReport.form.label.startMoment  = Fecha de Inicio:
+auditor.auditReport.form.label.endMoment    = Fecha de Fin:
+auditor.auditReport.form.label.moreInfo     = Más Información: (Opcional)
+auditor.auditReport.form.label.monthsActive = Meses activo:
+auditor.auditReport.form.label.hours   = Horas:
+
+auditor.auditReport.form.button.delete = Borrar
+auditor.auditReport.form.button.update = Actualizar
+auditor.auditReport.form.button.create = Crear
+auditor.auditReport.form.button.publish = Publicar
+auditor.auditReport.form.button.auditSections = Ver Secciones del Reporto
+
+auditor.auditReport.list.button.create = Crear Reporte de Auditoría

@@ -1,5 +1,5 @@
 
-package acme.features.any.auditReport;
+package acme.features.any.auditsection;
 
 import java.util.Collection;
 
@@ -8,24 +8,27 @@ import org.springframework.stereotype.Service;
 
 import acme.client.components.principals.Any;
 import acme.client.services.AbstractService;
-import acme.entities.auditReport.AuditReport;
+import acme.entities.auditReport.AuditSection;
 
 @Service
-public class AnyAuditReportListService extends AbstractService<Any, AuditReport> {
+public class AnyAuditSectionListService extends AbstractService<Any, AuditSection> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private AnyAuditReportRepository	repository;
+	private AnyAuditSectionRepository	repository;
 
-	private Collection<AuditReport>		auditReports;
+	private Collection<AuditSection>	auditSections;
 
 	// AbstractService interface -------------------------------------------
 
 
 	@Override
 	public void load() {
-		this.auditReports = this.repository.findPublishedAuditReports();
+		int auditSectionId;
+
+		auditSectionId = super.getRequest().getData("auditReportId", int.class);
+		this.auditSections = this.repository.findAuditSectionsByAuditReportId(auditSectionId);
 	}
 
 	@Override
@@ -35,6 +38,6 @@ public class AnyAuditReportListService extends AbstractService<Any, AuditReport>
 
 	@Override
 	public void unbind() {
-		super.unbindObjects(this.auditReports, "ticker", "name", "description", "startMoment", "endMoment", "auditor.identity.fullName");
+		super.unbindObjects(this.auditSections, "name", "notes", "hours", "kind");
 	}
 }

@@ -17,7 +17,7 @@ public class AuthenticatedAuditorUpdateService extends AbstractService<Authentic
 	@Autowired
 	private AuthenticatedAuditorRepository	repository;
 
-	private Auditor							Auditor;
+	private Auditor							auditor;
 
 	// AbstractService interface ---------------------------------------------
 
@@ -27,14 +27,14 @@ public class AuthenticatedAuditorUpdateService extends AbstractService<Authentic
 		int userAccountId;
 
 		userAccountId = super.getRequest().getPrincipal().getAccountId();
-		this.Auditor = this.repository.findAuditorByUserAccountId(userAccountId);
+		this.auditor = this.repository.findAuditorByUserAccountId(userAccountId);
 	}
 
 	@Override
 	public void authorise() {
 		boolean status;
 
-		int id = super.getRequest().getPrincipal().getAccountId();
+		//int id = super.getRequest().getPrincipal().getAccountId();
 
 		status = super.getRequest().getPrincipal().hasRealmOfType(Auditor.class); // && id == this.Auditor.getUserAccount().getId();
 
@@ -43,17 +43,17 @@ public class AuthenticatedAuditorUpdateService extends AbstractService<Authentic
 
 	@Override
 	public void bind() {
-		super.bindObject(this.Auditor, "firm", "highlights", "solicitor");
+		super.bindObject(this.auditor, "firm", "highlights", "solicitor");
 	}
 
 	@Override
 	public void validate() {
-		super.validateObject(this.Auditor);
+		super.validateObject(this.auditor);
 	}
 
 	@Override
 	public void execute() {
-		this.repository.save(this.Auditor);
+		this.repository.save(this.auditor);
 	}
 
 	private SelectChoices getsolicitorChoices(final Boolean selected) {
@@ -70,9 +70,9 @@ public class AuthenticatedAuditorUpdateService extends AbstractService<Authentic
 	public void unbind() {
 		SelectChoices solicitorChoices;
 
-		solicitorChoices = this.getsolicitorChoices(this.Auditor.getSolicitor());
+		solicitorChoices = this.getsolicitorChoices(this.auditor.getSolicitor());
 
-		super.unbindObject(this.Auditor, "firm", "highlights", "solicitor");
+		super.unbindObject(this.auditor, "firm", "highlights", "solicitor");
 		super.getResponse().addGlobal("solicitorChoices", solicitorChoices);
 	}
 

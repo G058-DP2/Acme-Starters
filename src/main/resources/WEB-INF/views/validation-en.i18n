@@ -32,3 +32,6 @@ acme.validation.tactic.sumPercentages = The sum of the percentages of the tactic
 acme.validation.auditReport.auditSection.error = Audit reports cannot be published unless they have at least one audit section
 acme.validation.auditReport.dates.error = Start and end moments must form a valid time interval in the future upon publication
 acme.validation.auditReport.ticker.non-unique = The ticker is already in use by another audit report
+acme.validation.auditReport.startMoment.future = Start date must be in the future
+acme.validation.auditReport.endMoment.future = End date must be in the future
+acme.validation.auditReport.auditSections.error.message = A Audit Report cannot be published unless they have at least one Audit Section

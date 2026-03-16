@@ -75,7 +75,7 @@ public class AuditReport extends AbstractEntity {
 	@Mandatory
 	//@Valid
 	@Column
-	private Boolean					draftMode;
+	private boolean					draftMode;
 
 	// Derived attributes -----------------------------------------------------
 

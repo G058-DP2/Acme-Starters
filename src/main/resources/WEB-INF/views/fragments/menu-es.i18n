@@ -41,6 +41,11 @@ master.menu.spokesperson.list-my-campaigns   = Mis campañas
 master.menu.fundraiser = Recaudador
 master.menu.fundraiser.list-my-strategies = Mis estrategias
 
+# master.menu.auditor #########################################################
+
+master.menu.auditor = Auditor
+master.menu.auditor.list-my-audit-reports = Mis informes de auditoría
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador

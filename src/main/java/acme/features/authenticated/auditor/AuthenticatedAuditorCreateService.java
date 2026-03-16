@@ -19,7 +19,7 @@ public class AuthenticatedAuditorCreateService extends AbstractService<Authentic
 	@Autowired
 	private AuthenticatedAuditorRepository	repository;
 
-	private Auditor							Auditor;
+	private Auditor							auditor;
 
 	// AbstractService inteface -----------------------------------------------
 
@@ -32,8 +32,8 @@ public class AuthenticatedAuditorCreateService extends AbstractService<Authentic
 		userAccountId = this.getRequest().getPrincipal().getAccountId();
 		userAccount = this.repository.findUserAccountById(userAccountId);
 
-		this.Auditor = super.newObject(Auditor.class);
-		this.Auditor.setUserAccount(userAccount);
+		this.auditor = super.newObject(Auditor.class);
+		this.auditor.setUserAccount(userAccount);
 	}
 
 	@Override
@@ -47,17 +47,17 @@ public class AuthenticatedAuditorCreateService extends AbstractService<Authentic
 
 	@Override
 	public void bind() {
-		super.bindObject(this.Auditor, "firm", "highlights", "solicitor");
+		super.bindObject(this.auditor, "firm", "highlights", "solicitor");
 	}
 
 	@Override
 	public void validate() {
-		super.validateObject(this.Auditor);
+		super.validateObject(this.auditor);
 	}
 
 	@Override
 	public void execute() {
-		this.repository.save(this.Auditor);
+		this.repository.save(this.auditor);
 	}
 
 	private SelectChoices getsolicitorChoices(final Boolean selected) {
@@ -74,9 +74,9 @@ public class AuthenticatedAuditorCreateService extends AbstractService<Authentic
 	public void unbind() {
 		SelectChoices solicitorChoices;
 
-		solicitorChoices = this.getsolicitorChoices(this.Auditor.getSolicitor());
+		solicitorChoices = this.getsolicitorChoices(this.auditor.getSolicitor());
 
-		super.unbindObject(this.Auditor, "firm", "highlights", "solicitor");
+		super.unbindObject(this.auditor, "firm", "highlights", "solicitor");
 		super.getResponse().addGlobal("solicitorChoices", solicitorChoices);
 	}
 

@@ -52,7 +52,7 @@ public class InventorInventionUpdateService extends AbstractService<Inventor, In
 
 	@Override
 	public void unbind() {
-		super.bindObject(this.invention, //
+		super.unbindObject(this.invention, //
 			"ticker", "name", "description", "startMoment", "endMoment", "moreInfo", //
 			"draftMode", "monthsActive", "cost");
 	}

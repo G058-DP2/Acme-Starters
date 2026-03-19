@@ -3,7 +3,7 @@ inventor.part.form.title = Detalles de la parte
 
 inventor.part.list.label.name = Nombre
 inventor.part.list.label.cost = Coste
-inventor.part.list.label.kind = Tipe
+inventor.part.list.label.kind = Tipo
 
 inventor.part.list.button.create = Crear una parte
 

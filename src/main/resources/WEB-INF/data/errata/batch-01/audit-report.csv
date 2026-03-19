@@ -1,6 +1,6 @@
 key,ticker,name,description,startMoment,endMoment,moreInfo,draftMode,key:auditor
 #base - entity
-auditReport-01, , , , , , , ,
+auditReport-01, , , , , , ,true ,
 #ticker - errata
 auditReport-02,,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2025/02/01 0:00,http://lorem.com/ipsum,true,auditor-01
 auditReport-03,A01-1a2b3c4,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2025/02/01 0:00,http://lorem.com/ipsum,true,auditor-01
@@ -30,7 +30,7 @@ auditReport-21,AB13-1a2b3c4,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsu
 auditReport-22,AB14-1a2b3c4,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2025/02/01 0:00,ftp://a,true,auditor-01
 auditReport-23,AB15-1a2b3c4,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2025/02/01 0:00,"http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/dolore/magna/aliqua/Ut/enim/ad/minim/veniam/quis/nostrud/exercitation/ullamco/laboris/nisi/ut/aliquip/ex/ea/commodo/consequat/duis/aute/xa",true,auditor-01
 #draftMode - errata
-auditReport-24,AB16-1a2b3c4,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2025/02/01 0:00,http://lorem.com/ipsum,,auditor-01
+auditReport-24,AB16-1a2b3c4,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2025/02/01 0:00,http://lorem.com/ipsum,false,auditor-01
 auditReport-25,AB17-1a2b3c4,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2025/02/01 0:00,http://lorem.com/ipsum,false,auditor-01
 auditReport-26,AB18-1a2b3c4,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/01 0:00,2025/01/01 0:00,http://lorem.com/ipsum,false,auditor-01
 auditReport-27,AB19-1a2b3c4,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",1999/12/31 23:59,2200/12/31 23:59,http://lorem.com/ipsum,false,auditor-01

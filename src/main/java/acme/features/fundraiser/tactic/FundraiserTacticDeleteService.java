@@ -32,7 +32,8 @@ public class FundraiserTacticDeleteService extends AbstractService<Fundraiser, T
 	public void authorise() {
 		boolean status;
 
-		status = this.tactic.getStrategy() != null && //
+		status = this.tactic != null && //
+			this.tactic.getStrategy() != null && //
 			this.tactic.getStrategy().getFundraiser().isPrincipal() && //
 			this.tactic.getStrategy().isDraftMode();
 
@@ -62,7 +63,7 @@ public class FundraiserTacticDeleteService extends AbstractService<Fundraiser, T
 		choices = SelectChoices.from(TacticKind.class, this.tactic.getKind());
 
 		tuple = super.unbindObject(this.tactic, "name", "notes", "expectedPercentage", "kind");
-		tuple.put("strategyId", super.getRequest().getData("strategyId", int.class));
+		tuple.put("strategyId", this.tactic.getStrategy().getId());
 		tuple.put("draftMode", this.tactic.getStrategy().isDraftMode());
 		tuple.put("kinds", choices);
 	}

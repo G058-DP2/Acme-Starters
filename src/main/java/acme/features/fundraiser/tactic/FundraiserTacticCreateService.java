@@ -37,7 +37,8 @@ public class FundraiserTacticCreateService extends AbstractService<Fundraiser, T
 	public void authorise() {
 		boolean status;
 
-		status = this.tactic.getStrategy() != null && //
+		status = this.tactic != null && //
+			this.tactic.getStrategy() != null && //
 			this.tactic.getStrategy().getFundraiser().isPrincipal() && //
 			this.tactic.getStrategy().isDraftMode();
 

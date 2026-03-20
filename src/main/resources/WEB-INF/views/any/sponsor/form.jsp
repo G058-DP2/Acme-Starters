@@ -9,5 +9,5 @@
 	<acme:form-textbox code="any.sponsor.form.label.email" path="identity.email"/>
 	<acme:form-textbox code="any.sponsor.form.label.address" path="address"/>
 	<acme:form-textbox code="any.sponsor.form.label.im" path="im"/>
-	<acme:form-textbox code="any.sponsor.form.label.gold" path="gold"/>
+	<acme:form-select code="any.sponsor.form.label.gold" path="gold" choices="${goldChoices}"/>
 </acme:form>

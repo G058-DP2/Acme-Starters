@@ -5,3 +5,5 @@ any.auditor.form.label.email = Email:
 any.auditor.form.label.firm = Firm:
 any.auditor.form.label.highlights = highlights:
 any.auditor.form.label.solicitor = Solicitor:
+any.auditor.form.value.true = Yes
+any.auditor.form.value.false = No

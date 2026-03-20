@@ -5,3 +5,5 @@ any.auditor.form.label.email = Correo electrónico:
 any.auditor.form.label.firm = Empresa:
 any.auditor.form.label.highlights = Aspectos destacados:
 any.auditor.form.label.solicitor = Abogado:
+any.auditor.form.value.true = Sí
+any.auditor.form.value.false = No

@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.client.components.principals.Any;
+import acme.client.components.views.SelectChoices;
 import acme.client.services.AbstractService;
 import acme.realms.Spokesperson;
 
@@ -38,8 +39,23 @@ public class AnySpokespersonShowService extends AbstractService<Any, Spokesperso
 		super.setAuthorised(status);
 	}
 
+	private SelectChoices getLicensedChoices(final Boolean selected) {
+		SelectChoices result;
+
+		result = new SelectChoices();
+		result.add("false", "any.spokesperson.form.value.false", Boolean.FALSE.equals(selected));
+		result.add("true", "any.spokesperson.form.value.true", Boolean.TRUE.equals(selected));
+
+		return result;
+	}
+
 	@Override
 	public void unbind() {
+		SelectChoices licensedChoices;
+
+		licensedChoices = this.getLicensedChoices(this.spokesperson.getLicensed());
+
 		super.unbindObject(this.spokesperson, "cv", "achievements", "licensed", "identity.name", "identity.surname", "identity.email");
+		super.getResponse().addGlobal("licensedChoices", licensedChoices);
 	}
 }

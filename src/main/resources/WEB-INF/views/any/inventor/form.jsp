@@ -9,5 +9,5 @@
 	<acme:form-textbox code="any.inventor.form.label.email" path="identity.email"/>
 	<acme:form-textbox code="any.inventor.form.label.bio" path="bio"/>
 	<acme:form-textbox code="any.inventor.form.label.keywords" path="keyWords"/>
-	<acme:form-textbox code="any.inventor.form.label.licensed" path="licensed"/>
+	<acme:form-select code="any.inventor.form.label.licensed" path="licensed" choices="${licensedChoices}"/>
 </acme:form>

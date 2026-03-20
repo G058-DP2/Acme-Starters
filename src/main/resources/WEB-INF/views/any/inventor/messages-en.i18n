@@ -6,3 +6,5 @@ any.inventor.form.label.email = Email:
 any.inventor.form.label.bio = Bio:
 any.inventor.form.label.keywords = Keywords:
 any.inventor.form.label.licensed = Licensed:
+any.inventor.form.value.true = Yes
+any.inventor.form.value.false = No

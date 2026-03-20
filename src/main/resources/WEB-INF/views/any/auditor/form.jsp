@@ -9,5 +9,5 @@
 	<acme:form-textbox code="any.auditor.form.label.email" path="identity.email"/>
 	<acme:form-textbox code="any.auditor.form.label.firm" path="firm"/>
 	<acme:form-textbox code="any.auditor.form.label.highlights" path="highlights"/>
-	<acme:form-textbox code="any.auditor.form.label.solicitor" path="solicitor"/>
+	<acme:form-select code="any.auditor.form.label.solicitor" path="solicitor" choices="${solicitorChoices}"/>
 </acme:form>

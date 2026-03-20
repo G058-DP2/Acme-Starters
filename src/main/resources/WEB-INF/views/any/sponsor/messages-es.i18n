@@ -5,3 +5,5 @@ any.sponsor.form.label.email = Correo electrónico:
 any.sponsor.form.label.address = Dirección:
 any.sponsor.form.label.im = Mensajería instantánea:
 any.sponsor.form.label.gold = Miembro Gold:
+any.sponsor.form.value.true = Sí
+any.sponsor.form.value.false = No

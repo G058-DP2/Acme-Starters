@@ -5,3 +5,5 @@ any.spokesperson.form.label.email = Correo electrónico:
 any.spokesperson.form.label.cv = currículum:
 any.spokesperson.form.label.achievements = Logros:
 any.spokesperson.form.label.licensed = Licenciado:
+any.spokesperson.form.value.true = Sí
+any.spokesperson.form.value.false = No

@@ -5,3 +5,5 @@ any.sponsor.form.label.email = Email:
 any.sponsor.form.label.address = Address:
 any.sponsor.form.label.im = Instant Messaging:
 any.sponsor.form.label.gold = Gold Member:
+any.sponsor.form.value.true = Yes
+any.sponsor.form.value.false = No

@@ -37,7 +37,8 @@ public class AuditorAuditSectionCreateService extends AbstractService<Auditor, A
 	public void authorise() {
 		boolean status;
 
-		status = this.auditSection.getAuditReport() != null && //
+		status = this.auditSection != null && //
+			this.auditSection.getAuditReport() != null && //
 			this.auditSection.getAuditReport().getAuditor().isPrincipal() && //
 			this.auditSection.getAuditReport().isDraftMode();
 

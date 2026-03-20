@@ -1,6 +1,6 @@
 
-auditor.audit-report.list.title = Mis Estrategias
-auditor.audit-report.form.title = Detalles de la Estrategia
+auditor.audit-report.list.title = Mis Informes de auditoría
+auditor.audit-report.form.title = Detalles del informe de auditoría
 
 auditor.auditReport.list.label.ticker      = Código
 auditor.auditReport.list.label.name        = Nombre
@@ -21,6 +21,6 @@ auditor.auditReport.form.button.delete = Borrar
 auditor.auditReport.form.button.update = Actualizar
 auditor.auditReport.form.button.create = Crear
 auditor.auditReport.form.button.publish = Publicar
-auditor.auditReport.form.button.auditSections = Ver Secciones del Reporto
+auditor.auditReport.form.button.auditSections = Ver Secciones del Informe
 
-auditor.auditReport.list.button.create = Crear Reporte de Auditoría
+auditor.auditReport.list.button.create = Crear informe de Auditoría

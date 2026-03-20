@@ -1,6 +1,6 @@
 
-auditor.auditSection.form.title = Detalles de la sección de auditoría
-auditor.auditSection.list.title = Tácticas
+auditor.audit-section.form.title = Detalles de la sección de auditoría
+auditor.audit-section.list.title = Secciones de auditoría
 
 auditor.auditSection.form.label.name  = Nombre:
 auditor.auditSection.form.label.notes = Notas:

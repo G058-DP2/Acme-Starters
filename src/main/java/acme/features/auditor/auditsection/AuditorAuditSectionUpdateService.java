@@ -47,16 +47,6 @@ public class AuditorAuditSectionUpdateService extends AbstractService<Auditor, A
 	@Override
 	public void validate() {
 		super.validateObject(this.auditSection);
-		/*
-		 * {
-		 * boolean validPercentage;
-		 * Double currentPercentage;
-		 * 
-		 * currentPercentage = this.AuditSection.getAuditReport().getExpectedPercentage();
-		 * validPercentage = currentPercentage + this.AuditSection.getExpectedPercentage() <= 100;
-		 * super.state(validPercentage, "expectedPercentage", "acme.validation.AuditSection.sumPercentages");
-		 * }
-		 */
 	}
 
 	@Override
@@ -72,7 +62,7 @@ public class AuditorAuditSectionUpdateService extends AbstractService<Auditor, A
 		choices = SelectChoices.from(SectionKind.class, this.auditSection.getKind());
 
 		tuple = super.unbindObject(this.auditSection, "name", "notes", "hours", "kind");
-		tuple.put("AuditReportId", super.getRequest().getData("AuditReportId", int.class));
+		tuple.put("auditReportId", this.auditSection.getAuditReport().getId());
 		tuple.put("draftMode", this.auditSection.getAuditReport().isDraftMode());
 		tuple.put("kinds", choices);
 	}

@@ -5,3 +5,6 @@ any.fundraiser.form.label.email = Correo electónico:
 any.fundraiser.form.label.bank = Banco:
 any.fundraiser.form.label.statement = Declaración:
 any.fundraiser.form.label.agent = Agente:
+
+any.fundraiser.form.value.true = Si
+any.fundraiser.form.value.false= No

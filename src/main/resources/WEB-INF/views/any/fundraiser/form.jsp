@@ -9,5 +9,5 @@
 	<acme:form-textbox code="any.fundraiser.form.label.email" path="identity.email"/>
 	<acme:form-textbox code="any.fundraiser.form.label.bank" path="bank"/>
 	<acme:form-textbox code="any.fundraiser.form.label.statement" path="statement"/>
-	<acme:form-textbox code="any.fundraiser.form.label.agent" path="agent"/>
+	<acme:form-select code="any.fundraiser.form.label.agent" path="agent" choices="${agentChoices}"/>
 </acme:form>

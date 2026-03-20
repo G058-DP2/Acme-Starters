@@ -5,3 +5,6 @@ any.fundraiser.form.label.email = Email:
 any.fundraiser.form.label.bank = Bank:
 any.fundraiser.form.label.statement = Statement:
 any.fundraiser.form.label.agent = Agent:
+
+any.fundraiser.form.value.true = Yes
+any.fundraiser.form.value.false= No

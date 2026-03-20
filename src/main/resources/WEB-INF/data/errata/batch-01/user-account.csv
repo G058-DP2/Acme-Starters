@@ -2,5 +2,5 @@ key,enabled,identity,password,username
 user-account-sponsor-01,false,"UserIdentity{name: '', surname: '', email: ''}",,
 user-account-spokesperson-01,false,"UserIdentity{name: '', surname: '', email: ''}","",""
 user-account-inventor-01,true,"UserIdentity{name: 'John', surname: 'Doe', email: 'doe@acme.com'}",,
-user-account-auditor-01,false,,,
+user-account-auditor-01,false,"UserIdentity{name: '', surname: '', email: ''}",,
 user-account-fundraiser-01,false,"UserIdentity{name: '', surname: '', email: ''}",,

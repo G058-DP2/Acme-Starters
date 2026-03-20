@@ -1,2 +1,11 @@
 key,key:userAccount,firm,highlights,solicitor
+#base - entity
 auditor-01,,,,
+#firm - errata
+auditor-02,user-account-auditor-01,,"Lorem ipsum dolor sit amet, consectetu",true
+auditor-03,user-account-auditor-01,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i","Lorem ipsum dolor sit amet, consectetu",true
+#highlights - errata
+auditor-04,user-account-auditor-01,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",,true
+auditor-05,user-account-auditor-01,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tem",true
+#solicitor - errata
+auditor-06,user-account-auditor-01,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*","Lorem ipsum dolor sit amet, consectetu",

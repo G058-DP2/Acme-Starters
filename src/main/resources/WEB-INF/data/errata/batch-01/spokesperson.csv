@@ -1,2 +1,11 @@
 key,key:userAccount,cv,achievements,licensed
+#base - entity
 spokesperson-01,user-account-spokesperson-01,"","",""
+#cv - errata
+spokesperson-02,user-account-spokesperson-01,,"Lorem ipsum dolor sit amet, consectetu",true
+spokesperson-03,user-account-spokesperson-01,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i","Lorem ipsum dolor sit amet, consectetu",true
+#achievements - errata
+spokesperson-04,user-account-spokesperson-01,"Lorem ipsum dolor sit amet, consectetu",,true
+spokesperson-05,user-account-spokesperson-01,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i",true
+#licensed - errata
+spokesperson-06,user-account-spokesperson-01,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*","Lorem ipsum dolor sit amet, consectetu",

@@ -1,2 +1,10 @@
 key,key:userAccount,bio,keyWords,licensed
 inventor-01,user-account-inventor-01,,,
+#bio - errata
+inventor-02,user-account-inventor-01,,"Lorem ipsum dolor sit amet, consectetu",true
+inventor-03,user-account-inventor-01,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i","Lorem ipsum dolor sit amet, consectetu",true
+#keyWords - errata
+inventor-04,user-account-inventor-01,"Lorem ipsum dolor sit amet, consectetu",,true
+inventor-05,user-account-inventor-01,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i",true
+#licensed - errata
+inventor-06,user-account-inventor-01,"Lorem ipsum dolor sit amet, consectetu","Lore ipsum",

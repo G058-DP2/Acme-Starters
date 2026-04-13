@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <help_text>Level B publication state, derived metrics, dashboard formulas and ad banner entity (IR-B07, IR-B08, IR-B09, IR-B10, FR-B08).</help_text>
+  <zoom_level>10</zoom_level>
+
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>40</x>
+      <y>20</y>
+      <w>480</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Project
+--
++ draftMode: Boolean { Mandatory, Valid, Column }
+--
++ / effort: Double { Mandatory, Valid, Transient }
++ / totalMembers: Integer { Mandatory, Valid, Transient }
++ / totalComponents: Integer { Mandatory, Valid, Transient }
+
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>560</x>
+      <y>20</y>
+      <w>340</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+AdBanner
+--
++ slogan: String { Mandatory, ValidText, Column }
++ targetUrl: String { Mandatory, ValidUrl, Column }
++ picture: String { Mandatory, ValidUrl, Column }
+
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>40</x>
+      <y>220</y>
+      <w>860</w>
+      <h>300</h>
+    </coordinates>
+    <panel_attributes>Business rules
+--
+
+- A project can only be published if
+  it contains at least one invention.
+
+- effort = (sum of active months of
+  components) / (number of involved
+  members).
+
+- totalMembers = number of
+  ProjectMembership records linked
+  to the project.
+
+- totalComponents = inventions +
+  campaigns + strategies linked to
+  the project.
+
+- dashboard deviation =
+  |managerProjects - mean(all
+  managers projects)|.
+
+- dashboard effort indicators are:
+  min, max, average, and standard
+  deviation.
+
+bg=RED</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

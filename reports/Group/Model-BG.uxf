@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <help_text>Level B model-level constraints.</help_text>
+  <zoom_level>10</zoom_level>
+
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>40</x>
+      <y>20</y>
+      <w>620</w>
+      <h>560</h>
+    </coordinates>
+    <panel_attributes>Additional constraints
+--
+
+- A manager manages zero or more
+  projects; each project is managed
+  by exactly one manager.
+
+- A project can only be published if
+  it contains at least one invention.
+
+- Publishing a project publishes all
+  its components automatically.
+
+- /totalMembers counts
+  ProjectMembership records linked
+  to the project.
+
+- /totalComponents counts linked
+  inventions, campaigns, and
+  strategies.
+
+- Project members can display the
+  project data even when draft.
+
+- effort = (sum of active months of
+  components) / (number of involved
+  members).
+
+- dashboard deviation =
+  |managerProjects - mean(all
+  managers projects)|.
+
+- Only published sponsorships and
+  published audit reports can be
+  attached to published projects.
+
+- Non-members cannot view or
+  manage draft projects; published
+  projects cannot be edited,
+  deleted, or re-published.
+
+- Ad banners must be displayed with
+  minimal intrusiveness.
+
+bg=RED</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

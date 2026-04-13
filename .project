@@ -37,7 +37,23 @@
 		<link>
 			<name>acme-framework</name>
 			<type>2</type>
-			<locationURI>WORKSPACE_LOC/Frameworks/Acme-Framework-26.3.0/target/classes</locationURI>
+			<locationURI>WORKSPACE_LOC/Frameworks/Acme-Framework-26.4.0/target/classes</locationURI>
+		</link>
+		<link>
+			<name>target/classes</name>
+			<type>2</type>
+			<location>//C:/Users/xxnii/OneDrive/Documentos/DP2/Workspace-26/Projects/Acme-Starters-B/target/classes/</location>
 		</link>
 	</linkedResources>
+	<filteredResources>
+		<filter>
+			<id>1774903486621</id>
+			<name></name>
+			<type>30</type>
+			<matcher>
+				<id>org.eclipse.core.resources.regexFilterMatcher</id>
+				<arguments>node_modules|\.git|__CREATED_BY_JAVA_LANGUAGE_SERVER__</arguments>
+			</matcher>
+		</filter>
+	</filteredResources>
 </projectDescription>

@@ -9,12 +9,13 @@
       <x>40</x>
       <y>20</y>
       <w>480</w>
-      <h>170</h>
+      <h>195</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Project
 --
 + draftMode: Boolean { Mandatory, Valid, Column }
++ publishedOn: Moment { Optional, ValidMoment, Temporal(TIMESTAMP) }
 --
 + / effort: Double { Mandatory, Valid, Transient }
 + / totalMembers: Integer { Mandatory, Valid, Transient }

@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="15.0.0">
+<diagram program="umlet" version="15.1">
   <help_text>Level B project entity base attributes (IR-B03).</help_text>
   <zoom_level>10</zoom_level>
-
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>40</x>
+      <x>50</x>
       <y>20</y>
       <w>560</w>
-      <h>180</h>
+      <h>210</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Project
 --
 + title: String { Mandatory, ValidText, Column }
-  + keyWords: String { Mandatory, ValidHeader, Column }
++ keyWords: String { Mandatory, ValidHeader, Column }
 + description: String { Mandatory, ValidText, Column }
-+ kickOffMoment: Moment { Mandatory, ValidMoment(future), Temporal(TIMESTAMP) }
-+ closeOutMoment: Moment { Mandatory, ValidMoment(future), Temporal(TIMESTAMP) }
++ kickOffMoment: Moment { Mandatory, ValidMoment, Temporal(TIMESTAMP) }
++ closeOutMoment: Moment { Mandatory, ValidMoment, Temporal(TIMESTAMP) }
++ publishedOn: Moment { Optional, ValidMoment, Temporal(TIMESTAMP) }
 
 bg=GREEN</panel_attributes>
     <additional_attributes/>

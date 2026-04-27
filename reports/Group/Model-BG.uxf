@@ -8,21 +8,17 @@
     <coordinates>
       <x>40</x>
       <y>20</y>
-      <w>620</w>
-      <h>560</h>
+      <w>680</w>
+      <h>900</h>
     </coordinates>
     <panel_attributes>Additional constraints
 --
 
+[Data-model constraints]
+
 - A manager manages zero or more
   projects; each project is managed
   by exactly one manager.
-
-- A project can only be published if
-  it contains at least one invention.
-
-- Publishing a project publishes all
-  its components automatically.
 
 - /totalMembers counts
   ProjectMembership records linked
@@ -32,9 +28,6 @@
   inventions, campaigns, and
   strategies.
 
-- Project members can display the
-  project data even when draft.
-
 - effort = (sum of active months of
   components) / (number of involved
   members).
@@ -43,19 +36,78 @@
   |managerProjects - mean(all
   managers projects)|.
 
+[Publication / functionality constraints]
+
+- A project can only be published if
+  it contains at least one invention.
+
+- kickOffMoment must be strictly
+  before closeOutMoment; both must
+  be in the future at the moment
+  of publication.
+
+- Each component linked to the
+  project must satisfy its own
+  individual publication constraints
+  before the project can be published.
+
+- The time interval of each component
+  (startMoment/endMoment) must be
+  fully contained within the project's
+  kickOffMoment/closeOutMoment
+  interval at the moment of
+  publication.
+
+- Publishing a project publishes all
+  its components automatically.
+
+[Authorisation constraints]
+
+- A manager can only publish their
+  own projects (ownership check).
+
+- Non-members cannot view or manage
+  draft projects.
+
+- Published projects cannot be
+  edited, deleted, or re-published.
+
 - Only published sponsorships and
   published audit reports can be
   attached to published projects.
 
-- Non-members cannot view or
-  manage draft projects; published
-  projects cannot be edited,
-  deleted, or re-published.
+- The start moment of an attached
+  sponsorship must be after the
+  project's closeOutMoment.
+
+- The start moment of an attached
+  audit report must be after the
+  project's closeOutMoment.
+
+- A ProjectMember (Squad) can view
+  all components of their associated
+  project (published and draft), but
+  cannot modify components owned by
+  other members.
+
+[Membership constraints]
+
+- Adding a member to a project is
+  irreversible; memberships cannot
+  be edited or deleted.
+
+- A ProjectMember can view unpublished
+  components that belong to their
+  project; they cannot view unpublished
+  components of projects they are not
+  part of.
+
+[Derived-attribute constraints]
 
 - Ad banners must be displayed with
   minimal intrusiveness.
 
 bg=RED</panel_attributes>
-    <additional_attributes/>
+    <additional_attrs/>
   </element>
 </diagram>

@@ -1,11 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="15.1">
-  <help_text>Level B project members linked to projects (IR-B05).</help_text>
+  <help_text>Level B project members linked to projects via Squad realm ProjectMember (IR-B05).</help_text>
   <zoom_level>10</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>470</x>
+      <x>320</x>
+      <y>30</y>
+      <w>300</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Project
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>320</x>
       <y>240</y>
       <w>300</w>
       <h>90</h>
@@ -18,105 +31,80 @@ bg=GREEN</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>110</x>
-      <y>240</y>
-      <w>180</w>
-      <h>80</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;role&gt;&gt;
-Inventor
-bg=ORANGE</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>530</x>
-      <y>440</y>
-      <w>180</w>
-      <h>80</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;role&gt;&gt;
-Spokesperson
-bg=ORANGE</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>930</x>
-      <y>240</y>
-      <w>180</w>
-      <h>80</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;role&gt;&gt;
-Fundraiser
-bg=ORANGE</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
       <x>280</x>
-      <y>270</y>
-      <w>210</w>
-      <h>40</h>
+      <y>450</y>
+      <w>380</w>
+      <h>110</h>
     </coordinates>
-    <panel_attributes>lt=x-&gt;
-m1=1
-m2=*</panel_attributes>
-    <additional_attributes>190.0;10.0;10.0;10.0</additional_attributes>
+    <panel_attributes>&lt;&lt;Squad&gt;&gt;
+ProjectMember
+--
+includes: Inventor, Spokesperson,
+Fundraiser (and Manager)
+
+bg=CYAN</panel_attributes>
+    <additional_attributes/>
   </element>
   <element>
-    <id>Relation</id>
+    <id>UMLNote</id>
     <coordinates>
-      <x>610</x>
-      <y>320</y>
-      <w>30</w>
-      <h>140</h>
+      <x>700</x>
+      <y>240</y>
+      <w>360</w>
+      <h>320</h>
     </coordinates>
-    <panel_attributes>lt=x-&gt;
-m1=1
-m2=*</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>760</x>
-      <y>270</y>
-      <w>190</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>lt=x-&gt;
-m1=1
-m2=*</panel_attributes>
-    <additional_attributes>10.0;10.0;170.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>470</x>
-      <y>30</y>
-      <w>300</w>
-      <h>90</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;Entity&gt;&gt;
-Project
-bg=GREEN</panel_attributes>
+    <panel_attributes>Notes
+--
+- ProjectMember is a Squad realm that
+  groups principals who can act as
+  Inventor, Spokesperson, Fundraiser,
+  or Manager within a project context.
+
+- Each ProjectMembership record
+  links exactly one principal (of any
+  ProjectMember-compatible role) to
+  one project.
+
+- Adding a member is irreversible:
+  memberships cannot be edited or
+  deleted. A confirmation checkbox
+  is shown when adding.
+
+- A ProjectMember can view all
+  components (draft and published)
+  of their own project, but cannot
+  view draft components of projects
+  they do not belong to.
+
+bg=RED</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>610</x>
+      <x>460</x>
       <y>110</y>
-      <w>30</w>
+      <w>40</w>
       <h>150</h>
     </coordinates>
     <panel_attributes>lt=x-&gt;
 m1=1
-m2=*</panel_attributes>
+m2=1
+</panel_attributes>
     <additional_attributes>10.0;130.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>460</x>
+      <y>320</y>
+      <w>50</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=x-&gt;
+m1=1
+m2=1..n
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
   </element>
 </diagram>

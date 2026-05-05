@@ -56,6 +56,21 @@ public class SponsorshipValidator extends AbstractValidator<ValidSponsorship, Sp
 			super.state(context, validDates, "startMoment", "acme.validation.sponsorship.dates.error");
 		}
 
+		// Model constraint: sponsorship can only be attached to published projects
+		if (sponsorship.getProject() != null) {
+			boolean projectPublished = !sponsorship.getProject().isDraftMode();
+			super.state(context, projectPublished, "*", "acme.validation.sponsorship.project.must-be-published");
+		}
+
+		// Model constraint: sponsorship startMoment must be after project closeOutMoment
+		if (sponsorship.getProject() != null && sponsorship.getStartMoment() != null) {
+			Date projectCloseOut = sponsorship.getProject().getCloseOutMoment();
+			if (projectCloseOut != null) {
+				boolean sponsorshipAfterCloseOut = MomentHelper.isAfter(sponsorship.getStartMoment(), projectCloseOut);
+				super.state(context, sponsorshipAfterCloseOut, "startMoment", "acme.validation.sponsorship.start-before-project-closeout");
+			}
+		}
+
 		return !super.hasErrors(context);
 	}
 }

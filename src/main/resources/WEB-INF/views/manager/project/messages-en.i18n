@@ -1,0 +1,31 @@
+manager.project.form.title = Project details
+manager.project.list.title = My Projects
+
+manager.project.form.label.title           = Title:
+manager.project.form.label.keyWords        = Key words:
+manager.project.form.label.description     = Description:
+manager.project.form.label.kickOffMoment   = Kick-off date:
+manager.project.form.label.closeOutMoment  = Close-out date:
+manager.project.form.label.moreInfo        = More info: (Optional)
+
+manager.project.form.button.create  = Create
+manager.project.form.button.update  = Update
+manager.project.form.button.delete  = Delete
+manager.project.form.button.publish = Publish
+manager.project.form.button.members = View Members
+
+manager.project.list.label.title           = Title
+manager.project.list.label.kickOffMoment   = Kick-off
+manager.project.list.label.closeOutMoment  = Close-out
+manager.project.list.label.draftMode       = Draft?
+
+manager.project.list.button.create = Create project
+
+manager.dashboard.form.title = Manager Dashboard
+
+manager.dashboard.form.label.totalProjects        = Total projects:
+manager.dashboard.form.label.deviationFromAverage = Deviation from average:
+manager.dashboard.form.label.minEffort            = Minimum effort (PMs):
+manager.dashboard.form.label.maxEffort            = Maximum effort (PMs):
+manager.dashboard.form.label.avgEffort            = Average effort (PMs):
+manager.dashboard.form.label.devEffort            = Effort deviation (PMs):

@@ -1,0 +1,16 @@
+key,key:userAccount,position,skills,executive
+# base - errata (all required fields null)
+manager-01,user-account-manager-01,,,
+# position - errata
+# position - null (missing mandatory field)
+manager-02,user-account-manager-01,,"Java, Spring Boot, Agile",true
+# position - too long (76 chars, exceeds ValidHeader max of 75)
+manager-03,user-account-manager-01,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmods","Java, Spring Boot, Agile",true
+# skills - errata
+# skills - null (missing mandatory field)
+manager-04,user-account-manager-01,"Project Lead",,true
+# skills - too long (256 chars, exceeds ValidText max of 255)
+manager-05,user-account-manager-01,"Project Lead","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor inn",true
+# executive - errata
+# executive - null (missing mandatory boolean)
+manager-06,user-account-manager-01,"Project Lead","Java, Spring Boot, Agile",

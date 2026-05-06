@@ -1,0 +1,11 @@
+key,key:project,key:inventor,key:spokesperson,key:fundraiser
+# base - errata (membership with no role assigned)
+project-membership-01,project-01,,,
+# project - errata (null project reference)
+project-membership-02,,inventor-01,,
+# duplicate membership - same inventor already member of project-01 in sample
+project-membership-03,project-01,inventor-01,,
+# duplicate membership - same spokesperson already member of project-01 in sample
+project-membership-04,project-01,,spokesperson-01,
+# duplicate membership - same fundraiser already member of project-02 in sample
+project-membership-05,project-02,,,fundraiser-01

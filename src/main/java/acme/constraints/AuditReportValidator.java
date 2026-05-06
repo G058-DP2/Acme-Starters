@@ -56,6 +56,21 @@ public class AuditReportValidator extends AbstractValidator<ValidAuditReport, Au
 			super.state(context, validDates, "startMoment", "acme.validation.auditReport.dates.error");
 		}
 
+		// Model constraint: audit reports can only be attached to published projects
+		if (auditReport.getProject() != null) {
+			boolean projectPublished = !auditReport.getProject().isDraftMode();
+			super.state(context, projectPublished, "*", "acme.validation.auditReport.project.must-be-published");
+		}
+
+		// Model constraint: audit startMoment must be after project closeOutMoment
+		if (auditReport.getProject() != null && auditReport.getStartMoment() != null) {
+			Date projectCloseOut = auditReport.getProject().getCloseOutMoment();
+			if (projectCloseOut != null) {
+				boolean auditAfterCloseOut = MomentHelper.isAfter(auditReport.getStartMoment(), projectCloseOut);
+				super.state(context, auditAfterCloseOut, "startMoment", "acme.validation.auditReport.start-before-project-closeout");
+			}
+		}
+
 		return !super.hasErrors(context);
 	}
 }

@@ -1,7 +1,6 @@
 
-package acme.entities.auditReport;
+package acme.entities.project;
 
-import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -18,97 +17,91 @@ import acme.client.components.basis.AbstractEntity;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
-import acme.client.components.validation.ValidNumber;
 import acme.client.components.validation.ValidUrl;
-import acme.client.helpers.MathHelper;
-import acme.client.helpers.MomentHelper;
-import acme.constraints.ValidAuditReport;
 import acme.constraints.ValidHeader;
+import acme.constraints.ValidProject;
 import acme.constraints.ValidText;
-import acme.constraints.ValidTicker;
-import acme.entities.project.Project;
-import acme.realms.Auditor;
+import acme.realms.Manager;
 import lombok.Getter;
 import lombok.Setter;
 
 @Entity
 @Getter
 @Setter
-@ValidAuditReport
-public class AuditReport extends AbstractEntity {
+@ValidProject
+public class Project extends AbstractEntity {
 
 	// Serialisation version --------------------------------------------------
 
-	private static final long		serialVersionUID	= 1L;
+	private static final long	serialVersionUID	= 1L;
 
 	// Attributes -------------------------------------------------------------
 
 	@Mandatory
-	@ValidTicker
-	@Column(unique = true)
-	private String					ticker;
+	@ValidHeader
+	@Column
+	private String				title;
 
 	@Mandatory
 	@ValidHeader
 	@Column
-	private String					name;
+	private String				keyWords;
 
 	@Mandatory
 	@ValidText
 	@Column
-	private String					description;
+	private String				description;
 
 	@Mandatory
 	@ValidMoment
 	@Temporal(TemporalType.TIMESTAMP)
-	private Date					startMoment;
+	private Date				kickOffMoment;
 
 	@Mandatory
 	@ValidMoment
 	@Temporal(TemporalType.TIMESTAMP)
-	private Date					endMoment;
+	private Date				closeOutMoment;
 
 	@Optional
 	@ValidUrl
 	@Column
-	private String					moreInfo;
+	private String				moreInfo;
 
 	@Mandatory
-	//@Valid
 	@Column
-	private boolean					draftMode;
+	private boolean				draftMode;
+
+	@Optional
+	@ValidMoment
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date				publishedOn;
 
 	// Derived attributes -----------------------------------------------------
 
 	@Transient
 	@Autowired
-	private AuditReportRepository	repository;
+	private ProjectRepository	repository;
+
+	/*
+	 * Effort is computed in PMs (person-months) as the sum of active months
+	 * of its components divided by the number of people involved.
+	 */
 
 
-	@Mandatory
-	@ValidNumber
 	@Transient
-	public Double getMonthsActive() {
+	public Double getEffort() {
+		if (this.getId() > 0 && this.repository != null) {
+			Double totalActiveMonths = this.repository.computeTotalActiveMonthsByProjectId(this.getId());
+			Integer memberCount = this.repository.countMembersByProjectId(this.getId());
 
-		if (this.startMoment == null || this.endMoment == null)
-			return null;
+			if (totalActiveMonths == null)
+				totalActiveMonths = 0.0;
+			if (memberCount == null || memberCount == 0)
+				return 0.0;
 
-		Double months = MomentHelper.computeDifference(this.startMoment, this.endMoment, ChronoUnit.MONTHS);
-
-		return MathHelper.roundOff(months, 1);
-	}
-
-	@Mandatory
-	@ValidNumber(min = 0)
-	@Transient
-	public Integer getHours() {
-
-		if (this.getId() == 0)
-			return 0;
-
-		Integer total = this.repository.sumHoursByReportId(this.getId());
-
-		return total == null ? 0 : total;
+			return Math.round(totalActiveMonths / memberCount * 100.0) / 100.0;
+		}
+		return 0.0;
 	}
 
 	// Relationships ----------------------------------------------------------
@@ -117,11 +110,6 @@ public class AuditReport extends AbstractEntity {
 	@Mandatory
 	@Valid
 	@ManyToOne(optional = false)
-	private Auditor	auditor;
-
-	@Optional
-	@Valid
-	@ManyToOne(optional = true)
-	private Project	project;
+	private Manager manager;
 
 }

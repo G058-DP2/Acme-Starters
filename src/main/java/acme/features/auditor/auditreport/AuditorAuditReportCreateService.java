@@ -41,6 +41,12 @@ public class AuditorAuditReportCreateService extends AbstractService<Auditor, Au
 	@Override
 	public void validate() {
 		super.validateObject(this.auditReport);
+		{
+			int submittedProjectId;
+
+			submittedProjectId = super.getRequest().getData("project", int.class);
+			super.state(submittedProjectId == 0, "project", "acme.validation.project.update-not-allowed");
+		}
 	}
 
 	@Override
@@ -50,8 +56,9 @@ public class AuditorAuditReportCreateService extends AbstractService<Auditor, Au
 
 	@Override
 	public void unbind() {
-		super.unbindObject(this.auditReport, //
-			"ticker", "name", "description", "startMoment", "endMoment", "moreInfo", //
+
+		super.unbindObject(this.auditReport, "ticker", //
+			"name", "description", "startMoment", "endMoment", "moreInfo", //
 			"draftMode", "monthsActive", "hours");
 	}
 

@@ -8,10 +8,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.client.components.models.Tuple;
+import acme.client.components.views.SelectChoices;
 import acme.client.helpers.MomentHelper;
 import acme.client.services.AbstractService;
 import acme.entities.auditReport.AuditReport;
 import acme.entities.auditReport.AuditSection;
+import acme.entities.project.Project;
 import acme.realms.Auditor;
 
 @Service
@@ -45,7 +47,17 @@ public class AuditorAuditReportPublishService extends AbstractService<Auditor, A
 
 	@Override
 	public void bind() {
+		int projectId;
+		Project project;
+
 		super.bindObject(this.auditReport, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo");
+
+		projectId = super.getRequest().getData("project", int.class);
+		if (projectId != 0) {
+			project = this.repository.findProjectById(projectId);
+			this.auditReport.setProject(project);
+		} else
+			this.auditReport.setProject(null);
 	}
 
 	@Override
@@ -88,6 +100,14 @@ public class AuditorAuditReportPublishService extends AbstractService<Auditor, A
 			endInFuture = end != null && MomentHelper.isAfter(end, now);
 			super.state(endInFuture, "endMoment", "acme.validation.auditReport.endMoment.future");
 		}
+
+		{
+			Project project = this.auditReport.getProject();
+			if (project != null) {
+				Collection<Project> publishedProjects = this.repository.findPublishedProjects();
+				super.state(publishedProjects.contains(project), "project", "acme.validation.project.not-allowed");
+			}
+		}
 	}
 
 	@Override
@@ -99,6 +119,11 @@ public class AuditorAuditReportPublishService extends AbstractService<Auditor, A
 	@Override
 	public void unbind() {
 		Tuple tuple;
+		Collection<Project> projects;
+		SelectChoices projectChoices;
+
+		projects = this.repository.findPublishedProjects();
+		projectChoices = SelectChoices.from(projects, "title", this.auditReport.getProject());
 
 		tuple = super.unbindObject(this.auditReport, //
 			"ticker", "name", "description", "startMoment", "endMoment", "moreInfo");
@@ -106,7 +131,8 @@ public class AuditorAuditReportPublishService extends AbstractService<Auditor, A
 		tuple.put("draftMode", this.auditReport.isDraftMode());
 		tuple.put("monthsActive", this.auditReport.getMonthsActive());
 		tuple.put("hours", this.auditReport.getHours());
-
+		tuple.put("projectChoices", projectChoices);
+		tuple.put("project", projectChoices.getSelected().getKey());
 	}
 
 }

@@ -1,6 +1,0 @@
-key,slogan,targetUrl,pictureUrl
-# base - real banners
-banner-01,"Where the world builds software","https://github.com","https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png"
-banner-02,"The source for modern Java","https://spring.io","https://spring.io/img/og-spring.png"
-banner-03,"Code smarter, not harder","https://www.jetbrains.com","https://resources.jetbrains.com/storage/products/jetbrains/img/meta/jetbrains_250x250.png"
-banner-04,"For every question, Stack Overflow has an answer","https://stackoverflow.com","https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon.png"

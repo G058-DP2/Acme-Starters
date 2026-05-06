@@ -14,3 +14,6 @@ user-account-inventor-03,true,"UserIdentity{name: 'Juan', surname: 'Torres', ema
 user-account-auditor-01,true,"UserIdentity{name: 'Jacobo', surname: 'Ordoñez', email: 'audit1@acme.com'}",auditor1,auditor1
 user-account-auditor-02,true,"UserIdentity{name: 'Jan', surname: 'Estrada', email: 'audit2@acme.com'}",auditor2,auditor2
 user-account-auditor-03,true,"UserIdentity{name: 'Unai', surname: 'Saez', email: 'audit3@acme.com'}",auditor3,auditor3
+user-account-manager-01,true,"UserIdentity{name: 'Manager', surname: 'One', email: 'manager1@acme.com'}",manager1,manager1
+user-account-manager-02,true,"UserIdentity{name: 'Manager', surname: 'Two', email: 'manager2@acme.com'}",manager2,manager2
+user-account-manager-03,true,"UserIdentity{name: 'Manager', surname: 'Three', email: 'manager3@acme.com'}",manager3,manager3

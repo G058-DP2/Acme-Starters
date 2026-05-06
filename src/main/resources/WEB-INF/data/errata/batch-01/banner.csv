@@ -1,0 +1,26 @@
+key,slogan,targetUrl,pictureUrl
+# base - errata (all fields empty)
+banner-01,,,
+# slogan - errata
+# slogan - null (missing mandatory field)
+banner-02,,"http://www.acme.com/innovate","http://www.acme.com/images/banner1.png"
+# slogan - too long (76 chars, exceeds ValidHeader max of 75)
+banner-03,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tem","http://www.acme.com/innovate","http://www.acme.com/images/banner1.png"
+# targetUrl - errata
+# targetUrl - null (missing mandatory field)
+banner-04,"Innovate with Acme!",,"http://www.acme.com/images/banner1.png"
+# targetUrl - invalid scheme (ftp not allowed)
+banner-05,"Innovate with Acme!","ftp://www.acme.com/innovate","http://www.acme.com/images/banner1.png"
+# targetUrl - malformed URL
+banner-06,"Innovate with Acme!","not-a-valid-url","http://www.acme.com/images/banner1.png"
+# targetUrl - missing host (http:// only)
+banner-07,"Innovate with Acme!","http://","http://www.acme.com/images/banner1.png"
+# pictureUrl - errata
+# pictureUrl - null (missing mandatory field)
+banner-08,"Innovate with Acme!","http://www.acme.com/innovate",
+# pictureUrl - invalid scheme (ftp not allowed)
+banner-09,"Innovate with Acme!","http://www.acme.com/innovate","ftp://www.acme.com/images/banner1.png"
+# pictureUrl - malformed URL
+banner-10,"Innovate with Acme!","http://www.acme.com/innovate","not-a-valid-url"
+# pictureUrl - missing host (http:// only)
+banner-11,"Innovate with Acme!","http://www.acme.com/innovate","http://"

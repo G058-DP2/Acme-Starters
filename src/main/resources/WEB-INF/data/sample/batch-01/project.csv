@@ -1,0 +1,84 @@
+key,title,keyWords,description,kickOffMoment,closeOutMoment,moreInfo,draftMode,key:manager
+# base
+project-01,"Innovation Alpha","AI, Machine Learning","A project focused on artificial intelligence innovations","2025/06/01 10:00","2025/12/31 18:00","http://example.com/alpha",true,manager-01
+# title (ValidHeader: 1..75 chars)
+# title - min boundary (1 char)
+project-02,"A","AI, Machine Learning","A project focused on artificial intelligence innovations","2025/06/01 10:00","2025/12/31 18:00","http://example.com/alpha",true,manager-01
+# title - min+1 boundary (2 chars)
+project-03,"Ab","AI, Machine Learning","A project focused on artificial intelligence innovations","2025/06/01 10:00","2025/12/31 18:00","http://example.com/alpha",true,manager-01
+# title - max-1 boundary (74 chars)
+project-04,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmoo","AI, Machine Learning","A project focused on artificial intelligence innovations","2025/06/01 10:00","2025/12/31 18:00","http://example.com/alpha",true,manager-02
+# title - max boundary (75 chars)
+project-05,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod","AI, Machine Learning","A project focused on artificial intelligence innovations","2025/06/01 10:00","2025/12/31 18:00","http://example.com/alpha",true,manager-02
+# title - unicode values
+project-06,"โลเร็ม อิปซัม","AI, Machine Learning","A project focused on artificial intelligence innovations","2025/06/01 10:00","2025/12/31 18:00","http://example.com/alpha",true,manager-02
+project-07,"洛伦·伊普森","AI, Machine Learning","A project focused on artificial intelligence innovations","2025/06/01 10:00","2025/12/31 18:00","http://example.com/alpha",true,manager-03
+project-08,"لوريم إيبسوم","AI, Machine Learning","A project focused on artificial intelligence innovations","2025/06/01 10:00","2025/12/31 18:00","http://example.com/alpha",true,manager-03
+# title - HTML injection
+project-09,"<marquee>Hacked</marquee>","AI, Machine Learning","A project focused on artificial intelligence innovations","2025/06/01 10:00","2025/12/31 18:00","http://example.com/alpha",true,manager-03
+project-10,"<script>alert('Hacked!');</script>","AI, Machine Learning","A project focused on artificial intelligence innovations","2025/06/01 10:00","2025/12/31 18:00","http://example.com/alpha",true,manager-01
+project-11,"' or 'A' = 'A","AI, Machine Learning","A project focused on artificial intelligence innovations","2025/06/01 10:00","2025/12/31 18:00","http://example.com/alpha",true,manager-01
+# keyWords (ValidHeader: 1..75 chars)
+# keyWords - min boundary (1 char)
+project-12,"Innovation Alpha","A","A project focused on artificial intelligence innovations","2025/06/01 10:00","2025/12/31 18:00","http://example.com/alpha",true,manager-01
+# keyWords - min+1 boundary (2 chars)
+project-13,"Innovation Alpha","AI","A project focused on artificial intelligence innovations","2025/06/01 10:00","2025/12/31 18:00","http://example.com/alpha",true,manager-02
+# keyWords - max-1 boundary (74 chars)
+project-14,"Innovation Alpha","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmoo","A project focused on artificial intelligence innovations","2025/06/01 10:00","2025/12/31 18:00","http://example.com/alpha",true,manager-02
+# keyWords - max boundary (75 chars)
+project-15,"Innovation Alpha","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod","A project focused on artificial intelligence innovations","2025/06/01 10:00","2025/12/31 18:00","http://example.com/alpha",true,manager-02
+# keyWords - unicode values
+project-16,"Innovation Alpha","โลเร็ม อิปซัม","A project focused on artificial intelligence innovations","2025/06/01 10:00","2025/12/31 18:00","http://example.com/alpha",true,manager-03
+project-17,"Innovation Alpha","洛伦·伊普森","A project focused on artificial intelligence innovations","2025/06/01 10:00","2025/12/31 18:00","http://example.com/alpha",true,manager-03
+# description (ValidText: 1..255 chars)
+# description - min boundary (1 char)
+project-18,"Innovation Alpha","AI, Machine Learning","A","2025/06/01 10:00","2025/12/31 18:00","http://example.com/alpha",true,manager-01
+# description - min+1 boundary (2 chars)
+project-19,"Innovation Alpha","AI, Machine Learning","Ab","2025/06/01 10:00","2025/12/31 18:00","http://example.com/alpha",true,manager-01
+# description - max-1 boundary (254 chars)
+project-20,"Innovation Alpha","AI, Machine Learning","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor*","2025/06/01 10:00","2025/12/31 18:00","http://example.com/alpha",true,manager-02
+# description - max boundary (255 chars)
+project-21,"Innovation Alpha","AI, Machine Learning","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor *","2025/06/01 10:00","2025/12/31 18:00","http://example.com/alpha",true,manager-02
+# description - unicode values
+project-22,"Innovation Alpha","AI, Machine Learning","โลเร็ม อิปซัม","2025/06/01 10:00","2025/12/31 18:00","http://example.com/alpha",true,manager-02
+project-23,"Innovation Alpha","AI, Machine Learning","洛伦·伊普森","2025/06/01 10:00","2025/12/31 18:00","http://example.com/alpha",true,manager-03
+project-24,"Innovation Alpha","AI, Machine Learning","لوريم إيبسوم","2025/06/01 10:00","2025/12/31 18:00","http://example.com/alpha",true,manager-03
+# description - HTML injection
+project-25,"Innovation Alpha","AI, Machine Learning","<marquee>Hacked</marquee>","2025/06/01 10:00","2025/12/31 18:00","http://example.com/alpha",true,manager-03
+project-26,"Innovation Alpha","AI, Machine Learning","<script>alert('Hacked!');</script>","2025/06/01 10:00","2025/12/31 18:00","http://example.com/alpha",true,manager-01
+# kickOffMoment (ValidMoment: 2000/01/01 0:00 .. 2200/12/31 23:59)
+# kickOffMoment - min boundary
+project-27,"Innovation Alpha","AI, Machine Learning","A project focused on artificial intelligence innovations","2000/01/01 0:00","2025/12/31 18:00","http://example.com/alpha",true,manager-01
+# kickOffMoment - min+1 boundary
+project-28,"Innovation Alpha","AI, Machine Learning","A project focused on artificial intelligence innovations","2000/01/01 0:01","2025/12/31 18:00","http://example.com/alpha",true,manager-01
+# kickOffMoment - max-1 boundary (closeOut must be after kickOff, not reachable here without violating interval)
+project-29,"Innovation Alpha","AI, Machine Learning","A project focused on artificial intelligence innovations","2200/12/30 23:58","2200/12/31 23:59","http://example.com/alpha",true,manager-02
+# kickOffMoment - max boundary
+project-30,"Innovation Alpha","AI, Machine Learning","A project focused on artificial intelligence innovations","2200/12/31 23:58","2200/12/31 23:59","http://example.com/alpha",true,manager-02
+# closeOutMoment (ValidMoment: 2000/01/01 0:00 .. 2200/12/31 23:59, must be after kickOff)
+# closeOutMoment - just after kickOff min (min effective boundary respecting interval)
+project-31,"Innovation Alpha","AI, Machine Learning","A project focused on artificial intelligence innovations","2000/01/01 0:00","2000/01/01 0:01","http://example.com/alpha",true,manager-02
+# closeOutMoment - one minute after min+1
+project-32,"Innovation Alpha","AI, Machine Learning","A project focused on artificial intelligence innovations","2000/01/01 0:01","2000/01/01 0:02","http://example.com/alpha",true,manager-03
+# closeOutMoment - max-1 boundary
+project-33,"Innovation Alpha","AI, Machine Learning","A project focused on artificial intelligence innovations","2025/06/01 10:00","2200/12/31 23:58","http://example.com/alpha",true,manager-03
+# closeOutMoment - max boundary
+project-34,"Innovation Alpha","AI, Machine Learning","A project focused on artificial intelligence innovations","2025/06/01 10:00","2200/12/31 23:59","http://example.com/alpha",true,manager-03
+# moreInfo (ValidUrl, Optional)
+# moreInfo - absent (null/empty)
+project-35,"Innovation Alpha","AI, Machine Learning","A project focused on artificial intelligence innovations","2025/06/01 10:00","2025/12/31 18:00",,true,manager-01
+# moreInfo - minimal URL
+project-36,"Innovation Alpha","AI, Machine Learning","A project focused on artificial intelligence innovations","2025/06/01 10:00","2025/12/31 18:00","http://example.org/a/b?",true,manager-01
+# moreInfo - with query params
+project-37,"Innovation Alpha","AI, Machine Learning","A project focused on artificial intelligence innovations","2025/06/01 10:00","2025/12/31 18:00","http://example.org?a=1&b=2",true,manager-01
+# moreInfo - https scheme
+project-38,"Innovation Alpha","AI, Machine Learning","A project focused on artificial intelligence innovations","2025/06/01 10:00","2025/12/31 18:00","https://www.example.com/project",true,manager-02
+# moreInfo - long URL
+project-39,"Innovation Alpha","AI, Machine Learning","A project focused on artificial intelligence innovations","2025/06/01 10:00","2025/12/31 18:00","http://www.lorem.com/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/dolore/magna/aliqua/Ut/enim/ad/minim/veniam/quis/nostrud/exercitation/ullamco/laboris/nisi/ut/aliquip/ex/ea/commodo/consequat/duis/aute/",true,manager-02
+# moreInfo - with anchor
+project-40,"Innovation Alpha","AI, Machine Learning","A project focused on artificial intelligence innovations","2025/06/01 10:00","2025/12/31 18:00","http://www.example.com/project.html#section",true,manager-02
+# draftMode
+# draftMode - false (published, requires at least one invention linked to the project)
+project-41,"Campaign Beta","Marketing, Social","A project focused on marketing campaign strategies","2025/07/01 9:00","2026/03/31 17:00","http://example.com/beta",false,manager-02
+# draftMode - true (another draft project with different manager)
+project-42,"Strategy Gamma","Finance, Fundraising","A fundraising and strategy coordination project","2025/08/01 8:00","2026/06/30 18:00",,true,manager-01

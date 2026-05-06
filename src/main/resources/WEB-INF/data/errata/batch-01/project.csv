@@ -1,0 +1,45 @@
+key,title,keyWords,description,kickOffMoment,closeOutMoment,moreInfo,draftMode,key:manager
+# base - errata (all fields empty)
+project-01,,,,,,,true,
+# title - errata
+# title - null (missing mandatory field)
+project-02,,"AI, Machine Learning","A project focused on artificial intelligence innovations","2025/06/01 10:00","2025/12/31 18:00","http://example.com/alpha",true,manager-01
+# title - too long (76 chars, exceeds ValidHeader max of 75)
+project-03,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmode","AI, Machine Learning","A project focused on artificial intelligence innovations","2025/06/01 10:00","2025/12/31 18:00","http://example.com/alpha",true,manager-01
+# keyWords - errata
+# keyWords - null (missing mandatory field)
+project-04,"Innovation Alpha",,"A project focused on artificial intelligence innovations","2025/06/01 10:00","2025/12/31 18:00","http://example.com/alpha",true,manager-01
+# keyWords - too long (76 chars, exceeds ValidHeader max of 75)
+project-05,"Innovation Alpha","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmode","A project focused on artificial intelligence innovations","2025/06/01 10:00","2025/12/31 18:00","http://example.com/alpha",true,manager-02
+# description - errata
+# description - null (missing mandatory field)
+project-06,"Innovation Alpha","AI, Machine Learning",,"2025/06/01 10:00","2025/12/31 18:00","http://example.com/alpha",true,manager-02
+# description - too long (256 chars, exceeds ValidText max of 255)
+project-07,"Innovation Alpha","AI, Machine Learning","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor inn","2025/06/01 10:00","2025/12/31 18:00","http://example.com/alpha",true,manager-02
+# kickOffMoment - errata
+# kickOffMoment - null (missing mandatory field)
+project-08,"Innovation Alpha","AI, Machine Learning","A project focused on artificial intelligence innovations",,"2025/12/31 18:00","http://example.com/alpha",true,manager-01
+# kickOffMoment - before min boundary (1999/12/31 23:59, before 2000/01/01)
+project-09,"Innovation Alpha","AI, Machine Learning","A project focused on artificial intelligence innovations","1999/12/31 23:59","2025/12/31 18:00","http://example.com/alpha",true,manager-01
+# kickOffMoment - after max boundary (2201/01/01 00:00, after 2200/12/31)
+project-10,"Innovation Alpha","AI, Machine Learning","A project focused on artificial intelligence innovations","2201/01/01 0:00","2025/12/31 18:00","http://example.com/alpha",true,manager-02
+# closeOutMoment - errata
+# closeOutMoment - null (missing mandatory field)
+project-11,"Innovation Alpha","AI, Machine Learning","A project focused on artificial intelligence innovations","2025/06/01 10:00",,"http://example.com/alpha",true,manager-02
+# closeOutMoment - before min boundary (1999/12/31 23:59)
+project-12,"Innovation Alpha","AI, Machine Learning","A project focused on artificial intelligence innovations","2025/06/01 10:00","1999/12/31 23:59","http://example.com/alpha",true,manager-03
+# closeOutMoment - after max boundary (2201/01/01 00:00)
+project-13,"Innovation Alpha","AI, Machine Learning","A project focused on artificial intelligence innovations","2025/06/01 10:00","2201/01/01 0:00","http://example.com/alpha",true,manager-03
+# interval constraint - errata (kickOff >= closeOut)
+# closeOut equal to kickOff (violates strict interval)
+project-14,"Innovation Alpha","AI, Machine Learning","A project focused on artificial intelligence innovations","2025/06/01 10:00","2025/06/01 10:00","http://example.com/alpha",true,manager-01
+# closeOut before kickOff
+project-15,"Innovation Alpha","AI, Machine Learning","A project focused on artificial intelligence innovations","2025/12/31 18:00","2025/06/01 10:00","http://example.com/alpha",true,manager-01
+# moreInfo - errata
+# moreInfo - invalid URL scheme (ftp not allowed)
+project-16,"Innovation Alpha","AI, Machine Learning","A project focused on artificial intelligence innovations","2025/06/01 10:00","2025/12/31 18:00","ftp://example.com/alpha",true,manager-02
+# moreInfo - malformed URL
+project-17,"Innovation Alpha","AI, Machine Learning","A project focused on artificial intelligence innovations","2025/06/01 10:00","2025/12/31 18:00","not-a-url",true,manager-02
+# draftMode & publish constraint - errata
+# draftMode - false with no inventions linked (violates @ValidProject)
+project-18,"Innovation Alpha","AI, Machine Learning","A project focused on artificial intelligence innovations","2025/06/01 10:00","2025/12/31 18:00","http://example.com/alpha",false,manager-03

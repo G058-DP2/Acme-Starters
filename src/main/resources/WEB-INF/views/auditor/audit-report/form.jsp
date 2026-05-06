@@ -12,6 +12,9 @@
 	<acme:form-url      code="auditor.auditReport.form.label.moreInfo"     path="moreInfo"/>
 	<acme:form-double   code="auditor.auditReport.form.label.monthsActive" path="monthsActive" readonly="true"/>
 	<acme:form-double   code="auditor.auditReport.form.label.hours"   	   path="hours"   readonly="true"/>
+	<jstl:if test="${acme:anyOf(_command, 'publish|show')}">
+		<acme:form-select code="auditor.auditReport.form.label.project" path="project" choices="${projectChoices}"/>
+	</jstl:if>
 
 	<jstl:choose>
 		<jstl:when test="${_command == 'show' && draftMode == false }">

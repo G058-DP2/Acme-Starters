@@ -15,7 +15,8 @@ auditor.auditReport.form.label.startMoment  = Fecha de Inicio:
 auditor.auditReport.form.label.endMoment    = Fecha de Fin:
 auditor.auditReport.form.label.moreInfo     = Más Información: (Opcional)
 auditor.auditReport.form.label.monthsActive = Meses activo:
-auditor.auditReport.form.label.hours   = Horas:
+auditor.auditReport.form.label.hours        = Horas:
+auditor.auditReport.form.label.project      = Proyecto: (Opcional)
 
 auditor.auditReport.form.button.delete = Borrar
 auditor.auditReport.form.button.update = Actualizar

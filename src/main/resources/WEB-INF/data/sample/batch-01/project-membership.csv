@@ -1,0 +1,33 @@
+key,key:project,key:inventor,key:spokesperson,key:fundraiser
+# base - inventor + spokesperson in same project
+project-membership-01,project-01,inventor-01,,
+project-membership-02,project-01,,spokesperson-01,
+# base - fundraiser + spokesperson in same project
+project-membership-03,project-02,,,fundraiser-01
+project-membership-04,project-02,,spokesperson-02,
+# published project (project-41) members
+# inventor-02 is member of project-41 and has invention-38 linked to it (satisfies published constraint)
+project-membership-05,project-41,inventor-02,,
+project-membership-06,project-41,,spokesperson-03,
+project-membership-07,project-41,,,fundraiser-02
+# draft project (project-42) - all three roles represented
+project-membership-08,project-42,inventor-01,,
+project-membership-09,project-42,,spokesperson-01,
+project-membership-10,project-42,,,fundraiser-03
+# inventor-only membership
+project-membership-11,project-35,inventor-03,,
+# spokesperson-only membership
+project-membership-12,project-35,,spokesperson-02,
+# fundraiser-only membership
+project-membership-13,project-35,,,fundraiser-01
+# multiple inventors in same project
+project-membership-14,project-01,inventor-02,,
+project-membership-15,project-01,inventor-03,,
+# multiple spokespersons in same project
+project-membership-16,project-02,,spokesperson-03,
+# multiple fundraisers in same project
+project-membership-17,project-41,,,fundraiser-03
+# all three roles in one project (full team)
+project-membership-18,project-27,inventor-01,,
+project-membership-19,project-27,,spokesperson-01,
+project-membership-20,project-27,,,fundraiser-01

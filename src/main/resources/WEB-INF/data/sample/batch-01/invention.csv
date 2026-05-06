@@ -45,3 +45,5 @@ invention-36,AB36-wwwwwww,"Lorem ipsum dolor sit amet.","Lorem ipsum dolor sit a
 invention-37,AB37-wwwwwww,"Lorem ipsum dolor sit amet.","Lorem ipsum dolor sit amet, consectetur adipiscing elit",2025/01/01 0:00,2025/02/01 0:00,,true,inventor-01
 # draftMode
 invention-38,AB38-wwwwwww,"Lorem ipsum dolor sit amet.","Lorem ipsum dolor sit amet, consectetur adipiscing elit",2025/01/01 0:01,2025/02/01 0:00,"http://lorem.com",false,inventor-02
+# project
+invention-39,AB39-wwwwwww,"Lorem ipsum dolor sit amet.","Lorem ipsum dolor sit amet, consectetur adipiscing elit",2025/01/01 0:00,2025/02/01 0:00,"http://lorem.com",true,inventor-01,project-01

@@ -68,3 +68,5 @@ strategy-56,TK52-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lor
 strategy-57,TK53-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2000/01/01 00:01,2200/12/31 23:59,http://lorem.com/ipsum,FALSE,fundraiser-01
 #fundraiser - standar variations
 strategy-58,TK54-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/10 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,fundraiser-02
+# project - standar variations
+strategy-59,TK55-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/10 10:00,2025/06/30 10:00,http://lorem.com/ipsum,TRUE,fundraiser-02,project-41

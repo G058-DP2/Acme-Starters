@@ -1,0 +1,7 @@
+key,key:userAccount,position,skills,executive
+# base
+manager-01,user-account-manager-01,"Project Lead","Java, Spring Boot, Agile",true
+# position - max boundary (75 chars)
+manager-02,user-account-manager-02,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod","Management, DevOps, Cloud",false
+# skills - max boundary (255 chars)
+manager-03,user-account-manager-03,"Operations Director","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i",true

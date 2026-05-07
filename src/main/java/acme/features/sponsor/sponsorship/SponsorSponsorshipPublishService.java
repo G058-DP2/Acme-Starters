@@ -8,8 +8,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.client.components.models.Tuple;
+import acme.client.components.views.SelectChoices;
 import acme.client.helpers.MomentHelper;
 import acme.client.services.AbstractService;
+import acme.entities.project.Project;
 import acme.entities.sponsorship.Donation;
 import acme.entities.sponsorship.Sponsorship;
 import acme.realms.Sponsor;
@@ -46,7 +48,17 @@ public class SponsorSponsorshipPublishService extends AbstractService<Sponsor, S
 
 	@Override
 	public void bind() {
+		int projectId;
+		Project project;
+
 		super.bindObject(this.sponsorship, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo");
+
+		projectId = super.getRequest().getData("project", int.class);
+		if (projectId != 0) {
+			project = this.repository.findProjectById(projectId);
+			this.sponsorship.setProject(project);
+		} else
+			this.sponsorship.setProject(null);
 	}
 
 	@Override
@@ -90,6 +102,14 @@ public class SponsorSponsorshipPublishService extends AbstractService<Sponsor, S
 			endInFuture = end != null && MomentHelper.isAfter(end, now);
 			super.state(endInFuture, "endMoment", "acme.validation.sponsorship.endMoment.future");
 		}
+
+		{
+			Project project = this.sponsorship.getProject();
+			if (project != null) {
+				Collection<Project> publishedProjects = this.repository.findPublishedProjects();
+				super.state(publishedProjects.contains(project), "project", "acme.validation.project.not-allowed");
+			}
+		}
 	}
 
 	@Override
@@ -100,8 +120,12 @@ public class SponsorSponsorshipPublishService extends AbstractService<Sponsor, S
 
 	@Override
 	public void unbind() {
-
 		Tuple tuple;
+		Collection<Project> projects;
+		SelectChoices projectChoices;
+
+		projects = this.repository.findPublishedProjects();
+		projectChoices = SelectChoices.from(projects, "title", this.sponsorship.getProject());
 
 		tuple = super.unbindObject(this.sponsorship, //
 			"ticker", "name", "description", "startMoment", "endMoment", "moreInfo");
@@ -109,6 +133,7 @@ public class SponsorSponsorshipPublishService extends AbstractService<Sponsor, S
 		tuple.put("draftMode", this.sponsorship.isDraftMode());
 		tuple.put("monthsActive", this.sponsorship.getMonthsActive());
 		tuple.put("totalMoney", this.sponsorship.getTotalMoney());
-
+		tuple.put("projectChoices", projectChoices);
+		tuple.put("project", projectChoices.getSelected().getKey());
 	}
 }

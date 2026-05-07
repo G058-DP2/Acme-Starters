@@ -37,3 +37,5 @@ acme.validation.campaign.effort-not-positive = The campaign effort must be posit
 acme.validation.campaign.startMoment.future     = Start date must be in the future
 acme.validation.campaign.endMoment.future       = End date must be in the future
 acme.validation.campaign.dates.error-publish = Start/end moments must define a valid time interval
+acme.validation.sponsorship.start-before-project-closeout = The sponsorship start moment must be after the project close-out moment
+acme.validation.sponsorship.project.must-be-published = Sponsorships can only be attached to published projects

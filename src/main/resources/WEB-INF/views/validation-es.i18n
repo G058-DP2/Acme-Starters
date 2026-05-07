@@ -37,3 +37,5 @@ acme.validation.campaign.effort-not-positive = El esfuerzo total de la campaña 
 acme.validation.campaign.startMoment.future     = La fecha de inicio debe estar en el futuro
 acme.validation.campaign.endMoment.future       = La fecha de fin debe estar en el futuro
 acme.validation.campaign.dates.error-publish = Las fechas de inicio y fin deben definir un intervalo válido de tiempo
+acme.validation.sponsorship.start-before-project-closeout = El momento de inicio del patrocinio debe ser posterior al cierre del proyecto
+acme.validation.sponsorship.project.must-be-published = Los patrocinios solo pueden vincularse a proyectos publicados

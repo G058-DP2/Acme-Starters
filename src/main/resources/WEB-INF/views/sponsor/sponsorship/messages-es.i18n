@@ -10,6 +10,7 @@ sponsor.sponsorship.form.label.endMoment    = Fecha de fin:
 sponsor.sponsorship.form.label.moreInfo     = Mas información: (Opcional)
 sponsor.sponsorship.form.label.monthsActive = Meses activo:
 sponsor.sponsorship.form.label.totalMoney   = Total de donaciones:
+sponsor.sponsorship.form.label.project      = Proyecto: (Opcional)
 
 sponsor.sponsorship.form.button.create    = Crear
 sponsor.sponsorship.form.button.update    = Actualizar

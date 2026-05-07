@@ -2,10 +2,15 @@
 
 package acme.features.sponsor.sponsorship;
 
+import java.util.Collection;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import acme.client.components.models.Tuple;
+import acme.client.components.views.SelectChoices;
 import acme.client.services.AbstractService;
+import acme.entities.project.Project;
 import acme.entities.sponsorship.Sponsorship;
 import acme.realms.Sponsor;
 
@@ -39,11 +44,18 @@ public class SponsorSponsorshipCreateService extends AbstractService<Sponsor, Sp
 	@Override
 	public void bind() {
 		super.bindObject(this.sponsorship, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo");
+		this.sponsorship.setProject(null);
 	}
 
 	@Override
 	public void validate() {
 		super.validateObject(this.sponsorship);
+		{
+			int submittedProjectId;
+
+			submittedProjectId = super.getRequest().getData("project", int.class);
+			super.state(submittedProjectId == 0, "project", "acme.validation.project.update-not-allowed");
+		}
 	}
 
 	@Override
@@ -53,10 +65,16 @@ public class SponsorSponsorshipCreateService extends AbstractService<Sponsor, Sp
 
 	@Override
 	public void unbind() {
+		Tuple tuple;
+		Collection<Project> projects;
+		SelectChoices projectChoices;
 
-		super.unbindObject(this.sponsorship, //
+		projects = this.repository.findPublishedProjects();
+		projectChoices = SelectChoices.from(projects, "title", this.sponsorship.getProject());
+
+		tuple = super.unbindObject(this.sponsorship, //
 			"ticker", "name", "description", "startMoment", "endMoment", "moreInfo", //
 			"draftMode", "monthsActive", "totalMoney");
-
+		tuple.put("projectChoices", projectChoices);
 	}
 }

@@ -11,6 +11,7 @@
 # master.menu.any #############################################################
 
 master.menu.any = Any
+master.menu.any.list-projects = List projects
 master.menu.any.list-sponsorships = List sponsorships
 master.menu.any.list-inventions = List inventions
 master.menu.any.list-strategies = List strategies
@@ -41,6 +42,12 @@ master.menu.fundraiser.list-my-strategies = My Strategies
 
 master.menu.auditor = Auditor
 master.menu.auditor.list-my-audit-reports = My Audit Reports
+
+# master.menu.manager #########################################################
+
+master.menu.manager = Manager
+master.menu.manager.list-my-projects = My Projects
+master.menu.manager.dashboard = Dashboard
 
 # master.menu.administrator ###################################################
 

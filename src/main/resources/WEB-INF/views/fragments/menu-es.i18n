@@ -64,3 +64,5 @@ master.menu.user-account.become-inventor = Hazte inventor
 master.menu.user-account.inventor-profile = Perfil del inventor
 master.menu.user-account.become-auditor = Hazte auditor
 master.menu.user-account.auditor-profile = Perfil del auditor
+master.menu.user-account.become-manager = Hazte manager
+master.menu.user-account.manager-profile = Perfil de manager

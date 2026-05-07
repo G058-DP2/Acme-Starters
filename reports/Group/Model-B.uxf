@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="15.1">
   <help_text>Level B global model overview.</help_text>
-  <zoom_level>8</zoom_level>
+  <zoom_level>6</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>312</x>
-      <y>104</y>
-      <w>304</w>
-      <h>96</h>
+      <x>426</x>
+      <y>72</y>
+      <w>228</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>&lt;&lt;role&gt;&gt;
 Manager
@@ -23,21 +23,21 @@ bg=ORANGE</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>344</x>
-      <y>304</y>
-      <w>464</w>
-      <h>192</h>
+      <x>450</x>
+      <y>222</y>
+      <w>348</w>
+      <h>144</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Project
 --
-+ title: String { Mandatory, ValidText, Column }
++ title: String { Mandatory, ValidHeader, Column }
 + keyWords: String { Mandatory, ValidHeader, Column }
 + description: String { Mandatory, ValidText, Column }
-+ kickOffMoment: Moment { Mandatory, ValidMoment, Temporal(TIMESTAMP) }
-+ closeOutMoment: Moment { Mandatory, ValidMoment, Temporal(TIMESTAMP) }
++ kickOffMoment: Date { Mandatory, ValidMoment, Temporal(TIMESTAMP) }
++ closeOutMoment: Date { Mandatory, ValidMoment, Temporal(TIMESTAMP) }
 + draftMode: Boolean { Mandatory, Valid, Column }
-+ publishedOn: Moment { Optional, ValidMoment, Temporal(TIMESTAMP) }
++ publishedOn: Date { Optional, ValidMoment, Temporal(TIMESTAMP) }
 --
 + / effort: Double { Mandatory, Valid, Transient }
 + / totalMembers: Integer { Mandatory, Valid, Transient }
@@ -49,17 +49,17 @@ bg=GREEN</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>888</x>
-      <y>176</y>
-      <w>256</w>
-      <h>80</h>
+      <x>858</x>
+      <y>126</y>
+      <w>192</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 AdBanner
 --
-+ slogan: String { Mandatory, ValidText, Column }
++ slogan: String { Mandatory, ValidHeader, Column }
 + targetUrl: String { Mandatory, ValidUrl, Column }
-+ picture: String { Mandatory, ValidUrl, Column }
++ pictureUrl: String { Mandatory, ValidUrl, Column }
 
 bg=GREEN</panel_attributes>
     <additional_attributes/>
@@ -67,10 +67,10 @@ bg=GREEN</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>0</x>
-      <y>520</y>
-      <w>272</w>
-      <h>88</h>
+      <x>192</x>
+      <y>384</y>
+      <w>204</w>
+      <h>66</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Squad&gt;&gt;
 ProjectMember
@@ -84,10 +84,10 @@ bg=CYAN</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>296</x>
-      <y>640</y>
-      <w>144</w>
-      <h>64</h>
+      <x>414</x>
+      <y>474</y>
+      <w>108</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Invention
@@ -97,10 +97,10 @@ bg=LIGHT_GRAY</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>472</x>
-      <y>640</y>
-      <w>144</w>
-      <h>64</h>
+      <x>546</x>
+      <y>474</y>
+      <w>108</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Campaign
@@ -110,10 +110,10 @@ bg=LIGHT_GRAY</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>648</x>
-      <y>640</y>
-      <w>144</w>
-      <h>64</h>
+      <x>678</x>
+      <y>474</y>
+      <w>108</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Strategy
@@ -123,10 +123,10 @@ bg=LIGHT_GRAY</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>960</x>
-      <y>496</y>
-      <w>176</w>
-      <h>72</h>
+      <x>912</x>
+      <y>366</y>
+      <w>132</w>
+      <h>54</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Sponsorship
@@ -136,10 +136,10 @@ bg=LIGHT_GRAY</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>888</x>
-      <y>624</y>
-      <w>176</w>
-      <h>72</h>
+      <x>858</x>
+      <y>462</y>
+      <w>132</w>
+      <h>54</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 AuditReport
@@ -149,38 +149,40 @@ bg=LIGHT_GRAY</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>544</x>
-      <y>192</y>
-      <w>32</w>
-      <h>128</h>
+      <x>600</x>
+      <y>138</y>
+      <w>66</w>
+      <h>96</h>
     </coordinates>
     <panel_attributes>lt=x-&gt;
-m1=1
+m1=0..n
 m2=1
+managed by
 </panel_attributes>
     <additional_attributes>10.0;140.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>128</x>
-      <y>424</y>
-      <w>40</w>
-      <h>112</h>
+      <x>288</x>
+      <y>312</y>
+      <w>54</w>
+      <h>84</h>
     </coordinates>
     <panel_attributes>lt=x-&gt;
-m1=1
-m2=1..n
+m1=1..n
+m2=1
+memberOf
 </panel_attributes>
     <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>16</x>
-      <y>360</y>
-      <w>240</w>
-      <h>72</h>
+      <x>204</x>
+      <y>264</y>
+      <w>180</w>
+      <h>54</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 ProjectMembership
@@ -190,85 +192,199 @@ bg=GREEN</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>248</x>
-      <y>384</y>
-      <w>112</w>
-      <h>40</h>
+      <x>378</x>
+      <y>282</y>
+      <w>84</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>lt=x-&gt;
-m1=1
+m1=0..n
 m2=1
+belongsTo
 </panel_attributes>
     <additional_attributes>10.0;20.0;120.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>368</x>
-      <y>488</y>
-      <w>184</w>
-      <h>168</h>
+      <x>468</x>
+      <y>360</y>
+      <w>138</w>
+      <h>126</h>
     </coordinates>
     <panel_attributes>lt=x-&gt;
 m1=0..n
 m2=0..1
+componentOf
 </panel_attributes>
     <additional_attributes>10.0;190.0;10.0;120.0;190.0;120.0;190.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>536</x>
-      <y>488</y>
-      <w>40</w>
-      <h>168</h>
+      <x>594</x>
+      <y>360</y>
+      <w>66</w>
+      <h>126</h>
     </coordinates>
     <panel_attributes>lt=x-&gt;
 m1=0..n
 m2=0..1
+componentOf
 </panel_attributes>
     <additional_attributes>10.0;190.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>584</x>
-      <y>488</y>
-      <w>168</w>
-      <h>168</h>
+      <x>630</x>
+      <y>360</y>
+      <w>126</w>
+      <h>126</h>
     </coordinates>
     <panel_attributes>lt=x-&gt;
 m1=0..n
 m2=0..1
+componentOf
 </panel_attributes>
     <additional_attributes>170.0;190.0;170.0;120.0;10.0;110.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>744</x>
-      <y>488</y>
-      <w>160</w>
-      <h>192</h>
+      <x>750</x>
+      <y>360</y>
+      <w>120</w>
+      <h>144</h>
     </coordinates>
     <panel_attributes>lt=x-&gt;
 m1=0..n
 m2=0..1
+attachedTo
 </panel_attributes>
     <additional_attributes>180.0;210.0;90.0;210.0;90.0;70.0;10.0;70.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>800</x>
-      <y>384</y>
-      <w>176</w>
-      <h>168</h>
+      <x>792</x>
+      <y>282</y>
+      <w>132</w>
+      <h>126</h>
     </coordinates>
     <panel_attributes>lt=x-&gt;
 m1=0..n
 m2=0..1
+attachedTo
 </panel_attributes>
     <additional_attributes>200.0;180.0;90.0;180.0;90.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>1074</x>
+      <y>0</y>
+      <w>408</w>
+      <h>948</h>
+    </coordinates>
+    <panel_attributes>Additional constraints
+--
+
+[Data-model constraints]
+
+- A manager manages zero or more
+  projects; each project is managed
+  by exactly one manager.
+
+- kickOffMoment must be strictly
+  before closeOutMoment whenever
+  draftMode is false.
+
+- /totalMembers counts
+  ProjectMembership records linked
+  to the project.
+
+- /totalComponents counts linked
+  inventions, campaigns, and
+  strategies.
+
+- effort = (sum of active months of
+  components) / (number of involved
+  members).
+
+- dashboard deviation =
+  |managerProjects - mean(rest of
+  managers' projects)|; if only one
+  manager exists, deviation = N/A.
+
+- Only published sponsorships can be
+  attached to a published project;
+  start moment must be after the
+  project's closeOutMoment.
+
+- Only published audit reports can be
+  attached to a published project;
+  start moment must be after the
+  project's closeOutMoment.
+
+[Publication constraints]
+
+- A project can only be published if
+  it contains at least one invention.
+
+- kickOffMoment and closeOutMoment
+  must both be in the future at the
+  moment of publication.
+
+- If a project is published, the
+  interval of each component must be
+  fully contained within the project's
+  kickOffMoment/closeOutMoment
+  interval.
+
+- Each component linked to the
+  project must satisfy its own
+  individual publication constraints
+  before the project can be published.
+
+- Publishing a project publishes all
+  its components automatically.
+
+[Authorisation constraints]
+
+- A manager can only publish their
+  own projects (ownership check).
+
+- Non-members cannot view or manage
+  draft projects.
+
+- Published projects cannot be
+  edited, deleted, or re-published.
+
+- A ProjectMember (Squad) can view
+  all components of their associated
+  project (published and draft), but
+  cannot modify components owned by
+  other members.
+
+[Membership constraints]
+
+- Adding a member to a project is
+  irreversible; memberships cannot
+  be deleted.
+
+- A ProjectMember can view unpublished
+  components that belong to their
+  project; they cannot view unpublished
+  components of projects they are not
+  part of.
+
+[Ad-banner constraints]
+
+- Ad banners must be displayed with
+  minimal intrusiveness.
+
+bg=RED</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>

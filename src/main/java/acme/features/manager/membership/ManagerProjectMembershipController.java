@@ -20,5 +20,7 @@ public class ManagerProjectMembershipController extends AbstractController<Manag
 		super.addBasicCommand("list", ManagerProjectMembershipListService.class);
 		super.addBasicCommand("show", ManagerProjectMembershipShowService.class);
 		super.addBasicCommand("create", ManagerProjectMembershipCreateService.class);
+		super.addBasicCommand("update", ManagerProjectMembershipUpdateService.class);
+		super.addBasicCommand("delete", ManagerProjectMembershipDeleteService.class);
 	}
 }

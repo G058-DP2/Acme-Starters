@@ -10,9 +10,12 @@
 			<acme:form-select code="manager.project-membership.form.label.fundraiser"     path="fundraiser"    choices="${fundraiserChoices}"/>
 			<acme:submit code="manager.project-membership.form.button.create" action="/manager/project-membership/create?projectId=${projectId}"/>
 		</jstl:when>
-		<jstl:when test="${_command == 'show'}">
+		<jstl:when test="${_command == 'show' || _command == 'delete'}">
 			<acme:form-textbox code="manager.project-membership.form.label.memberName" path="memberName" readonly="true"/>
 			<acme:form-textbox code="manager.project-membership.form.label.memberType" path="memberType" readonly="true"/>
+			<jstl:if test="${draftMode == true}">
+				<acme:submit code="manager.project-membership.form.button.delete" action="/manager/project-membership/delete"/>
+			</jstl:if>
 		</jstl:when>
 	</jstl:choose>
 </acme:form>

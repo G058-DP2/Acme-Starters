@@ -23,3 +23,4 @@ inventor.invention.form.button.create = Create
 inventor.invention.form.button.update = Update
 inventor.invention.form.button.delete = Delete
 inventor.invention.form.button.publish = Publish
+inventor.invention.form.label.project = Assigned project:

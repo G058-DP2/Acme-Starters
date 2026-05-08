@@ -56,7 +56,7 @@ public class SponsorshipValidator extends AbstractValidator<ValidSponsorship, Sp
 			super.state(context, validDates, "startMoment", "acme.validation.sponsorship.dates.error");
 		}
 
-		// Model constraint: sponsorship can only be attached to published projects
+		// Model constraint: sponsorships can only be attached to published projects
 		if (sponsorship.getProject() != null) {
 			boolean projectPublished = !sponsorship.getProject().isDraftMode();
 			super.state(context, projectPublished, "*", "acme.validation.sponsorship.project.must-be-published");

@@ -12,6 +12,7 @@
 	<acme:form-url      code="sponsor.sponsorship.form.label.moreInfo"     path="moreInfo"/>
 	<acme:form-double   code="sponsor.sponsorship.form.label.monthsActive" path="monthsActive" readonly="true"/>
 	<acme:form-money    code="sponsor.sponsorship.form.label.totalMoney"   path="totalMoney"   readonly="true"/>
+	<acme:form-select code="sponsor.sponsorship.form.label.project" path="project" choices="${projectChoices}"/>
 
 	<jstl:choose>
 		<jstl:when test="${_command == 'show' && draftMode == false}">

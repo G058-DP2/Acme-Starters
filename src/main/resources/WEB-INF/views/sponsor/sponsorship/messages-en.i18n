@@ -11,6 +11,7 @@ sponsor.sponsorship.form.label.endMoment    = End Date:
 sponsor.sponsorship.form.label.moreInfo     = More info: (Optional)
 sponsor.sponsorship.form.label.monthsActive = Months active:
 sponsor.sponsorship.form.label.totalMoney   = Total donations:
+sponsor.sponsorship.form.label.project      = Project: (Optional)
 
 sponsor.sponsorship.form.button.create    = Create
 sponsor.sponsorship.form.button.update    = Update

@@ -11,6 +11,7 @@
 # master.menu.any #############################################################
 
 master.menu.any = Cualquiera
+master.menu.any.list-projects = Listar proyectos
 master.menu.any.list-sponsorships = Listar patrocinios
 master.menu.any.list-inventions = Listar inventos
 master.menu.any.list-strategies = Listar estrategias
@@ -41,10 +42,17 @@ master.menu.fundraiser.list-my-strategies = Mis estrategias
 master.menu.auditor = Auditor
 master.menu.auditor.list-my-audit-reports = Mis informes de auditoría
 
+# master.menu.manager #########################################################
+
+master.menu.manager = Manager
+master.menu.manager.list-my-projects = Mis Proyectos
+master.menu.manager.dashboard = Panel de control
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador
 master.menu.administrator.list-user-accounts = Ver cuentas de usuario
+master.menu.administrator.list-banners = Gestionar banners
 master.menu.administrator.populate-db-initial = Poblar BD (inicial)
 master.menu.administrator.populate-db-sample = Poblar BD (ejemplos)
 master.menu.administrator.shut-system-down = Parar el sistema
@@ -63,3 +71,5 @@ master.menu.user-account.become-inventor = Hazte inventor
 master.menu.user-account.inventor-profile = Perfil del inventor
 master.menu.user-account.become-auditor = Hazte auditor
 master.menu.user-account.auditor-profile = Perfil del auditor
+master.menu.user-account.become-manager = Hazte manager
+master.menu.user-account.manager-profile = Perfil de manager

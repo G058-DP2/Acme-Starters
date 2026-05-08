@@ -30,7 +30,7 @@
 			<acme:menu-suboption code="master.menu.fundraiser.list-my-strategies" action="/fundraiser/strategy/list"/>
 		</acme:menu-option>
     
-    <acme:menu-option code="master.menu.spokesperson" access="hasRealm('Spokesperson')">
+    	<acme:menu-option code="master.menu.spokesperson" access="hasRealm('Spokesperson')">
     		<acme:menu-suboption code="master.menu.spokesperson.list-my-campaigns" action="/spokesperson/campaign/list"/>
 		</acme:menu-option>
 		
@@ -38,16 +38,23 @@
 			<acme:menu-suboption code="master.menu.auditor.list-my-audit-reports" action="/auditor/audit-report/list"/>
 		</acme:menu-option>
 		
-		<acme:menu-option code="master.menu.any">		
-			 <acme:menu-suboption code="master.menu.any.list-inventions" action="/any/invention/list"/>
-       <acme:menu-suboption code="master.menu.any.list-campaigns" action="/any/campaign/list"/>
-			 <acme:menu-suboption code="master.menu.any.list-strategies" action="/any/strategy/list"/>
-       <acme:menu-suboption code="master.menu.any.list-sponsorships" action="/any/sponsorship/list"/>	
-       <acme:menu-suboption code="master.menu.any.list-auditReports" action="/any/audit-report/list"/>		
+		<acme:menu-option code="master.menu.manager" access="hasRealm('Manager')">
+			<acme:menu-suboption code="master.menu.manager.list-my-projects" action="/manager/project/list"/>
+			<acme:menu-suboption code="master.menu.manager.dashboard" action="/manager/dashboard/dashboard"/>
+		</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.any">
+			<acme:menu-suboption code="master.menu.any.list-projects" action="/any/project/list"/>		
+			<acme:menu-suboption code="master.menu.any.list-inventions" action="/any/invention/list"/>
+       		<acme:menu-suboption code="master.menu.any.list-campaigns" action="/any/campaign/list"/>
+			<acme:menu-suboption code="master.menu.any.list-strategies" action="/any/strategy/list"/>
+       		<acme:menu-suboption code="master.menu.any.list-sponsorships" action="/any/sponsorship/list"/>	
+       		<acme:menu-suboption code="master.menu.any.list-auditReports" action="/any/audit-report/list"/>		
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRealm('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.list-user-accounts" action="/administrator/user-account/list"/>
+			<acme:menu-suboption code="master.menu.administrator.list-banners" action="/administrator/banner/list"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.populate-db-initial" action="/administrator/system/populate-initial"/>
 			<acme:menu-suboption code="master.menu.administrator.populate-db-sample" action="/administrator/system/populate-sample"/>			
@@ -69,6 +76,8 @@
 			<acme:menu-suboption code="master.menu.user-account.sponsor-profile" action="/authenticated/sponsor/update" access="hasRealm('Sponsor')"/>
 			<acme:menu-suboption code="master.menu.user-account.become-auditor" action="/authenticated/auditor/create" access="!hasRealm('Auditor')"/>
 			<acme:menu-suboption code="master.menu.user-account.auditor-profile" action="/authenticated/auditor/update" access="hasRealm('Auditor')"/>
+			<acme:menu-suboption code="master.menu.user-account.become-manager" action="/authenticated/manager/create" access="!hasRealm('Manager')"/>
+			<acme:menu-suboption code="master.menu.user-account.manager-profile" action="/authenticated/manager/update" access="hasRealm('Manager')"/>
 
 		</acme:menu-option>
 	</acme:menu-right>

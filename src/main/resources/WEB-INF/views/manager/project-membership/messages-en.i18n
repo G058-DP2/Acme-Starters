@@ -1,0 +1,19 @@
+manager.project-membership.form.title = Project Member details
+manager.project-membership.list.title = Project Members
+
+manager.project-membership.form.label.inventor      = Inventor:
+manager.project-membership.form.label.spokesperson   = Spokesperson:
+manager.project-membership.form.label.fundraiser     = Fundraiser:
+manager.project-membership.form.label.memberName     = Member name:
+manager.project-membership.form.label.memberType     = Member type:
+
+manager.project-membership.form.button.create = Add member
+
+manager.project-membership.form.error.no-member  = You must select at least one member.
+manager.project-membership.form.error.duplicate   = This member is already part of the project.
+manager.project-membership.form.error.multiple-roles = You must select exactly one role (Inventor, Spokesperson, or Fundraiser).
+
+manager.project-membership.list.label.memberName = Member Name
+manager.project-membership.list.label.memberType = Type
+
+manager.project-membership.list.button.create = Add member

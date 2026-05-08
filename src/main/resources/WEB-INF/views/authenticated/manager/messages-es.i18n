@@ -1,0 +1,11 @@
+authenticated.manager.form.title = Perfil de Manager
+
+authenticated.manager.form.label.position  = Puesto:
+authenticated.manager.form.label.skills    = Habilidades:
+authenticated.manager.form.label.executive = Ejecutivo:
+
+authenticated.manager.form.value.true  = Si
+authenticated.manager.form.value.false = No
+
+authenticated.manager.form.button.create = Registrarse como manager
+authenticated.manager.form.button.update = Actualizar

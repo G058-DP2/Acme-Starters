@@ -65,3 +65,5 @@ master.menu.user-account.become-inventor = Become an inventor
 master.menu.user-account.inventor-profile = Inventor profile
 master.menu.user-account.become-auditor = Become an auditor
 master.menu.user-account.auditor-profile = Auditor profile
+master.menu.user-account.become-manager = Become a manager
+master.menu.user-account.manager-profile = Manager profile

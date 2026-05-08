@@ -1,0 +1,14 @@
+inventor.project.list.title = Mis Proyectos
+inventor.project.form.title = Detalles del proyecto
+
+inventor.project.list.label.title          = Titulo
+inventor.project.list.label.kickOffMoment  = Inicio
+inventor.project.list.label.closeOutMoment = Cierre
+inventor.project.list.label.draftMode      = Borrador?
+
+inventor.project.form.label.title          = Titulo:
+inventor.project.form.label.keyWords       = Palabras clave:
+inventor.project.form.label.description    = Descripcion:
+inventor.project.form.label.kickOffMoment  = Fecha de inicio:
+inventor.project.form.label.closeOutMoment = Fecha de cierre:
+inventor.project.form.label.moreInfo       = Mas info:

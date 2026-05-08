@@ -25,3 +25,4 @@ spokesperson.campaign.list.label.endMoment   = End Date
 spokesperson.campaign.list.label.draftMode   = Draft?
 
 spokesperson.campaign.list.button.create = Create campaign
+spokesperson.campaign.form.label.project = Assigned project:

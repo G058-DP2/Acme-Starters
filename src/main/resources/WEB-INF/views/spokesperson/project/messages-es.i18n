@@ -1,0 +1,14 @@
+spokesperson.project.list.title = Mis Proyectos
+spokesperson.project.form.title = Detalles del proyecto
+
+spokesperson.project.list.label.title          = Titulo
+spokesperson.project.list.label.kickOffMoment  = Inicio
+spokesperson.project.list.label.closeOutMoment = Cierre
+spokesperson.project.list.label.draftMode      = Borrador?
+
+spokesperson.project.form.label.title          = Titulo:
+spokesperson.project.form.label.keyWords       = Palabras clave:
+spokesperson.project.form.label.description    = Descripcion:
+spokesperson.project.form.label.kickOffMoment  = Fecha de inicio:
+spokesperson.project.form.label.closeOutMoment = Fecha de cierre:
+spokesperson.project.form.label.moreInfo       = Mas info:

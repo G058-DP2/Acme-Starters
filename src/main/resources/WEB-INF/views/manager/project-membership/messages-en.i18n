@@ -8,6 +8,7 @@ manager.project-membership.form.label.memberName     = Member name:
 manager.project-membership.form.label.memberType     = Member type:
 
 manager.project-membership.form.button.create = Add member
+manager.project-membership.form.button.delete = Remove member
 
 manager.project-membership.form.error.no-member  = You must select at least one member.
 manager.project-membership.form.error.duplicate   = This member is already part of the project.

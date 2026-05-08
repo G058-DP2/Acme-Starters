@@ -12,6 +12,9 @@
 	<acme:form-url      code="fundraiser.strategy.form.label.moreInfo"     path="moreInfo"/>
 	<acme:form-double   code="fundraiser.strategy.form.label.monthsActive" path="monthsActive" readonly="true"/>
 	<acme:form-double   code="fundraiser.strategy.form.label.expectedPercentage"   path="expectedPercentage"   readonly="true"/>
+	<jstl:if test="${acme:anyOf(_command, 'create|update|show')}">
+		<acme:form-select code="fundraiser.strategy.form.label.project" path="project" choices="${projectChoices}"/>
+	</jstl:if>
 
 	<jstl:choose>
 		<jstl:when test="${_command == 'show' && draftMode == false }">

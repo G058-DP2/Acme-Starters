@@ -1,0 +1,14 @@
+fundraiser.project.list.title = My Projects
+fundraiser.project.form.title = Project details
+
+fundraiser.project.list.label.title          = Title
+fundraiser.project.list.label.kickOffMoment  = Kick-off
+fundraiser.project.list.label.closeOutMoment = Close-out
+fundraiser.project.list.label.draftMode      = Draft?
+
+fundraiser.project.form.label.title          = Title:
+fundraiser.project.form.label.keyWords       = Key words:
+fundraiser.project.form.label.description    = Description:
+fundraiser.project.form.label.kickOffMoment  = Kick-off date:
+fundraiser.project.form.label.closeOutMoment = Close-out date:
+fundraiser.project.form.label.moreInfo       = More info:

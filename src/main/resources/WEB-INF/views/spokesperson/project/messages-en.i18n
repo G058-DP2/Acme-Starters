@@ -1,0 +1,14 @@
+spokesperson.project.list.title = My Projects
+spokesperson.project.form.title = Project details
+
+spokesperson.project.list.label.title          = Title
+spokesperson.project.list.label.kickOffMoment  = Kick-off
+spokesperson.project.list.label.closeOutMoment = Close-out
+spokesperson.project.list.label.draftMode      = Draft?
+
+spokesperson.project.form.label.title          = Title:
+spokesperson.project.form.label.keyWords       = Key words:
+spokesperson.project.form.label.description    = Description:
+spokesperson.project.form.label.kickOffMoment  = Kick-off date:
+spokesperson.project.form.label.closeOutMoment = Close-out date:
+spokesperson.project.form.label.moreInfo       = More info:

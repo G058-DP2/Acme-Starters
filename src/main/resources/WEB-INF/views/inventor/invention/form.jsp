@@ -11,6 +11,9 @@
 	<acme:form-url      code="inventor.invention.form.label.moreInfo"     path="moreInfo"/>
 	<acme:form-double   code="inventor.invention.form.label.monthsActive" path="monthsActive" readonly="true"/>
 	<acme:form-money    code="inventor.invention.form.label.cost"   	  path="cost"   readonly="true"/>
+	<jstl:if test="${acme:anyOf(_command, 'create|update|show')}">
+		<acme:form-select code="inventor.invention.form.label.project" path="project" choices="${projectChoices}"/>
+	</jstl:if>
 
 	<jstl:choose>
 		<jstl:when test="${_command == 'show' && draftMode == false}">

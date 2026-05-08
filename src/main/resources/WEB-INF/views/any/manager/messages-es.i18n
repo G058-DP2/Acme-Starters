@@ -1,0 +1,10 @@
+any.manager.form.title = Perfil del manager
+any.manager.list.title = Lista de managers
+
+any.manager.form.label.position  = Puesto:
+any.manager.form.label.skills    = Habilidades:
+any.manager.form.label.executive = Ejecutivo:
+
+any.manager.list.label.position  = Puesto
+any.manager.list.label.skills    = Habilidades
+any.manager.list.label.executive = Ejecutivo

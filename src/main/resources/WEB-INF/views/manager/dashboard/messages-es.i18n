@@ -1,0 +1,8 @@
+manager.dashboard.form.title = Panel del Manager
+
+manager.dashboard.form.label.totalProjects       = Total de proyectos:
+manager.dashboard.form.label.deviationFromAverage = Desviacion respecto al promedio:
+manager.dashboard.form.label.minEffort            = Esfuerzo minimo (PMs):
+manager.dashboard.form.label.maxEffort            = Esfuerzo maximo (PMs):
+manager.dashboard.form.label.avgEffort            = Esfuerzo promedio (PMs):
+manager.dashboard.form.label.devEffort            = Desviacion del esfuerzo (PMs):

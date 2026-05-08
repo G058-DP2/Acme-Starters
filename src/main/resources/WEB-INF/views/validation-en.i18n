@@ -37,5 +37,17 @@ acme.validation.campaign.effort-not-positive = The campaign effort must be posit
 acme.validation.campaign.startMoment.future     = Start date must be in the future
 acme.validation.campaign.endMoment.future       = End date must be in the future
 acme.validation.campaign.dates.error-publish = Start/end moments must define a valid time interval
+
+##################################### PROJECT
+acme.validation.project.no-inventions = A project cannot be published without at least one invention
+acme.validation.project.invalid-interval = Kick-off/close-out moments must define a valid time interval
+acme.validation.project.kickOffMoment.future  = Kick-off date must be in the future at publish time
+acme.validation.project.closeOutMoment.future = Close-out date must be in the future at publish time
+acme.validation.project.not-allowed = The selected project is not available or you do not have access to it
+acme.validation.project.unpublishable-component = One or more components (inventions, campaigns or strategies) do not meet the requirements to be published
+acme.validation.project.update-not-allowed = Projects can only be assigned when publishing, not when updating or creating
+acme.validation.project.component-out-of-interval = One or more component intervals (start/end) are not contained within the project kick-off/close-out interval
+acme.validation.auditReport.start-before-project-closeout = The audit report start moment must be after the project close-out moment
+acme.validation.auditReport.project.must-be-published = Audit reports can only be attached to published projects
 acme.validation.sponsorship.start-before-project-closeout = The sponsorship start moment must be after the project close-out moment
 acme.validation.sponsorship.project.must-be-published = Sponsorships can only be attached to published projects

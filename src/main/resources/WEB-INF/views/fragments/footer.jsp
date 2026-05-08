@@ -38,3 +38,6 @@
 		<acme:footer-copyright code="master.company.name"/>
 	</acme:footer-logo>
 </acme:footer-panel>
+<div class="container mt-3 mb-3 text-center">
+    <div id="acme-banner-container"></div>
+</div>

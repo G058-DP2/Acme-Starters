@@ -37,5 +37,17 @@ acme.validation.campaign.effort-not-positive = El esfuerzo total de la campaña 
 acme.validation.campaign.startMoment.future     = La fecha de inicio debe estar en el futuro
 acme.validation.campaign.endMoment.future       = La fecha de fin debe estar en el futuro
 acme.validation.campaign.dates.error-publish = Las fechas de inicio y fin deben definir un intervalo válido de tiempo
+
+##################################### PROJECT
+acme.validation.project.no-inventions = Un proyecto no puede publicarse sin al menos un invento
+acme.validation.project.invalid-interval = Las fechas de inicio y cierre deben definir un intervalo válido de tiempo
+acme.validation.project.kickOffMoment.future  = La fecha de inicio debe estar en el futuro al momento de la publicación
+acme.validation.project.closeOutMoment.future = La fecha de cierre debe estar en el futuro al momento de la publicación
+acme.validation.project.not-allowed = El proyecto seleccionado no está disponible o no tiene acceso a él
+acme.validation.project.unpublishable-component = Uno o más componentes (inventos, campañas o estrategias) no cumplen los requisitos para ser publicados
+acme.validation.project.update-not-allowed = El proyecto solo puede asignarse al publicar, no al actualizar o al crear
+acme.validation.project.component-out-of-interval = Uno o más intervalos de componentes (inicio/fin) no están contenidos dentro del intervalo del proyecto (kickOff/closeOut)
+acme.validation.auditReport.start-before-project-closeout = El momento de inicio del informe de auditoría debe ser posterior al cierre del proyecto
+acme.validation.auditReport.project.must-be-published = Los informes de auditoría solo pueden vincularse a proyectos publicados
 acme.validation.sponsorship.start-before-project-closeout = El momento de inicio del patrocinio debe ser posterior al cierre del proyecto
 acme.validation.sponsorship.project.must-be-published = Los patrocinios solo pueden vincularse a proyectos publicados
